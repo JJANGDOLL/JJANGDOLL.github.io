@@ -1,0 +1,3 @@
+# JJANGDOLL blog
+
+AABBCCDDEE
