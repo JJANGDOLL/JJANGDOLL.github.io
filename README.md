@@ -1,3 +1,3 @@
 # JJANGDOLL blog
 
-AABBCCDDEE
+Welcome JJANGDOLL Wiki
