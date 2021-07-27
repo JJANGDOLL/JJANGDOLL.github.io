@@ -10,7 +10,6 @@ parent: "[수학] 벡터 대수"
 ## 벡터의 정의
 
 크기와 방향을 모두 가진 수량을 가르키는 말
-{: .fs-6 }
 
 ## 벡터의 종류
 
@@ -20,14 +19,13 @@ parent: "[수학] 벡터 대수"
 
 ## 벡터 표현방법
 
-<img src="/images/Vector/VectorMain.PNG">
+<img src="/images/Vector/VectorMain.png">
 
 Directed Line Segment(지향 선분) : 방향이 있는 선분
-{: .fs-6 }
 
 ## 벡터의 상등
 
-<img src="/images/Vector/VectorEqual.PNG">
+<img src="/images/Vector/VectorEqual.png">
 
 두 벡터의 **길이가 같고**, **방향도 같으면** 상등이다.
 
@@ -35,10 +33,10 @@ Directed Line Segment(지향 선분) : 방향이 있는 선분
 
 ## 3차원 벡터를 표현하는 방법
 
-<img src="/images/Vector/VectorAppearCoordinate.PNG">
+<img src="/images/Vector/VectorAppearCoordinate.png">
 
 ## 같은 벡터, 다른 기준계
 
-<img src="/images/Vector/VectorDifferentCordinate.PNG">
+<img src="/images/Vector/VectorDifferentCordinate.png">
 
 ## 왼손잡이 좌표계, 오른손 잡이 좌표계
