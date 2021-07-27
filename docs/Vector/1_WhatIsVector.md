@@ -6,6 +6,13 @@ parent: "[수학] 벡터 대수"
 ---
 
 # 벡터
+{: .no_toc}
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 ## 벡터의 정의
 
