@@ -14,6 +14,8 @@ parent: "[수학] 벡터 대수"
 1. TOC
 {:toc}
 
+---
+
 ## 벡터의 정의
 
 크기와 방향을 모두 가진 수량을 가르키는 말
@@ -47,3 +49,13 @@ Directed Line Segment(지향 선분) : 방향이 있는 선분
 <img src="/images/Vector/VectorDifferentCordinate.png">
 
 ## 왼손잡이 좌표계, 오른손 잡이 좌표계
+
+<img src="/images/Vector/LeftandRighthandedcns.png">
+
+# 벡터의 연산
+
+## 벡터를 수식으로 표현하는 방법
+
+## 벡터
+
+## 상등

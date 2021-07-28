@@ -14,4 +14,10 @@ back_to_top_text: "Back to top"
 
 color_scheme: dark
 
+markdown: kramdown
+
 exclude: ["README.md"]
+
+defaults:
+  values:
+    mathjax: true
