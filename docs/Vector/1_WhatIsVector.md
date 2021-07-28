@@ -3,6 +3,7 @@ layout: default
 title: "벡터 대수"
 nav_order: 1
 parent: "[수학] 벡터 대수"
+use_math: true
 ---
 
 # 벡터
@@ -59,3 +60,5 @@ Directed Line Segment(지향 선분) : 방향이 있는 선분
 ## 벡터
 
 ## 상등
+
+This formula $f(x) = x^2$ is an example.
