@@ -23,7 +23,7 @@ use_math: true
 
 크기와 방향을 모두 가진 수량을 가르키는 말
 
-</br>
+&nbsp;<br/>
 
 ## 벡터의 종류
 
@@ -31,7 +31,7 @@ use_math: true
 * 변위 (최종적인 이동 방향 + 거리)
 * 속도 (방향 + 빠르기)
 
-</br>
+&nbsp;<br/>
 
 ## 벡터 표현방법
 
@@ -39,7 +39,7 @@ use_math: true
 
 Directed Line Segment(지향 선분) : 방향이 있는 선분
 
-</br>
+&nbsp;<br/>
 
 ## 벡터의 상등
 
@@ -47,7 +47,7 @@ Directed Line Segment(지향 선분) : 방향이 있는 선분
 
 두 벡터의 **길이가 같고**, **방향도 같으면** 상등이다.
 
-</br>
+&nbsp;<br/>
 
 # 백터와 좌표계
 
