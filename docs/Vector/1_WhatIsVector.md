@@ -105,8 +105,11 @@ $
 $\vec I = (3, 4, 5)$ 일 때<br/>
 
 $\vec I_x = 3$
+
 $\vec I_y = 4$
+
 $\vec I_z = 5$
+
 
 &nbsp;<br/>&nbsp;<br/>
 
@@ -117,12 +120,18 @@ $\vec I_z = 5$
 $\vec V, \vec U$ 에 대해서
 
 $\dim (\vec V) = \dim (\vec U)$
+
 $\vec V_x = \vec U_x$
+
 $\vec V_y = \vec U_y$
+
 ...
+
 $\vec V_n = \vec U_n$
 
+
 이면 
+
 $\vec V = \vec U$ 이므로 상등이다.
 
 &nbsp;<br/>
@@ -133,7 +142,8 @@ $\vec V = \vec U$ 이므로 상등이다.
 
 $\vec V, \vec U$ 에 대해서
 
-$\dim (\vec V) = \dim (\vec U)$ 일 때
+$\dim (\vec V) = \dim (\vec U)$ 일 때,
+
 $\vec V + \vec U = (\vec V_x+\vec U_x, \vec V_y+\vec U_y, ... , \vec V_n+\vec U_n) $ 이다.
 
 &nbsp;<br/>
@@ -142,7 +152,8 @@ $\vec V + \vec U = (\vec V_x+\vec U_x, \vec V_y+\vec U_y, ... , \vec V_n+\vec U_
 
 벡터에는 스칼라를 곱할 수 있으며, 그 결과는 벡터다.
 
-$\vec V, \{ k \in R  \}$ 일 때
+$\vec V, \{ k \in R  \}$ 일 때,
+
 $k\vec V = (k\vec V_x, k\vec V_y, ... ,k \vec V_n)$ 이다.
 
 &nbsp;<br/>
@@ -153,10 +164,14 @@ $k\vec V = (k\vec V_x, k\vec V_y, ... ,k \vec V_n)$ 이다.
 
 $\vec V, \vec U$ 에 대해서
 
-$\dim (\vec V) = \dim (\vec U)$ 일 때
+$\dim (\vec V) = \dim (\vec U)$ 일 때,
+
 $\vec V - \vec U$
+
 $= \vec V + (-1 \cdot \vec U)$
+
 $= (\vec V_x-\vec U_x, \vec V_y-\vec U_y, ... , \vec V_n-\vec U_n) $
+
 
 &nbsp;<br/>
 
@@ -164,7 +179,7 @@ $= (\vec V_x-\vec U_x, \vec V_y-\vec U_y, ... , \vec V_n-\vec U_n) $
 
 ## 벡터의 크기 표기법
 
-$\vec V$ 의 크기는 $\| V\|$ 로 표현한다.<br/>
+$\vec V$ 의 크기는 $ \| V\|$ 로 표현한다.
 
 $\vec V = (5,0)$ 일 때, $\| V \| = 5 $ 이다.
 
@@ -192,8 +207,11 @@ $\vec V = (x,y,z)$ 일 때
 <img src="/images/Vector/3dPythagoras.png">
 
 $\| \vec V\| $
+
 $= \sqrt{ a^2 + y^2}$
+
 $= \sqrt{ \sqrt{x^2 + z^2}^2 + y^2}$
+
 $= \sqrt{ x^2 + z^2 + y^2}$
 
 $\therefore	\| \vec V \| = \sqrt{ x^2 + z^2 + y^2}$
@@ -202,7 +220,7 @@ $\therefore	\| \vec V \| = \sqrt{ x^2 + z^2 + y^2}$
 
 ## 단위 벡터
 
-단위 벡터(방향 전용 벡터) : $\| \vec  V\| = 1$ 인 벡터<br/>
+단위 벡터(방향 전용 벡터) : $\| \vec  V\| = 1$ 인 벡터
 
 임의의 벡터의 크기를 단위 벡터로 만드는 것을 **정규화(normalization)** 한다고 부른다.
 
@@ -215,7 +233,7 @@ ex) $\hat{V}$
 
 벡터의 **각 성분을 벡터의 크기로 나누면** 정규화가 된다.
 
-$\vec V = (x,y)$ 일 때
+$\vec V = (x,y)$ 일 때,
 
 $\hat{V} = (\frac{x}{\|V\|}, \frac{y}{\|V\|})$
 
