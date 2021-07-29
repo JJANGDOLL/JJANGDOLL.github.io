@@ -148,7 +148,7 @@ $\vec V + \vec U = (\vec V_x+\vec U_x, \vec V_y+\vec U_y, ... , \vec V_n+\vec U_
 
 &nbsp;<br/>
 
-## 벡터의 곱셈(스칼라 곱셈)
+## 스칼라 곱셈
 
 벡터에는 스칼라를 곱할 수 있으며, 그 결과는 벡터다.
 
