@@ -8,7 +8,7 @@ nav_order: 98
 
 * Game class has started
 * Studying math is hard. But, so far it's fun.
-* Why my computer is out of order when every wake up.
+* I don't know why my computer crashes when it wakes up (from sleep mode).
 
 ### 20210728
 
