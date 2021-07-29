@@ -102,7 +102,8 @@ $
 
 * 값 표현 방법
 
-$\vec I = (3, 4, 5)$ 일 때
+$\vec I = (3, 4, 5)$ 일 때<br/>
+
 $\vec I_x = 3$
 $\vec I_y = 4$
 $\vec I_z = 5$
@@ -158,3 +159,72 @@ $= \vec V + (-1 \cdot \vec U)$
 $= (\vec V_x-\vec U_x, \vec V_y-\vec U_y, ... , \vec V_n-\vec U_n) $
 
 &nbsp;<br/>
+
+# 벡터의 크기와 단위벡터
+
+## 벡터의 크기 표기법
+
+$\vec V$ 의 크기는 $\| V\|$ 로 표현한다.<br/>
+
+$\vec V = (5,0)$ 일 때, $\| V \| = 5 $ 이다.
+
+&nbsp;<br/>
+
+
+## 피타고라스의 정리
+
+* 2차원
+
+$\vec V = (4,3)$ 일 때
+
+<img src="/images/Vector/Pythagoras.png">
+
+$\| \vec  V\| = \sqrt{ 4^2 + 3^2} = \sqrt{25} = 5$
+
+$\therefore	\| \vec  V \| = 5$
+
+&nbsp;<br/>
+
+* 3차원
+
+$\vec V = (x,y,z)$ 일 때
+
+<img src="/images/Vector/3dPythagoras.png">
+
+$\| \vec V\| $
+$= \sqrt{ a^2 + y^2}$
+$= \sqrt{ \sqrt{x^2 + z^2}^2 + y^2}$
+$= \sqrt{ x^2 + z^2 + y^2}$
+
+$\therefore	\| \vec V \| = \sqrt{ x^2 + z^2 + y^2}$
+
+&nbsp;<br/>
+
+## 단위 벡터
+
+단위 벡터(방향 전용 벡터) : $\| \vec  V\| = 1$ 인 벡터<br/>
+
+임의의 벡터의 크기를 단위 벡터로 만드는 것을 **정규화(normalization)** 한다고 부른다.
+
+기호는 &nbsp; $\hat{}$  &nbsp;  를 사용한다. 
+ex) $\hat{V}$
+
+&nbsp;<br/>
+
+## 단위 벡터 공식
+
+벡터의 **각 성분을 벡터의 크기로 나누면** 정규화가 된다.
+
+$\vec V = (x,y)$ 일 때
+
+$\hat{V} = (\frac{x}{\|V\|}, \frac{y}{\|V\|})$
+
+&nbsp;<br/>
+
+# 내적
+
+**대응되는 각 성분들의 곱을 합산한 결과**
+
+$\vec V, \vec U$ 가 있을 떄, 두 벡터의 내적은
+
+$\vec V \cdot \vec U$ 로 정의된다.
