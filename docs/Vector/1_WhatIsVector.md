@@ -179,7 +179,7 @@ $= (\vec V_x-\vec U_x, \vec V_y-\vec U_y, ... , \vec V_n-\vec U_n) $
 
 ## 벡터의 크기 표기법
 
-$\vec V$ 의 크기는 $ \| V\|$ 로 표현한다.
+$\vec V$ 의 크기는 $ \Vert V \Vert $ 로 표현한다.
 
 $\vec V = (5,0)$ 일 때, $\| V \| = 5 $ 이다.
 
