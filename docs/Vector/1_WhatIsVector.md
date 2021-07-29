@@ -181,7 +181,7 @@ $= (\vec V_x-\vec U_x, \vec V_y-\vec U_y, ... , \vec V_n-\vec U_n) $
 
 $\vec V$ 의 크기는 $ \Vert V \Vert $ 로 표현한다.
 
-$\vec V = (5,0)$ 일 때, $\| V \| = 5 $ 이다.
+$\vec V = (5,0)$ 일 때, $\Vert V \Vert = 5 $ 이다.
 
 &nbsp;<br/>
 
@@ -194,9 +194,9 @@ $\vec V = (4,3)$ 일 때
 
 <img src="/images/Vector/Pythagoras.png">
 
-$\| \vec  V\| = \sqrt{ 4^2 + 3^2} = \sqrt{25} = 5$
+$\Vert \vec  V \Vert = \sqrt{ 4^2 + 3^2} = \sqrt{25} = 5$
 
-$\therefore	\| \vec  V \| = 5$
+$\therefore	\Vert \vec  V \Vert = 5$
 
 &nbsp;<br/>
 
@@ -206,7 +206,7 @@ $\vec V = (x,y,z)$ 일 때
 
 <img src="/images/Vector/3dPythagoras.png">
 
-$\| \vec V\| $
+$\Vert \vec V\Vert $
 
 $= \sqrt{ a^2 + y^2}$
 
@@ -214,13 +214,13 @@ $= \sqrt{ \sqrt{x^2 + z^2}^2 + y^2}$
 
 $= \sqrt{ x^2 + z^2 + y^2}$
 
-$\therefore	\| \vec V \| = \sqrt{ x^2 + z^2 + y^2}$
+$\therefore	\Vert \vec V \Vert = \sqrt{ x^2 + z^2 + y^2}$
 
 &nbsp;<br/>
 
 ## 단위 벡터
 
-단위 벡터(방향 전용 벡터) : $\| \vec  V\| = 1$ 인 벡터
+단위 벡터(방향 전용 벡터) : $\Vert \vec  V\Vert = 1$ 인 벡터
 
 임의의 벡터의 크기를 단위 벡터로 만드는 것을 **정규화(normalization)** 한다고 부른다.
 
@@ -235,7 +235,7 @@ ex) $\hat{V}$
 
 $\vec V = (x,y)$ 일 때,
 
-$\hat{V} = (\frac{x}{\|V\|}, \frac{y}{\|V\|})$
+$\hat{V} = (\frac{x}{\Vert V \Vert}, \frac{y}{\Vert V \Vert})$
 
 &nbsp;<br/>
 
