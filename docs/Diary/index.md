@@ -4,6 +4,11 @@ title: Diary
 nav_order: 98
 ---
 
+### 20210730
+
+* Strange people visited my blog
+* Class is more fun that I predicted
+
 ### 20210729
 
 * Game class has started
