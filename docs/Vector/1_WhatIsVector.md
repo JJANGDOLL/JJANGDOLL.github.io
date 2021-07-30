@@ -247,6 +247,34 @@ $\vec V, \vec U$ 가 있을 떄, 두 벡터의 내적은
 
 $\vec V \cdot \vec U$ 로 정의된다.
 
+## 내적 코사인 법칙(관계)
+
+$\vec V, \vec U$ 가 있을 때, 두 벡터의 내적에서
+
+$\vec V \cdot \vec U = \Vert V \Vert \cdot \Vert U \Vert \cdot \cos{\theta}$ 이다.
+
+## 내적 코사인 법칙의 증명(벡터 내적 증명)
+
+아래와 같은 좌표에 벡터가 있다고 가정하자.
+
+$\vec A = (x_1, y_1), \vec B = (x_2, y_2)$,
+
+<img src="/images/Vector/VectorDotProductProof.png">
+
+$\vec A \cdot \vec B = \Vert A \Vert \cdot \Vert B \Vert \cdot \cos{\theta} $
+
+$ = A \cdot B \cdot \cos{(\alpha - \beta)} $
+
+$ = A \cdot B \cdot (\cos{\alpha} \cdot \cos{\beta} + \sin{\alpha} \cdot \sin{\beta}) $
+
+$ = A \cdot B \cdot \cos{\alpha} \cdot \cos{\beta} + A \cdot B \cdot \sin{\alpha} \cdot \sin{\beta} $
+
+$ = A \cdot \cos{\alpha} \cdot B \cdot \cos{\beta} + A \cdot \sin{\alpha} \cdot B \cdot \sin{\beta} $
+
+$ = x_1 \cdot x_2 + y_1 \cdot y_2 $
+
+$\therefore \vec A \cdot \vec B = \Vert A \Vert \cdot \Vert B \Vert \cdot \cos{\theta} = x_1 \cdot x_2 + y_1 \cdot y_2 $
+
 # 선형 대수
 
 ## 선형 독립
