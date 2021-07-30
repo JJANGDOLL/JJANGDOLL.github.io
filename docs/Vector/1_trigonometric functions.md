@@ -2,7 +2,7 @@
 layout: default
 title: "삼각 함수"
 nav_order: 2
-parent: "[수학] 벡터 대수"
+parent: "[Math] 게임 기초 수학"
 use_math: true
 ---
 
