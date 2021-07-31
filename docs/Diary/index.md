@@ -7,7 +7,7 @@ nav_order: 98
 ### 20210730
 
 * Strange people visited my blog
-* Class is more fun that I predicted
+* Class is more fun than I predicted
 
 ### 20210729
 
