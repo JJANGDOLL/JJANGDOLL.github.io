@@ -265,15 +265,15 @@ $\vec A = (x_1, y_1), \vec B = (x_2, y_2)$,
 
 <img src="/images/Vector/VectorDotProductProof.png">
 
-$\vec A \cdot \vec B = \Vert A \Vert \cdot \Vert B \Vert \cdot \cos{\theta} $
+$\vec A \cdot \vec B = \Vert \vec A \Vert \cdot \Vert \vec B \Vert \cdot \cos{\theta} $
 
-$ = A \cdot B \cdot \cos{(\alpha - \beta)} $
+$ = \Vert \vec A \Vert \cdot \Vert \vec B \Vert \cdot \cos{(\alpha - \beta)} $
 
-$ = A \cdot B \cdot (\cos{\alpha} \cdot \cos{\beta} + \sin{\alpha} \cdot \sin{\beta}) $
+$ = \Vert \vec A \Vert \cdot \Vert \vec B \Vert \cdot (\cos{\alpha} \cdot \cos{\beta} + \sin{\alpha} \cdot \sin{\beta}) $
 
-$ = A \cdot B \cdot \cos{\alpha} \cdot \cos{\beta} + A \cdot B \cdot \sin{\alpha} \cdot \sin{\beta} $
+$ = \Vert \vec A \Vert \cdot \Vert \vec B \Vert \cdot \cos{\alpha} \cdot \cos{\beta} + \Vert \vec A \Vert \cdot  \Vert \vec B \Vert \cdot \sin{\alpha} \cdot \sin{\beta} $
 
-$ = A \cdot \cos{\alpha} \cdot B \cdot \cos{\beta} + A \cdot \sin{\alpha} \cdot B \cdot \sin{\beta} $
+$ = \Vert \vec A \Vert \cdot \cos{\alpha} \cdot \Vert \vec B \Vert \cdot \cos{\beta} + \Vert \vec A \Vert \cdot \sin{\alpha} \cdot \Vert \vec B \Vert \cdot \sin{\beta} $
 
 $ = x_1 \cdot x_2 + y_1 \cdot y_2 $
 
@@ -282,6 +282,8 @@ $\therefore \vec A \cdot \vec B = \Vert A \Vert \cdot \Vert B \Vert \cdot \cos{\
 &nbsp;<br/>
 
 ## 내적의 속성
+
+<img src="/images/Vector/InnerProduct.png">
 
 * $ \vec U \cdot \vec V = 0 $ 이면, $ \vec U \perp \vec V$ 이다.
 * $ \vec U \cdot \vec V > 0 $ 이면, $ \theta < 90^\circ $ 이다.
