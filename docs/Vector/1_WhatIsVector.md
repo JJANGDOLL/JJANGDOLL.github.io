@@ -249,11 +249,13 @@ $\hat{V} = (\frac{x}{\Vert V \Vert}, \frac{y}{\Vert V \Vert})$
 
 # 내적
 
-**대응되는 각 성분들의 곱을 합산한 결과**
+**대응되는 각 성분들의 곱을 합산한 결과. 결과는 스칼라이다.**
 
 $\vec V, \vec U$ 가 있을 떄, 두 벡터의 내적은
 
 $\vec V \cdot \vec U$ 로 정의된다.
+
+
 
 &nbsp;<br/>
 
@@ -372,6 +374,60 @@ $w_2 = v_2 - proj_{w_0}(v_2) - proj_{w_1}(v_2)$
 이러면 직교인 벡터들의 집합 $\{ w_0, w_1, w_2\}$ 가 만들어 졌다.
 
 $w_0, w_1, w_2$ 를 정규화 하면 정규직교 집합이 완성된다.
+
+&nbsp;<br/>
+
+# 외적
+
+**오직 3차원 벡터에 대해서만 정의된다. 결과는 벡터이다.**
+
+두 3차원 벡터 $u, v$에 외적을 취하면, $u, v$모두에 직교인 또 다른 벡터 $w$ 가 나온다.
+
+그렇다면, $w$ 는 $u$와도 직교이고 $v$ 와도 직교이다.
+
+$u = (u_x, u_y, u_z), v = (v_x, v_y, v_z$$  라고 할 때 둘의 외적은 아래처럼 정의된다.
+
+$w = u \times v = (u_yv_z - u_zv_y, u_zv_x - u_xv_z, u_xv_y - u_yv_x) $
+
+&nbsp;<br/>
+
+## 외적은 교환법칙이 성립되지 않는다
+
+$u = (2, 1, 3), v = (2, 0, 0)$ 이라고 할 때, $w = u \times v, z = v \times u$ 를 계산하고 w가 u와 v에 교환법칙과 직교를 확인해보자.
+
+* 교환 법칙
+
+$ w = u \times v$
+
+$ = (2, 1, 3) \times (2, 0, 0)$
+
+$ = (1 \cdot 0 - 3 \cdot 0, 3 \cdot 2 - 2 \cdot 0, 2 \cdot 0 - 1 \cdot 2)$
+
+$ = (0, 6, -2)$ <br/><br/>
+
+$z = v \times u$
+
+$ = (2, 0, 0) \times (2, 1, 3)$
+
+$ = (0 \cdot 3 - 0 \cdot 1, 0 \cdot 2 - 2 \cdot 3, 2 \cdot 1 - 0 \cdot 2)$
+
+$ = (0, -6, 2)$
+
+$\therefore w \neq z, u \times v \neq v \times u $ <br/><br/>
+
+<img src="/images/Vector/3dOuterProduct.png">
+
+* 직교
+
+$w$ 가 $v$에 직교인지 확인하는 방법은 $w \cdot v = 0$ 인지 확인해보면 된다.
+
+$w \cdot v = (0, 6, -2) \cdot (2, 1, 3) = 0$
+
+마찬가지로 $u$도 동일한지 확인한다.
+
+$w \cdot u = (0, 6, -2) \cdot (2, 0, 0) = 0$
+
+그러므로, $w$ 는 $u, v$에 대해서 직교이다.
 
 &nbsp;<br/>
 
