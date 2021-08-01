@@ -175,7 +175,7 @@ $= (\vec V_x-\vec U_x, \vec V_y-\vec U_y, ... , \vec V_n-\vec U_n) $
 
 &nbsp;<br/>
 
-# 벡터의 크기와 단위벡터
+# 벡터의 크기
 
 ## 벡터의 크기 표기법
 
@@ -186,7 +186,9 @@ $\vec V = (5,0)$ 일 때, $\Vert V \Vert = 5 $ 이다.
 &nbsp;<br/>
 
 
-## 피타고라스의 정리
+## 벡터의 크기 구하기
+
+**피타고라스의 정리를 이용한다.**
 
 * 2차원
 
@@ -218,7 +220,13 @@ $\therefore	\Vert \vec V \Vert = \sqrt{ x^2 + z^2 + y^2}$
 
 &nbsp;<br/>
 
-## 단위 벡터
+* N 차원
+
+$\vec V = (x_1,x_2, \cdots , x_n)$ 일 때
+
+$\therefore \Vert \vec V \Vert = \sqrt{ x_1^2 + x_2^2 + \cdots + x_n^2 }$
+
+# 단위 벡터
 
 단위 벡터(방향 전용 벡터) : $\Vert \vec  V\Vert = 1$ 인 벡터
 
@@ -290,6 +298,45 @@ $\therefore \vec A \cdot \vec B = \Vert A \Vert \cdot \Vert B \Vert \cdot \cos{\
 * $ \vec U \cdot \vec V < 0 $ 이면, $ \theta > 90^\circ $ 이다.
 
 &nbsp;<br/>
+
+## 직교 투영(정사영)
+
+<img src="/images/Vector/OrthogonalProjection.png">
+
+$\vec V $와, 단위 벡터 $ \hat{n} $이 주어졌을 떄, $\vec p$ 를 내적을 이용해 $\vec V, \hat{n}$ 으로 나타내보자.<br/><br/>
+
+$ \vec p = k \hat{n}$ 를 만족하는 스칼라 $ k $ 가 존재하는 것을 알 수 있다.
+
+또한, $ \Vert \hat{n} \Vert = 1 $이므로, $\Vert \vec p \Vert = \Vert k \cdot \hat{n} \Vert = \vert k \vert \cdot \Vert \hat{n} \Vert = \vert k \vert$ 이고,
+
+$ \vec p = k \hat{n} = (\Vert \vec V \Vert \cos{\theta}) \hat{n} $ 이다.
+
+그런데 위 식에서 $ \hat{n}$ 은 단위백터 이므로 아래처럼 표현이 가능하다.
+
+$\vec p = (\Vert \vec V \Vert \cos{\theta}) \cdot n = (\Vert \vec V \Vert * 1 \cos{\theta}) \cdot n = (\Vert \vec V \Vert \cdot \Vert \hat{n} \Vert  \cos{\theta}) \cdot n = ( \vec V \cdot \hat{n}) \hat{n}$
+
+$\therefore \vec p = k \hat{n} =  ( \vec V \cdot \hat{n}) \hat{n} $
+
+이처럼 $ \hat{n} $ 일 때,
+
+$\vec p $를 $\hat{n}$ 에 대한 $\vec V$ 의 직교 투영(orthographic projection) 또는 정사영 이라고 부르며 아래처럼 표기한다.
+
+$\vec p = proj_n(\vec V)$
+
+여기서 $\vec w = prep_n(\vec V) = \vec V - \vec p $ 이므로,  $\vec V = \vec p + \vec w$ 라는 결론이 나온다.
+
+만약 $ \vec n $ 이 단위벡터가 아니라면 $\vec n $ 을 정규화해서 단위 길이로 만들면 됩니다. 
+
+그렇다면 위 투영 공식에 $ \vec n $ 을 단위벡터 $ \frac{\vec n}{\Vert n \Vert}$ 으로 대체하면 좀 더 일반적인 공식이 나온다.
+
+$ \vec p = proj_n(\vec V) = (v \cdot \frac{\vec n}{\Vert n \Vert}) \cdot \frac{\vec n}{\Vert \vec n \Vert}  = \frac{(\vec V \cdot \vec n)}{\Vert \vec n \Vert ^ 2} \cdot n$
+
+&nbsp;<br/>
+
+## 직교화
+
+
+
 
 # 선형 대수
 
