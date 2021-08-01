@@ -4,6 +4,10 @@ title: Diary
 nav_order: 98
 ---
 
+### 20210801
+
+* Start "CODE VEIN" game
+
 ### 20210731
 
 * The answer for my math question that the smart person gave is really easy to understand.
