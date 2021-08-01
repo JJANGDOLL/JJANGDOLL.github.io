@@ -1,13 +1,12 @@
 remote_theme: pmarsceill/just-the-docs
 title: JJANGDOLL
-description: "Noah's Ark of JJANGDOLL"
+description: "JJANGDOLL's Ark"
 url: "https://jjangdoll.github.io"
 
 aux_links:
   "JJANGDOLL on GitHub":
     - "https://github.com/JJANGDOLL"
 aux_links_new_tab: true
-
 
 back_to_top: true
 back_to_top_text: "Back to top"
