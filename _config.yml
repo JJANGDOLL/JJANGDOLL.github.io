@@ -20,5 +20,3 @@ exclude: ["README.md"]
 defaults:
   values:
     mathjax: true
-
-baseurl: "/Test"
