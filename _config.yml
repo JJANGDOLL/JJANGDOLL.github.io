@@ -20,3 +20,5 @@ exclude: ["README.md"]
 defaults:
   values:
     mathjax: true
+
+logo: /images/Vector/homerunball_baseball.gif
