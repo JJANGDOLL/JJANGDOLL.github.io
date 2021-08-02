@@ -80,7 +80,7 @@ __m128 은 특별한 SIMD 형식이다. 벡터 계산 시에 SIMD 장점이 발�
 
 ## Load
 
-{% highlight markdown %} 
+<div class="code-example" markdown="1">
 ```C++
 XMVECTOR XM_CALLCONV  noexcept XMLoadFloat2(
   const XMFLOAT2 *pSource
