@@ -339,6 +339,8 @@ $ \vec p = proj_n(\vec V) = (v \cdot \frac{\vec n}{\Vert n \Vert}) \cdot \frac{\
 
 벡터 집합 $\{ \vec v_0, \vec v_1, \cdots, \vec v_{n-1} \} $의 모든 벡터가 단위 길이이고, 서로 직교라면 **정규직교** 집합이라고 부른다.
 
+&nbsp;<br/>
+
 ## 직교화
 
 * 2차원
@@ -407,6 +409,7 @@ $ = (0, 6, -2)$ <br/><br/>
 
 $z = v \times u$
 
+
 $ = (2, 0, 0) \times (2, 1, 3)$
 
 $ = (0 \cdot 3 - 0 \cdot 1, 0 \cdot 2 - 2 \cdot 3, 2 \cdot 1 - 0 \cdot 2)$
@@ -428,6 +431,36 @@ $w \cdot v = (0, 6, -2) \cdot (2, 1, 3) = 0$
 $w \cdot u = (0, 6, -2) \cdot (2, 0, 0) = 0$
 
 그러므로, $w$ 는 $u, v$에 대해서 직교이다.
+
+&nbsp;<br/>
+
+## 2차원 유사외적
+
+하나의 2차원 벡터 $u = (u_x, u_y)$에 대해 수직인 벡터 v 는 얼마든지 구할 수 있다.
+
+<img src="/images/Vector/2dOuterProduct.png">
+
+$v = (-u_y, u_x)$
+
+&nbsp;<br/>
+
+## 외적을 이용한 직교화
+
+벡터 집합 ${v_0, v_1, v_2}$를 직교화하는 또 다른 방법
+
+1. $w_0 = \frac{v_0}{\Vert v_0 \Vert}$
+
+2. $w_2 = \frac{w_0 \times v_1}{\Vert w_0 \times v_1 \Vert}$
+
+3. $w_1 = w_2 \times w_1$
+
+&nbsp;<br/>
+
+# 점
+
+특정 좌표계를 기준으로 표준 위치에 있는 벡터를 3차원 공간의 한 위치를 나타내는 데 사용할 수 있다.
+
+그러한 벡터를 **위치벡터** 라고 부른다.
 
 &nbsp;<br/>
 
@@ -454,7 +487,7 @@ $ S $ 는 선형 독립 이다.
 $ S = \{ \vec V_1, \vec V_2, \cdots, \vec V_n  \} $ 이고,
 
 $ R = \{ x \vert x \in \mathbb{R}  \} $ 일 때,
-
+ 
 $ R_1 \cdot S_1 + R_2 \cdot S_2 + ... R_n \cdot S_n = 0 $ 임을 만족하는
 
 $ O = \{ x \vert x \in  R_1, R_2, \cdots, R_n \} $ 라고 할 떄,
