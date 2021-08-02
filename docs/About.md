@@ -14,4 +14,4 @@ MAKE FUN!
 ## Introduce
 
 * Interested in video games and studying Unreal Engine.
-* My last goal is to make a Greate game.
+* 1 Day 1 Diary (Everything)
