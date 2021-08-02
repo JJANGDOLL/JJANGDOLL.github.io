@@ -35,7 +35,7 @@ Windows SDK 일부인 이 라이브러리는 [SSE2](https://ko.wikipedia.org/wik
 * DirectXMath 코드는 DirectX 라는 namespace 에 속한다.
 * DirectXPackedVector.h 를 포함시켜야 한다.
 * DirectXPackedVector 코드는 DirectX::PackedVector 라는 namespace 에 속한다.
-* x86 인 경우 활성화 해야한다.(프로젝트 속성 > 구성 속성 > C/C++ > 코드 생성 > 고급 명령 집합 사용)
+* x86 인 경우 활성화 해야한다.(프로젝트 속성 > 구성 속성 > C/cpp > 코드 생성 > 고급 명령 집합 사용)
 * x64 인 경우 기본 지원한다.
 
 &nbsp;<br/>
@@ -86,13 +86,13 @@ XMVECTOR XM_CALLCONV  noexcept XMLoadFloat2(
 );
 ```
 
-```C++
+```cpp
 XMVECTOR XM_CALLCONV  noexcept XMLoadFloat3(
   const XMFLOAT3 *pSource
 );
 ```
 
-```C++
+```cpp
 XMVECTOR XM_CALLCONV  noexcept XMLoadFloat4(
   const XMFLOAT4 *pSource
 );
@@ -102,21 +102,21 @@ XMVECTOR XM_CALLCONV  noexcept XMLoadFloat4(
 
 ## Store
 
-```C++
+```cpp
 void XM_CALLCONV  noexcept XMStoreFloat2(
   XMFLOAT2  *pDestination,
   FXMVECTOR V
 );
 ```
 
-```C++
+```cpp
 void XM_CALLCONV  noexcept XMStoreFloat3(
   XMFLOAT3  *pDestination,
   FXMVECTOR V
 );
 ```
 
-```C++
+```cpp
 void XM_CALLCONV  noexcept XMStoreFloat4(
   XMFLOAT4  *pDestination,
   FXMVECTOR V
@@ -127,7 +127,7 @@ void XM_CALLCONV  noexcept XMStoreFloat4(
 
 ## Read/Write Custom Component
 
-```C++
+```cpp
 float XM_CALLCONV  noexcept XMVectorGetX(
   FXMVECTOR V
 );
@@ -178,7 +178,7 @@ XMVECTOR 를 인자로 전달할 때, 효율성을 위해 XMVECTOR 값이 스택
 * HXMVECTOR : 다섯째, 여섯째 인자 형식
 * CXMVECTOR : 그 이후 인자 형식
 
-```C++
+```cpp
 example)
 
 XMMATRIX XM_CALLCONV  noexcept XMMatrixTransformation(
@@ -206,7 +206,7 @@ XMMATRIX XM_CALLCONV  noexcept XMMatrixTransformation2D(
 
 const XMVECTOR 형태에는 반드시 XMVECTOR32 형식을 사용해야 한다.
 
-```C++
+```cpp
 example)
 
 static const XMVECTORF32 g_vFLTMAX = { FLT_MAX, FLT_MAX, FLT_MAX, FLT_MAX };
@@ -226,19 +226,19 @@ DirectXMath 라이브러리는 XMVECTOR 객체의 초기화(Initialization)를 �
 
 * 0 벡터를 반환한다.
 
-```C++
+```cpp
 XMVECTOR XM_CALLCONV  noexcept XMVectorZero();
 ```
 
 * (1, 1, 1, 1) 벡터를 반환한다.
 
-```C++
+```cpp
 XMVECTOR XM_CALLCONV  noexcept XMVectorSplatOne();
 ```
 
 * $(x, y, z, w)$ 벡터를 반환한다.
 
-```C++
+```cpp
 XMVECTOR XM_CALLCONV  noexcept XMVectorSet(
   float x,
   float y,
@@ -249,7 +249,7 @@ XMVECTOR XM_CALLCONV  noexcept XMVectorSet(
 
 * $(s, s, s, s)$ 벡터를 반환한다.
 
-```C++
+```cpp
 XMVECTOR XM_CALLCONV  noexcept XMVectorReplicate(
   float Value
 );
@@ -257,7 +257,7 @@ XMVECTOR XM_CALLCONV  noexcept XMVectorReplicate(
 
 * $(v_x, v_x, v_x, v_x)$ 벡터를 반환한다.
 
-```C++
+```cpp
 XMVECTOR XM_CALLCONV  noexcept XMVectorSplatX(
   FXMVECTOR V
 );
@@ -272,7 +272,7 @@ XMVECTOR 에는 벡터 덧셈, 뺄셈, 스칼라 곱셈을 위한 Overloading �
 
 * $\Vert \vec v \Vert$
 
-```C++
+```cpp
 XMVECTOR XM_CALLCONV  noexcept XMVector3Length(
   FXMVECTOR V
 );
@@ -280,7 +280,7 @@ XMVECTOR XM_CALLCONV  noexcept XMVector3Length(
 
 * $\Vert \vec v \Vert ^2$
 
-```C++
+```cpp
 XMVECTOR XM_CALLCONV  noexcept XMVector3LengthSq(
   FXMVECTOR V
 );
@@ -288,7 +288,7 @@ XMVECTOR XM_CALLCONV  noexcept XMVector3LengthSq(
 
 * $v_1 \cdot v_2$
 
-```C++
+```cpp
 XMVECTOR XM_CALLCONV  noexcept XMVector3Dot(
   FXMVECTOR V1,
   FXMVECTOR V2
@@ -297,7 +297,7 @@ XMVECTOR XM_CALLCONV  noexcept XMVector3Dot(
 
 * $v_1 \times v_2$
 
-```C++
+```cpp
 XMVECTOR XM_CALLCONV  noexcept XMVector3Cross(
   FXMVECTOR V1,
   FXMVECTOR V2
@@ -306,7 +306,7 @@ XMVECTOR XM_CALLCONV  noexcept XMVector3Cross(
 
 * $v / \Vert v \Vert$
 
-```C++
+```cpp
 XMVECTOR XM_CALLCONV  noexcept XMVector3Normalize(
   FXMVECTOR V
 );
@@ -314,7 +314,7 @@ XMVECTOR XM_CALLCONV  noexcept XMVector3Normalize(
 
 * $ \vec V \perp x $
 
-```C++
+```cpp
 XMVECTOR XM_CALLCONV  noexcept XMVector3Orthogonal(
   FXMVECTOR V
 );
@@ -322,7 +322,7 @@ XMVECTOR XM_CALLCONV  noexcept XMVector3Orthogonal(
 
 * $ v_1 \measuredangle v_2$
 
-```C++
+```cpp
 XMVECTOR XM_CALLCONV  noexcept XMVector3AngleBetweenVectors(
   FXMVECTOR V1,
   FXMVECTOR V2
@@ -331,7 +331,7 @@ XMVECTOR XM_CALLCONV  noexcept XMVector3AngleBetweenVectors(
 
 * $proj_n(v)$
 
-```C++
+```cpp
 void XM_CALLCONV  noexcept XMVector3ComponentsFromNormal(
   XMVECTOR  *pParallel,
   XMVECTOR  *pPerpendicular,
@@ -342,7 +342,7 @@ void XM_CALLCONV  noexcept XMVector3ComponentsFromNormal(
 
 * $v_1 == v_2$
 
-```C++
+```cpp
 bool XM_CALLCONV  noexcept XMVector3Equal(
   FXMVECTOR V1,
   FXMVECTOR V2
@@ -351,7 +351,7 @@ bool XM_CALLCONV  noexcept XMVector3Equal(
 
 * $v_1 \neq v_2$
 
-```C++
+```cpp
 bool XM_CALLCONV  noexcept XMVector3NotEqual(
   FXMVECTOR V1,
   FXMVECTOR V2
@@ -368,7 +368,7 @@ DirectXMath 에는 정확도는 떨어지지만 더 빠르게 추정을 할 수 
 
 * $\Vert \vec V \Vert $
 
-```C++
+```cpp
 XMVECTOR XM_CALLCONV  noexcept XMVector3LengthEst(
   FXMVECTOR V
 );
@@ -376,7 +376,7 @@ XMVECTOR XM_CALLCONV  noexcept XMVector3LengthEst(
 
 * $\vec V / \Vert \vec V \Vert $
 
-```C++
+```cpp
 XMVECTOR XM_CALLCONV  noexcept XMVector3NormalizeEst(
   FXMVECTOR V
 );
