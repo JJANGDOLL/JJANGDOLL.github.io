@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Vector of DirectXMath Library"
+title: "DirectX Vector"
 nav_order: 1
 parent: "[GameDev] DirectX"
 use_math: true
