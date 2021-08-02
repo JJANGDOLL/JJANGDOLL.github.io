@@ -4,6 +4,10 @@ title: Diary
 nav_order: 98
 ---
 
+### 20210802
+
+* DirectX has many features of computer graphics
+
 ### 20210801
 
 * Start "CODE VEIN" game
@@ -11,6 +15,7 @@ nav_order: 98
 ### 20210731
 
 * The answer for my math question that the smart person gave is really easy to understand.
+* I ended up seeing the end of the 9th inning in a baseball game between the Republic of Korea and the Dominican Republic, and the team that was behind scored three runs, coming back for the win. I thought baseball was no fun, but I saw otherwise.
 
 ### 20210730
 
