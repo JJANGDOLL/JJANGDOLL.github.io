@@ -392,3 +392,20 @@ XMVECTOR XM_CALLCONV  noexcept XMVector3NormalizeEst(
 
 &nbsp;<br/>
 
+# 부동 소수점 오차
+
+**부동 소수점의 부정확함을 반드시 고려**해야 한다.
+
+따라서 부동 소수점을 비교할 때는 두 수가 **근사적으로** 같은지 확인해야된다.
+
+그래서 허용 오차로 아주 작은 숫자인 `엡실론` 을 정하고, 그 두의 차이가 엡실론 보다 작다면 두 수는 근사적으로 상등이다.
+
+DirectXMath 에는 두 벡터의 상등을 판정하는 XMVector3NearEqual 라는 함수를 사용한다.
+
+```cpp
+bool XM_CALLCONV  noexcept XMVector3NearEqual(
+  FXMVECTOR V1,
+  FXMVECTOR V2,
+  FXMVECTOR Epsilon
+);
+```
