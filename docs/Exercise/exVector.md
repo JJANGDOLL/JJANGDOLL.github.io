@@ -112,7 +112,7 @@ $ = (5, -10, -3)$
 
 **백터 대수에도 실수의 여러 좋은 법칙들이 성립한다.**
 
-$u = (u_x, u_y, u_z), v = (v_x, v_y, v_z), w = (w_x, w_y, w_z), c, k = \{x|x \in \mathbb{R} \} $ 일 때,
+$u = (u_x, u_y, u_z), v = (v_x, v_y, v_z), w = (w_x, w_y, w_z), c, k = \{x \| x \in \mathbb{R} \} $ 일 때,
 
 아래 법칙을 증명하라.
 
