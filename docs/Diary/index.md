@@ -6,6 +6,10 @@ nav_order: 98
 
 ### 20210802
 
+* Ex-coworker visited my blog(How have you been?). So, I read his Notion diary. He still does everything hard. I hope your dreams come true. I'm rooting for you.
+
+### 20210802
+
 * DirectX has many features of computer graphics
 
 ### 20210801
