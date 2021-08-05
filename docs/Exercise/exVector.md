@@ -9,6 +9,10 @@ use_math: true
 # 벡터 연습문제
 {: .no_toc}
 
+DirectX 12를 이용한 3D 게임 프로그래밍 입문 문제풀이
+
+1장 벡터 대수
+
 ## Table of contents
 {: .no_toc .text-delta }
 
@@ -382,3 +386,134 @@ $= 0 \cdot v_x + 0 \cdot v_y + 0 \cdot v_z$
 $= 0$
 
 &nbsp; <br/>
+
+
+# 내적 공식 증명
+
+코사인 법칙 $c^2 = a^2 + b^2 - 2ab \cos{\theta}$ 를 이용해서 다음을 증명해보아라.
+(a, b, c 는 삼각형 세 변의 길이, $\theta$는 a와 b의 사이 각도 이다.)
+
+$u_x v_x + u_y v_y + u_z v_z = \Vert u \Vert \Vert v \Vert \cos{\theta}$
+
+**풀이**
+
+$ \Vert u \Vert \cdot \Vert v \Vert \cdot cos{\theta}$
+
+$ = \frac{\Vert u \Vert ^2 + \Vert v \Vert ^2 - \Vert u - v \Vert^2 }{2}$
+
+$ = \frac{(\sqrt{(u_x^2 + u_y^2 + u_z^2)}^2 + \sqrt{(v_x^2 + v_y^2 + v_z^2)}^2 - \sqrt{(u_x-v_x)^2 + (u_y-v_y)^2+(u_z-v_z)^2}^2}{2}$
+
+$ = \frac{u_x^2 + u_y^2 + u_z^2 + v_x^2 + v_y^2 + v_z^2 -  (u_x^2 + v_x^2 - 2u_xv_x + u_y^2 + v_y^2  - 2u_yv_y + u_z^2 + v_z^2  - 2u_zv_z )}{2}$
+
+$ = \frac{u_x^2 + u_y^2 + u_z^2 + v_x^2 + v_y^2 + v_z^2 - u_x^2 - v_x^2 + 2u_xv_x - u_y^2 - v_y^2 + 2u_yv_y - u_z^2 - v_z^2 + 2u_zv_z )}{2}$
+
+$ = \frac{2u_xv_x + 2u_yv_y + 2u_zv_z}{2}$
+
+$ = \frac{2(u_xv_x + u_yv_y + u_zv_z)}{2}$
+
+$ = u_xv_x + u_yv_y + u_zv_z$
+
+&nbsp; <br/>
+
+# 직교화
+
+$ n = (-2, 1)$ 이라고 하자. n을 이용해서 $g = (0, -9.8)$를 이용해서 서로 수직인 두 벡터로 분해하라.
+
+<img src="/images/exercise/11.png">
+
+&nbsp; <br/>
+
+
+# 외적 문제 1
+
+$ u = (-2, 1, 4), v = (3, -4, 1)$ 일 때, $w = u \times v$ 를 구하고 $w \cdot u = 0, w \cdot v = 0$ 임을 보여라.
+
+**풀이**
+
+$w = ((1 \cdot 1) - (4 \cdot -4), (4 \cdot 3)-(-2 \cdot 1), (-2 \cdot -4) - (1 \cdot 3))$
+
+$ = (17, 14, 5)$
+
+$w \cdot u = 17 \cdot -2 + 14 \cdot 1 + 5 \cdot 4 = -34 + 14 + 20 = 0$
+
+$w \cdot v = 17 \cdot 3 + 14 \cdot -4 + 5 \cdot 1 = 51 + -56 + 5 = 0 $
+
+&nbsp; <br/>
+
+# 외적 문제 2
+
+점 $A = (0, 0, 0), B = (0, 1, 3), C = (5, 1, 0)$이 하나의 삼각형을 정의한다고 하자. 이 삼각형에 수직인 벡터를 구하라.
+
+**풀이**
+
+$\vec w = \overline{AB} \times \overline{AC} = (0, 1, 3) \times (5, 1, 0) = (-3, 15, -5) $
+
+&nbsp; <br/>
+
+# 외적 증명 문제
+
+$\Vert u \times v \Vert = \Vert u \Vert \Vert v \Vert \sin{\theta} $ 임을 증명하여라
+삼각함수의 항등식 : $(\cos^2{\theta} + \sin^2{\theta} = 1)$
+
+**풀이**
+
+$ \Vert u \Vert \Vert v \Vert \sin{\theta} $
+
+$= \sqrt{u_x^2 + u_y^2 + u_z^2} \cdot \sqrt{v_x^2 + v_y^2 + v_z^2} \cdot \sin{\theta}$
+
+$=\sqrt{(u_x^2+ u_y^2 + u_z^2) \cdot (v_x^2 + v_y^2 + v_z^2)} \cdot \sin{\theta}$
+
+$=\sqrt{u_x^2v_x^2 + u_x^2v_y^2 + u_x^2v_z^2+u_y^2v_x^2+u_y^2v_y^2+u_y^2v_z^2+u_z^2v_x^2+u_z^2v_y^2+u_z^2v_z^2} \cdot \sin{\theta}$
+
+$=\sqrt{u_x^2v_x^2 + u_x^2v_y^2 + u_x^2v_z^2+u_y^2v_x^2+u_y^2v_y^2+u_y^2v_z^2+u_z^2v_x^2+u_z^2v_y^2+u_z^2v_z^2} \cdot \sqrt{1 - \cos^2{\theta}}$
+
+$=\sqrt{u_x^2v_x^2 + u_x^2v_y^2 + u_x^2v_z^2+u_y^2v_x^2+u_y^2v_y^2+u_y^2v_z^2+u_z^2v_x^2+u_z^2v_y^2+u_z^2v_z^2} \cdot \sqrt{1 - \cos^2{\theta}}$
+
+$=\sqrt{u_x^2v_x^2 + u_x^2v_y^2 + u_x^2v_z^2+u_y^2v_x^2+u_y^2v_y^2+u_y^2v_z^2+u_z^2v_x^2+u_z^2v_y^2+u_z^2v_z^2} \cdot \sqrt{1 - (\frac{(u \cdot v)^2}{\Vert u \Vert ^2 \Vert v \Vert^2})}$
+
+$=\sqrt{u_x^2v_x^2 + u_x^2v_y^2 + u_x^2v_z^2+u_y^2v_x^2+u_y^2v_y^2+u_y^2v_z^2+u_z^2v_x^2+u_z^2v_y^2+u_z^2v_z^2} \cdot \sqrt{(\frac{\Vert u \Vert ^2 \Vert v \Vert^2 -  (u \cdot v)^2}{\Vert u \Vert ^2 \Vert v \Vert^2})}$
+
+$=\sqrt{u_x^2v_x^2 + u_x^2v_y^2 + u_x^2v_z^2+u_y^2v_x^2+u_y^2v_y^2+u_y^2v_z^2+u_z^2v_x^2+u_z^2v_y^2+u_z^2v_z^2} \cdot \sqrt{(\frac{\Vert u \Vert ^2 \Vert v \Vert^2 -  (u \cdot v)^2}{\Vert u \Vert ^2 \Vert v \Vert^2})}$
+
+$=\sqrt{u_x^2v_x^2 + u_x^2v_y^2 + u_x^2v_z^2+u_y^2v_x^2+u_y^2v_y^2+u_y^2v_z^2+u_z^2v_x^2+u_z^2v_y^2+u_z^2v_z^2} \cdot \sqrt{(\frac{\Vert u \Vert ^2 \Vert v \Vert^2 -  (u \cdot v)^2}{u_x^2v_x^2 + u_x^2v_y^2 + u_x^2v_z^2+u_y^2v_x^2+u_y^2v_y^2+u_y^2v_z^2+u_z^2v_x^2+u_z^2v_y^2+u_z^2v_z^2})}$
+
+$= \cdot \sqrt{\Vert u \Vert ^2 \Vert v \Vert^2 -  (u \cdot v)^2}$
+
+$=\sqrt{u_x^2v_x^2 + u_x^2v_y^2 + u_x^2v_z^2+u_y^2v_x^2+u_y^2v_y^2+u_y^2v_z^2+u_z^2v_x^2+u_z^2v_y^2+u_z^2v_z^2 -  (u \cdot v)^2}$
+
+$=\sqrt{u_x^2v_x^2 + u_x^2v_y^2 + u_x^2v_z^2+u_y^2v_x^2+u_y^2v_y^2+u_y^2v_z^2+u_z^2v_x^2+u_z^2v_y^2+u_z^2v_z^2 -  (u_xv_x + u_yv_y + u_zv_z)^2}$
+
+$=\sqrt{u_x^2v_x^2 + u_x^2v_y^2 + u_x^2v_z^2+u_y^2v_x^2+u_y^2v_y^2+u_y^2v_z^2+u_z^2v_x^2+u_z^2v_y^2+u_z^2v_z^2 -  ( u_x^2v_x^2 + 2u_xv_xu_yv_y  +  u_y^2v_y^2 + 2u_yv_yu_zv_z + u_z^2v_z^2 + 2u_xv_xu_zv_z))}$
+
+$=\sqrt{u_x^2v_x^2 + u_x^2v_y^2 + u_x^2v_z^2+u_y^2v_x^2+u_y^2v_y^2+u_y^2v_z^2+u_z^2v_x^2+u_z^2v_y^2+u_z^2v_z^2 - u_x^2v_x^2 - 2u_xv_xu_yv_y  -  u_y^2v_y^2 - 2u_yv_yu_zv_z - u_z^2v_z^2 - 2u_xv_xu_zv_z}$
+
+$=\sqrt{ u_x^2v_y^2 + u_x^2v_z^2+u_y^2v_x^2+u_y^2v_z^2+u_z^2v_x^2+u_z^2v_y^2 - 2u_xv_xu_yv_y - 2u_yv_yu_zv_z - 2u_xv_xu_zv_z}$
+
+$=\sqrt{ (u_y^2v_z^2 - 2u_yv_yu_zv_z + u_z^2v_y^2) + (u_z^2v_x^2 - 2u_xv_xu_zv_z + u_x^2v_z^2 ) + (u_x^2v_y^2 - 2u_xv_xu_yv_y + u_y^2v_x^2 ) }$
+
+$=\sqrt{(u_yv_z - u_zv_y)^2+(u_zv_x - u_xv_z)^2 + (u_xv_y - u_yv_x)^2}$
+
+$=\Vert u_yv_z - u_zv_y , u_zv_x - u_xv_z, u_xv_y - u_yv_x \Vert$
+
+$=\Vert u \times x \Vert $
+
+&nbsp; <br/>
+
+# 평행사변형의 넓이
+
+<img src="/images/exercise/15.png">
+
+위 평행사변형의 넓이의 면적이 $\Vert u \times v \Vert$ 와 같음을 증명하여라
+
+**풀이**
+
+$ \Vert v \Vert h$
+
+$ = \Vert v \Vert \Vert u \Vert \sin{\theta} $
+
+$ = \Vert u \Vert \Vert v \Vert \sin{\theta} $
+
+$=\Vert u \times x \Vert $
+
+&nbsp; <br/>
+
