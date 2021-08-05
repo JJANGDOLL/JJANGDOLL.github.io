@@ -4,7 +4,11 @@ title: Diary
 nav_order: 98
 ---
 
-### 20210802
+### 20210804
+
+* I ate some salmon sashimi that I purchased at a newly opened salmon shop. I expected it to be cheap and more delicious than E-Mart. It tasted ok, but it was not cheap.
+
+### 20210803
 
 * Ex-coworker visited my blog(How have you been?). So, I read his Notion diary. He still does everything hard. I hope your dreams come true. I'm rooting for you.
 
