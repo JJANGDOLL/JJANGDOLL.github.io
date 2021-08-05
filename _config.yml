@@ -24,9 +24,5 @@ defaults:
 kramdown:
   syntax_highlighter: rouge
 
-analytics:
-  provider               : "google-gtag" 
-                          # false (default), "google", "google-universal", "google-gtag", "custom"
-  google:
-    tracking_id          : "G-0X0GG2BJ9R"
-    #anonymize_ip         : # true, false (default)
+ga_tracking: G-0X0GG2BJ9R
+ga_tracking_anonymize_ip: true
