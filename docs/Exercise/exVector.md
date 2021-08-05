@@ -517,3 +517,36 @@ $=\Vert u \times x \Vert $
 
 &nbsp; <br/>
 
+# 외적의 결합법칙
+
+$ u \times (v \times w) \neq (u \times v) \times w$ 를 만족하는 $u, v, w$의 예를 제시하라.
+
+**풀이**
+
+$u = (1, 1, 1), v = (1, 1, 0), w = (1, 0, 0)$
+
+$ u \times (v \times w) = (1, 1, 1) \times (0, 0, -1) = (-1, 1, 0) $
+
+$ (u \times v) \times w = (-1, 1, 0) \times (1, 0, 0) = (0, 0, -1)$
+
+&nbsp; <br/>
+
+# 외적 증명 문제 2
+
+영벡터가 아닌 두 평행 벡터의 외적이 영벡터임을, $u \times ku = 0$를 증명하여라.
+
+**풀이**
+
+$\Vert u \times (ku_x, ku_y, ku_z) \Vert$
+
+$ = \Vert (u_yku_z - u_zku_y, u_zku_x - u_xku_z, u_xku_y - u_yku_x) \Vert $
+
+$ = \sqrt{(u_yku_z - u_zku_y)^2 + (u_zku_x - u_xku_z) ^2 + (u_xku_y - u_yku_x)^2}$
+
+$ = \sqrt{k^2(u_yu_z - u_yu_z)^2 + k^2(u_zu_x - u_xu_z)^2+ k^2(u_xu_y-u_xu_y)^2}$
+
+$ = \sqrt{k^2(0)^2 + k^2(0)^2+ k^2(0)^2}$
+
+$ = 0$
+
+&nbsp; <br/>
