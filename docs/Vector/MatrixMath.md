@@ -103,7 +103,125 @@ $
 
 ## 덧셈
 
+$
+A + B = 
+\begin{bmatrix}
+    1   &   5   \cr
+    -2  &   3   
+\end{bmatrix} + 
+\begin{bmatrix}
+    6   &   2   \cr
+    5   &   -8  
+\end{bmatrix} = 
+\begin{bmatrix}
+    1+6 & 5+2 \cr
+    -2+5 & 3+(-8)
+\end{bmatrix} =
+\begin{bmatrix}
+    7 & 7 \cr
+    3 & -5
+\end{bmatrix}
+$
+
+&nbsp;<br/>
+
+## 등호
+
+$A = C$
+
+&nbsp;<br/>
+
+## 스칼라 곱
+
+$
+3D = 
+3\begin{bmatrix}
+    2   &   1   &   -3  \cr
+    -6  &   3   &   0   
+\end{bmatrix} = 
+\begin{bmatrix}
+    (3)2   &   (3)1   &   (3)-3  \cr
+    (3)-6  &   (3)3   &   (3)0   
+\end{bmatrix} =
+\begin{bmatrix}
+   6   &   3  &   -9  \cr
+    -18  &   9   &   0  
+\end{bmatrix}
+$
+
+&nbsp;<br/>
+
+## 뺄셈
+
+$
+A - B =
+\begin{bmatrix}
+    1   &   5   \cr
+    -2  &   3   
+\end{bmatrix} - 
+\begin{bmatrix}
+    6   &   2   \cr
+    5   &   -8  
+\end{bmatrix} =
+\begin{bmatrix}
+    1-6 & 5-2 \cr
+    -2-5 & 3-(-8)
+\end{bmatrix} =
+\begin{bmatrix}
+    -5 & 3 \cr
+    -7 & 5
+\end{bmatrix}
+$
+
+&nbsp;<br/>
+
+## 행렬 곱셈
 
 
+
+&nbsp;<br/>
+
+# 행렬 성질
+
+다음 같은 행렬이 있다고 하자.
+
+$
+A = \begin{bmatrix}
+    1   &   5   \cr
+    -2  &   3   
+\end{bmatrix},
+B = \begin{bmatrix}
+    6   &   2   \cr
+    5   &   -8  
+\end{bmatrix},
+C = \begin{bmatrix}
+    1   &   5   \cr
+    -1   &   3  
+\end{bmatrix},
+D = \begin{bmatrix}
+    2   &   1   &   -3  \cr
+    -6  &   3   &   0   
+\end{bmatrix}
+$
+
+&nbsp;<br/>
+
+## 덧셈의 교환법칙
+
+$ A + B = B + A$
+
+&nbsp;<br/>
+
+## 덧셈의 결합법칙
+
+$ (A + B) + C = A + (B + C)
+
+&nbsp;<br/>
+
+## 스칼라 곱 분배법칙
+
+$ k(A + B) = kA + kB$
+
+$ (k + r)A = kA + rA$
 
 &nbsp;<br/>
