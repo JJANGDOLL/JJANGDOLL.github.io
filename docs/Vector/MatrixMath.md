@@ -47,14 +47,14 @@ v = \begin{bmatrix} 1 \cr 2 \cr \sqrt{3} \cr \pi \end{bmatrix}$
 
 $$
 \begin{bmatrix}
-   A_{11} & A_{12} & A_{13}\\
-   A_{21} & A_{22} & A_{23}\\
-   A_{31} & A_{32} & A_{33}\\
+   A_{11} & A_{12} & A_{13} \cr
+   A_{21} & A_{22} & A_{23} \cr
+   A_{31} & A_{32} & A_{33} \cr
 \end{bmatrix} =
 \begin{bmatrix}
-    \leftarrow  A_{1,*} \rightarrow \\
-    \leftarrow  A_{2,*} \rightarrow \\
-    \leftarrow  A_{3,*} \rightarrow \\
+    \leftarrow  A_{1,*} \rightarrow \cr
+    \leftarrow  A_{2,*} \rightarrow \cr
+    \leftarrow  A_{3,*} \rightarrow \cr
 \end{bmatrix}
 $$
 
