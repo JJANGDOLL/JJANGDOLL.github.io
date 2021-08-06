@@ -56,7 +56,7 @@ $$
 \end{bmatrix} =
 \begin{bmatrix}
     \uparrow & \uparrow&\uparrow \cr
-    A_{*,1} &A_{*,2}&A_{*,3} \cr
+    A_{\ast,1} &A_{\ast,2}&A_{\ast,3} \cr
     \downarrow & \downarrow&\downarrow
 \end{bmatrix}
 $$
