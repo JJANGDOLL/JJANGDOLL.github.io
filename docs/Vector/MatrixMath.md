@@ -50,14 +50,14 @@ $ \begin{bmatrix} A_{11} & A_{12} & A_{13} \cr A_{21} & A_{22} & A_{23} \cr A_{3
 
 $$
 \begin{bmatrix}
-   A_{11} & A_{12} & A_{13}\\
-   A_{21} & A_{22} & A_{23}\\
-   A_{31} & A_{32} & A_{33}\\
+   A_{11} & A_{12} & A_{13} \cr
+   A_{21} & A_{22} & A_{23} \cr
+   A_{31} & A_{32} & A_{33}
 \end{bmatrix} =
 \begin{bmatrix}
-    \uparrow & \uparrow&\uparrow\\
-    A_{*,1} &A_{*,2}&A_{*,3} \\
-    \downarrow & \downarrow&\downarrow\\
+    \uparrow & \uparrow&\uparrow \cr
+    A_{*,1} &A_{*,2}&A_{*,3} \cr
+    \downarrow & \downarrow&\downarrow
 \end{bmatrix}
 $$
 
