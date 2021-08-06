@@ -6,6 +6,10 @@ nav_order: 98
 
 ### 20210804
 
+* Finish DirectX Vector Chapter
+
+### 20210804
+
 * I ate some salmon sashimi that I purchased at a newly opened salmon shop. I expected it to be cheap and more delicious than E-Mart. It tasted ok, but it was not cheap.
 
 ### 20210803
