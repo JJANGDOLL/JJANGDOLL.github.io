@@ -48,7 +48,7 @@ $ \begin{bmatrix} A_{11} & A_{12} & A_{13} \cr A_{21} & A_{22} & A_{23} \cr A_{3
 
 마찬가지로, 열 벡터들도 아래처럼 표현할 수 있다.
 
-$$
+$
 \begin{bmatrix}
    A_{11} & A_{12} & A_{13} \cr
    A_{21} & A_{22} & A_{23} \cr
@@ -59,7 +59,7 @@ $$
     A_{\ast,1} &A_{\ast,2}&A_{\ast,3} \cr
     \downarrow & \downarrow&\downarrow
 \end{bmatrix}
-$$
+$
 
 여기서,
 
