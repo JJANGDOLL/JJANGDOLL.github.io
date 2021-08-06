@@ -42,7 +42,7 @@ $A = \begin{bmatrix} 3.5 & 0 & 0 & 0 \cr 0  & 1 & 0 & 0 \cr 0&  0& 0.5 &0 \cr 2&
 
 종종 한 행렬의 행을 한 번에 표기하는 법이 편리할 때가 있다. 
 
-$ \begin{bmatrix} A_{11} & A_{12} & A_{13} \cr A_{21} & A_{22} & A_{23} \cr A_{31} & A_{32} & A_{33} \end{bmatrix} = \begin{bmatrix}\leftarrow  A_{1,*} \rightarrow \cr \leftarrow  A_{2,*} \rightarrow \cr \leftarrow  A_{3,*} \rightarrow \end{bmatrix}$
+$ \begin{bmatrix} A_{11} & A_{12} & A_{13} \cr A_{21} & A_{22} & A_{23} \cr A_{31} & A_{32} & A_{33} \end{bmatrix} = \begin{bmatrix}\leftarrow  A_{1,\ast} \rightarrow \cr \leftarrow  A_{2,\ast} \rightarrow \cr \leftarrow  A_{3,\ast} \rightarrow \end{bmatrix}$
 
 여기서 $A_{1,*} = [A_{11}, A_{12}, A_{13}]$ 를 의미한다.<br/>
 
