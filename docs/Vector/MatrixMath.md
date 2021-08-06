@@ -33,10 +33,7 @@ $m \times n$ 행렬 $M$ 은 $m$ 개의 행과 $n$개의 열로 이루어진 정�
 행렬의 한 성분을 나타날 때 에는 아래 첨자 $M_{ij} $ 로 표현한다.<br/>
 
 
-$A = \begin{bmatrix} 3.5 & 0 & 0 & 0 \cr 0  & 1 & 0 & 0 \cr 0&  0& 0.5 &0 \cr 2& -5 & \sqrt{2} & 1\end{bmatrix},
-B = \begin{bmatrix} B_{11} & B_{12} \cr B_{21} & B_{22} \cr B_{31} & B_{32} \cr B_{41} & B_{42} \cr \end{bmatrix},
-u = \begin{bmatrix}u_{1} & u_{2} &  u_{3} \end{bmatrix}, 
-v = \begin{bmatrix} 1 \cr 2 \cr \sqrt{3} \cr \pi \end{bmatrix}$
+$A = \begin{bmatrix} 3.5 & 0 & 0 & 0 \cr 0  & 1 & 0 & 0 \cr 0&  0& 0.5 &0 \cr 2& -5 & \sqrt{2} & 1\end{bmatrix}, B = \begin{bmatrix} B_{11} & B_{12} \cr B_{21} & B_{22} \cr B_{31} & B_{32} \cr B_{41} & B_{42} \cr \end{bmatrix}, u = \begin{bmatrix}u_{1} & u_{2} &  u_{3} \end{bmatrix},  v = \begin{bmatrix} 1 \cr 2 \cr \sqrt{3} \cr \pi \end{bmatrix}$
 
 * 행렬 A는 $4 \times 4$ 행렬이고, B는 $3 \times 2$, u는 $1 \times 3$, v는 $4 \times 1$ 이다.
 * A의 4행 2열의 성분 (-5) 는 $A_{42}$ 로 표현한다.
@@ -45,18 +42,7 @@ v = \begin{bmatrix} 1 \cr 2 \cr \sqrt{3} \cr \pi \end{bmatrix}$
 
 종종 한 행렬의 행을 한 번에 표기하는 법이 편리할 때가 있다. 
 
-$
-\begin{bmatrix}
-   A_{11} & A_{12} & A_{13} \cr
-   A_{21} & A_{22} & A_{23} \cr
-   A_{31} & A_{32} & A_{33} \cr
-\end{bmatrix} =
-\begin{bmatrix}
-    \leftarrow  A_{1,*} \rightarrow \cr
-    \leftarrow  A_{2,*} \rightarrow \cr
-    \leftarrow  A_{3,*} \rightarrow \cr
-\end{bmatrix}
-$
+$\begin{bmatrix} A_{11} & A_{12} & A_{13} \cr A_{21} & A_{22} & A_{23} \cr A_{31} & A_{32} & A_{33} \cr \end{bmatrix} = \begin{bmatrix}\leftarrow  A_{1,*} \rightarrow \cr \leftarrow  A_{2,*} \rightarrow \cr \leftarrow  A_{3,*} \rightarrow \cr \end{bmatrix}$
 
 여기서 $A_{1,*} = [A_{11}, A_{12}, A_{13}]$ 를 의미한다.<br/>
 
