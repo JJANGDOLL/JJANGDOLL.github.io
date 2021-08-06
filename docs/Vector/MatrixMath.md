@@ -63,13 +63,14 @@ $
 
 여기서,
 
-$$ A_{*,1} =
+$
+A_{\ast,1} =
 \begin{bmatrix}
-   A_{11}\\
-   A_{21}\\
-   A_{31}\\
+   A_{11} \cr
+   A_{21} \cr
+   A_{31} 
 \end{bmatrix}
-$$
+$
 
 를 의미한다.
 
@@ -79,24 +80,24 @@ $$
 
 다음 같은 행렬이 있다고 하자.
 
-$$
+$
 A = \begin{bmatrix}
-    1   &   5   \\
-    -2  &   3   \\
+    1   &   5   \cr
+    -2  &   3   
 \end{bmatrix},
 B = \begin{bmatrix}
-    6   &   2   \\
-    5   &   -8  \\
+    6   &   2   \cr
+    5   &   -8  
 \end{bmatrix},
 C = \begin{bmatrix}
-    1   &   5   \\
-    -1   &   3  \\
+    1   &   5   \cr
+    -1   &   3  
 \end{bmatrix},
 D = \begin{bmatrix}
-    2   &   1   &   -3  \\
-    -6  &   3   &   0   \\
+    2   &   1   &   -3  \cr
+    -6  &   3   &   0   
 \end{bmatrix}
-$$
+$
 
 &nbsp;<br/>
 
