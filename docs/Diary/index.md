@@ -4,7 +4,11 @@ title: Diary
 nav_order: 98
 ---
 
-### 20210804
+### 20210806
+
+* The product that I purchased from Amazon arrived very fast.
+
+### 20210805
 
 * Finish DirectX Vector Chapter
 
