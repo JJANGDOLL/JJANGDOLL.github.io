@@ -408,6 +408,9 @@ $
 \end{bmatrix}, ...
 $
 
+&nbsp;<br/>
+
+
 ## 단위 행렬의 성질
 
 * 곱셈의 항등원 역할
@@ -418,7 +421,62 @@ $A$ 가 $m \times n$ 이고 $I$ 가 $n \times n$ 행렬이면, $AI =  A$ 이다.
 
 $M$ 이 정방행렬이고 $I$ 가 단위행렬일 때, $MI = IM = M$ 이다.
 
+&nbsp;<br/>
+
+
 # 행렬식
 
 행렬식(determinant)은 정방행렬을 입력받아서 실수값을 출력하는 특별한 함수이다.<br/>
-정방행렬 $A$의 행렬식을 흔히 $det A$로 표기한다. <br/>
+정방행렬 $A$의 행렬식을 흔히 $det A$로 표기한다. <br/> 
+정방행렬 $A$가 $det A \neq 0$ 일 때만, 가역행렬(역행렬이 존재하는 행렬) 이다.<br/>
+
+&nbsp;<br/>
+
+## 소행렬
+
+$n \times n$행렬 $A$ 가 주어졌을 때, 그 소행렬(minor matrix) $\bar{A_{ij}}$ 는 $A$의 $i$ 행과 $j$ 열을 삭제해서 나온 $(n-1) \times $(n-1)$ 행렬이다.
+
+&nbsp;<br/>
+
+$
+A = 
+\begin{bmatrix}
+    A_{11} & A_{12} & A_{13} \cr
+    A_{21} & A_{22} & A_{23} \cr
+    A_{31} & A_{32} & A_{33}
+\end{bmatrix}
+$
+
+일 때,
+
+$
+\bar{A_{11}} = 
+\begin{bmatrix}
+    A_{22} & A_{23} \cr
+    A_{32} & A_{33} 
+\end{bmatrix}
+$
+
+$
+\bar{A_{22}} = 
+\begin{bmatrix}
+    A_{11} & A_{13} \cr
+    A_{31} & A_{33} 
+\end{bmatrix}
+$
+
+$
+\bar{A_{33}} = 
+\begin{bmatrix}
+    A_{11} & A_{12} \cr
+    A_{12} & A_{22} 
+\end{bmatrix}
+$
+
+이다.
+
+&nbsp;<br/>
+
+$A$ 가 $n \times n$ 행렬이고, $n > 1$ 일 때, A의 행렬식은 아래와 같다.
+
+$det A = (\sum_{j=1}^{n}A_{1j})(-1)^{1+j}det \bar{A_{1j}}$
