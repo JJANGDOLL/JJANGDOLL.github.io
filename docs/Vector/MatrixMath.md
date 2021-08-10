@@ -131,25 +131,7 @@ $A = C$
 
 &nbsp;<br/>
 
-## 스칼라 곱
 
-$
-3D = 
-3\begin{bmatrix}
-    2   &   1   &   -3  \cr
-    -6  &   3   &   0   
-\end{bmatrix} = 
-\begin{bmatrix}
-    (3)2   &   (3)1   &   (3)-3  \cr
-    (3)-6  &   (3)3   &   (3)0   
-\end{bmatrix} =
-\begin{bmatrix}
-   6   &   3  &   -9  \cr
-    -18  &   9   &   0  
-\end{bmatrix}
-$
-
-&nbsp;<br/>
 
 ## 뺄셈
 
@@ -176,6 +158,89 @@ $
 &nbsp;<br/>
 
 ## 행렬 곱셈
+
+### 스칼라 곱
+
+$
+3D = 
+3\begin{bmatrix}
+    2   &   1   &   -3  \cr
+    -6  &   3   &   0   
+\end{bmatrix} = 
+\begin{bmatrix}
+    (3)2   &   (3)1   &   (3)-3  \cr
+    (3)-6  &   (3)3   &   (3)0   
+\end{bmatrix} =
+\begin{bmatrix}
+   6   &   3  &   -9  \cr
+    -18  &   9   &   0  
+\end{bmatrix}
+$
+
+&nbsp;<br/>
+
+### 행렬 곱
+
+$A = m \times n, B = n \times p$ 이라면 둘의 곱 $AB$ 를 정의할 수 있다.
+
+$AB$ 는 $m \times p$ 행렬이 된다. 이것을 $C$ 라고 하자.
+
+$C$ 의 $ij$ 번째 성분은 $A_{i,\ast}$ 와 $B_{\ast,j}$의 내적이다.
+
+$C_{ij} = A_{i,\ast} \cdot B_{\ast,j}$
+
+$
+A = 
+\begin{bmatrix}
+    -1  &   5   &   -4  \cr
+    3   &   2   &   1   
+\end{bmatrix},
+B = 
+\begin{bmatrix}
+    2   &   1   &   0   \cr
+    0   &   -2  &   1   \cr
+    -1  &   2   &   3
+\end{bmatrix}
+$
+
+일 때, 
+
+$
+AB = 
+\begin{bmatrix}
+    -1  &   5   &   -4  \cr
+    3   &   2   &   1   
+\end{bmatrix}
+\begin{bmatrix}
+    2   &   1   &   0   \cr
+    0   &   -2  &   1   \cr
+    -1  &   2   &   3
+\end{bmatrix}
+$
+
+$
+{=}
+\begin{bmatrix}
+    (-1,5,-4)\cdot(2,0,-1) & (-1,5,-4)\cdot(1, -2, 2) & (-1,5,-4)\cdot(0, 1, 3) \cr
+    (3, 2, 1)\cdot(2,0,-1) & (3, 2, 1)\cdot(1, -2, 2) & (3, 2, 1)\cdot(0, 1, 3)
+\end{bmatrix}
+$
+
+$
+{=}
+\begin{bmatrix}
+    2 & -19 & -7 \cr
+    5 & 1 & 5
+\end{bmatrix}
+$
+
+행렬 곱 $BA$ 는 정의할 수 없음을 알 수 있다. B의 열 수와 A의 행 수가  같지 않기 때문이다.
+
+따라서, $AB \neq BA$ 교환법칙이 성립하지 않는다.
+
+&nbsp;<br/>
+
+### 행렬과 벡터의 곱셈
 
 
 
@@ -223,5 +288,11 @@ $ (A + B) + C = A + (B + C) $
 $ k(A + B) = kA + kB$
 
 $ (k + r)A = kA + rA$
+
+&nbsp;<br/>
+
+## 두 행렬 곱셈 교환법칙
+
+$ CD \neq DC$
 
 &nbsp;<br/>
