@@ -4,6 +4,18 @@ title: Diary
 nav_order: 98
 ---
 
+### 20210809
+
+* I watched all the seasons of The Good Place.
+
+### 20210808
+
+
+
+### 20210807
+
+* I played Super Mario 3D World. It was fun but not my style.
+
 ### 20210806
 
 * The product that I purchased from Amazon arrived very fast.
