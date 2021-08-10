@@ -131,25 +131,7 @@ $A = C$
 
 &nbsp;<br/>
 
-## 스칼라 곱
 
-$
-3D = 
-3\begin{bmatrix}
-    2   &   1   &   -3  \cr
-    -6  &   3   &   0   
-\end{bmatrix} = 
-\begin{bmatrix}
-    (3)2   &   (3)1   &   (3)-3  \cr
-    (3)-6  &   (3)3   &   (3)0   
-\end{bmatrix} =
-\begin{bmatrix}
-   6   &   3  &   -9  \cr
-    -18  &   9   &   0  
-\end{bmatrix}
-$
-
-&nbsp;<br/>
 
 ## 뺄셈
 
@@ -176,6 +158,28 @@ $
 &nbsp;<br/>
 
 ## 행렬 곱셈
+
+### 스칼라 곱
+
+$
+3D = 
+3\begin{bmatrix}
+    2   &   1   &   -3  \cr
+    -6  &   3   &   0   
+\end{bmatrix} = 
+\begin{bmatrix}
+    (3)2   &   (3)1   &   (3)-3  \cr
+    (3)-6  &   (3)3   &   (3)0   
+\end{bmatrix} =
+\begin{bmatrix}
+   6   &   3  &   -9  \cr
+    -18  &   9   &   0  
+\end{bmatrix}
+$
+
+&nbsp;<br/>
+
+### 행렬 곱
 
 $A = m \times n, B = n \times p$ 이라면 둘의 곱 $AB$ 를 정의할 수 있다.
 
@@ -230,6 +234,16 @@ $
 \end{bmatrix}
 $
 
+행렬 곱 $BA$ 는 정의할 수 없음을 알 수 있다. B의 열 수와 A의 행 수가  같지 않기 때문이다.
+
+따라서, $AB \neq BA$ 교환법칙이 성립하지 않는다.
+
+&nbsp;<br/>
+
+### 행렬과 벡터의 곱셈
+
+
+
 &nbsp;<br/>
 
 # 행렬 성질
@@ -277,3 +291,8 @@ $ (k + r)A = kA + rA$
 
 &nbsp;<br/>
 
+## 두 행렬 곱셈 교환법칙
+
+$ CD \neq DC$
+
+&nbsp;<br/>
