@@ -177,7 +177,58 @@ $
 
 ## 행렬 곱셈
 
+$A = m \times n, B = n \times p$ 이라면 둘의 곱 $AB$ 를 정의할 수 있다.
 
+$AB$ 는 $m \times p$ 행렬이 된다. 이것을 $C$ 라고 하자.
+
+$C$ 의 $ij$ 번째 성분은 $A_{i,\ast}$ 와 $B_{\ast,j}$의 내적이다.
+
+$C_{ij} = A_{i,\ast} \cdot B_{\ast,j}$
+
+$
+A = 
+\begin{bmatrix}
+    -1  &   5   &   -4  \cr
+    3   &   2   &   1   
+\end{bmatrix},
+B = 
+\begin{bmatrix}
+    2   &   1   &   0   \cr
+    0   &   -2  &   1   \cr
+    -1  &   2   &   3
+\end{bmatrix}
+$
+
+일 때, 
+
+$
+AB = 
+\begin{bmatrix}
+    -1  &   5   &   -4  \cr
+    3   &   2   &   1   
+\end{bmatrix}
+\begin{bmatrix}
+    2   &   1   &   0   \cr
+    0   &   -2  &   1   \cr
+    -1  &   2   &   3
+\end{bmatrix}
+$
+
+$
+{=}
+\begin{bmatrix}
+    (-1,5,-4)\cdot(2,0,-1) & (-1,5,-4)\cdot(1, -2, 2) & (-1,5,-4)\cdot(0, 1, 3) \cr
+    (3, 2, 1)\cdot(2,0,-1) & (3, 2, 1)\cdot(1, -2, 2) & (3, 2, 1)\cdot(0, 1, 3)
+\end{bmatrix}
+$
+
+$
+{=}
+\begin{bmatrix}
+    2 & -19 & -7 \cr
+    5 & 1 & 5
+\end{bmatrix}
+$
 
 &nbsp;<br/>
 
@@ -225,3 +276,4 @@ $ k(A + B) = kA + kB$
 $ (k + r)A = kA + rA$
 
 &nbsp;<br/>
+
