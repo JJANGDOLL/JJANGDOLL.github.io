@@ -155,3 +155,4 @@ typedef const XMMATRIX& CXMMATRIX;
 &nbsp;<br/>
 
 다른 플랫폼에서 구체적으로 어떻게 정의되는지는 DirectXMath 의 CallingConvention 에 [LibraryInternal](https://docs.microsoft.com/en-us/windows/win32/dxmath/pg-xnamath-internals) 을 참조하자.
+
