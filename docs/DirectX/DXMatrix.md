@@ -121,4 +121,37 @@ XMMATRIX XM_CALLCONV  noexcept XMMatrixInverse(
 
 ## 매개변수
 
-XMMATRIX 매개변수를 선언할 때에는 [XMVECTOR 매개변수](/docs/DirectX/DXVector.html#파라메타-전달)를 선언할 때와 같은 규칙을 적용한다.
+XMMATRIX 매개변수를 선언할 때에는 [XMVECTOR 매개변수](/docs/DirectX/DXVector.html#파라메타-전달)를 선언할 때와 같은 규칙을 적용한다.<br/>
+단, XMMATRIX 가 XMVECTOR 매개변수 4 개에 해당한다는 부분이 다르다.<br/>
+그래서 첫 XMMATRIX 의 매개변수의 형식은 반드시 FXMMATRIX 로 하고 나머지 XMMATRIX 는 CXMMATRIX 로 해야 한다.<br/>
+
+&nbsp;<br/>
+
+
+* 32bit Windows 에서 `__fastcall` 호출 규약을 지원하는 컴파일러
+
+```cpp
+typedef const XMMATRIX& FXMMATRIX;
+typedef const XMMATRIX& CXMMATRIX;
+```
+
+처음 세 XMVECTOR 인수를 레지스터를 사용해서 전달하고, 나머지는 스택을 활용한다.
+
+XMMATRIX 하나가 XMVECTOR 4개 이므로 32bit Windows 에서 `__fastcall` 만 지원하는 컴파일러는 XMMATRIX 매개변수를 SSE/SSE2 레지스터를 통해서 함수에 전달할 수 없다.<br/>
+따라서, XMMATRIX 인스턴스는 스택을 통해서 참조로 전달된다.
+
+&nbsp;<br/>
+
+
+* 32bit Windows 에서 `__vectorcall` 호출 규약을 지원하는 컴파일러
+
+```cpp
+typedef const XMMATRIX FXMMATRIX;
+typedef const XMMATRIX& CXMMATRIX;
+```
+
+처음 여섯 XMVECTOR 인수를 레지스터를 통해서 전달하고, 나머지는 스택을 활용한다.
+
+&nbsp;<br/>
+
+다른 플랫폼에서 구체적으로 어떻게 정의되는지는 DirectXMath 의 CallingConvention 에 [LibraryInternal](https://docs.microsoft.com/en-us/windows/win32/dxmath/pg-xnamath-internals) 을 참조하자.
