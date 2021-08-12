@@ -562,5 +562,101 @@ $= 120$
 
 ## 여인수 행렬
 
-**
+$A = n \times n$ 행렬이라고 할 때, $C_{ij}=(-1)^{i+j}det\bar{A_{ij}}$ 를 여인수(cofactor) 라고 부른다.
 
+$A$의 각 성분의 여인수 $C_{ij}$를 계산해서 해당 위치를 동일한 위치에 배치한 행렬 $C_{A}$ 를 $A$의 여인수 행렬 이라고 한다.
+
+$
+C_{A} = 
+\begin{bmatrix}
+    C_{11} & C_{12} & \cdots & C_{1n} \cr
+    C_{21} & C_{22} & \cdots & C_{2n} \cr
+    \vdots & \vdots & \ddots & \vdots \cr
+    C_{n1} & C_{n2} & \cdots & C_{nn}
+\end{bmatrix} =
+\begin{bmatrix}
+    (-1)^{1+1} det A_{11} & (-1)^{1+2} det A_{12} & \cdots & (-1)^{1+n} det A_{1n} \cr
+    (-1)^{2+1} det A_{21} & (-1)^{2+2} det A_{22} & \cdots & (-1)^{2+n} det A_{2n} \cr
+    \vdots & \vdots & \ddots & \vdots \cr
+    (-1)^{n+1} det A_{n1} & (-1)^{n+2} det A_{n2} & \cdots & (-1)^{n+n} det A_{nn}
+\end{bmatrix}
+$
+$
+{=}
+\begin{bmatrix}
+     det A_{11} & (-1) det A_{12} & det A_{13} & \cdots & (-1)^{1+n} det A_{1n} \cr
+    (-1) A_{21} &  det A_{22} & (-1) det A_{23} & \cdots & (-1)^{2+n} det A_{2n} \cr
+    det A_{31} &  (-1) det A_{32} & det A_{33} & \cdots & (-1)^{3+n} det A_{2n} \cr
+    \vdots & \vdots & \vdots & \ddots & \vdots \cr
+    (-1)^{n+1} det A_{n1} & (-1)^{n+2} det A_{n2} & (-1)^{n+3} det A_{n3} & \cdots & (-1)^{n+n} det A_{nn}
+\end{bmatrix}
+$
+
+&nbsp;<br/>
+
+## 딸림행렬
+
+$A$의 여인수 행렬 $C_{A}$일 때, $C_{A}$ 의 전치행렬을 $A$ 의 딸림 행렬(adjoint matrix) 라고 부르며 아래처럼 표기한다.
+
+$A^\ast = C_{A}^T$
+
+딸림행렬을 이용하면 행렬의 역을 계산하는 명시적 공식을 구할 수 있다.
+
+&nbsp;<br/>
+
+# 역행렬
+
+## 역행렬의 정의
+
+행렬 대수는 나눗셈을 정의하지 않지만, 곱셈의 역원은 정의한다. 행렬 대수에서 곱셈의 역원을 역(Inverse)행렬 이라고 한다.
+
+## 역행렬의 성질
+
+* 역행렬은 정방행렬에만 있다. 따라서, 역행렬과 관련된 내용에는 해당 행렬이 정방행렬이라는 가정이 깔려있다.
+* $n \times n$ 행렬 $M$ 은 $n \times n$ 행렬이고, $M^{-1}$ 이다.
+* 모든 정방행렬에 역행렬이 있는 것은 아니다. 역행렬이 있는 행렬을 **가역행렬(invertible matrix)** 없는 행렬을 **특이행렬(singular matrix)** 이라고 부른다.
+* 역행렬이 존재하는 경우 그 역행렬은 고유하다.
+* 행렬에 그 역행렬을 곱하면 단위 행렬이 나온다. 즉 $MM^{-1} = M^{-1}M = I$ 이다.
+* 역행렬의 곱은 행렬 곱셈에서 교환법칙이 성립하는 특별한 사례중 하나이다.
+
+&nbsp;<br/>
+
+## 역행렬과 행렬 방정식
+
+행렬의 역은 행렬 방정식을 만족하는 행렬 들을 구할 때 유용하다. <br/>
+${p}' = pM$ 이라는 방정식이 있을 때, ${p}' ,M$은 이미 알고, $p$ 를 구해야 한다 치자. <br/>
+$M$이 가역행렬 일 때, $p$를 아래처럼 구할 수 있다.<br/>
+
+${p}' = pM$
+${p}'M^{-1} = pMM^{-1}$
+${p}'M^{-1} = pI$
+${p}'M^{-1} = p$
+
+또한, 딸림 행렬과 행렬식을 이용해서 역행렬을 구할 수 있다.
+
+$A^{-1} = \frac{A^\ast}{det A}$
+
+&nbsp;<br/>
+
+### 역행렬 문제풀이
+
+$2 \times 2$ 행렬 $A = \begin{bmatrix} A_{11} & A_{12} \cr A_{21} & A_{22} \end{bmatrix}$ 의 역행렬에 대한 행렬식을 구하고,<br/>
+그 공식을 이용해서 행렬 $M = \begin{bmatrix} 3 & 0 \cr -1 & 2 \end{bmatrix}$ 의 역행렬을 구해보자.
+
+$
+det A = A_{11}A_{22} - A_{12}A_{21}
+$
+
+$
+C_{A} = 
+\begin{bmatrix}
+    A_{22}  & -A_{21} \cr
+    -A_{12} & A_{11}
+\end{bmatrix}
+$
+
+$
+A^{-1} = \frac{A^\ast}{det A} = \frac{1}{A_{11}A_{22} - A_{12}A_{21}} \begin{bmatrix} \end{bmatrix} 
+$
+
+&nbsp;<br/>
