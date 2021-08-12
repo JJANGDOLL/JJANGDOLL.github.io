@@ -638,9 +638,9 @@ $A^{-1} = \frac{A^\ast}{det A}$
 
 &nbsp;<br/>
 
-### 역행렬 문제풀이
+## 역행렬 문제풀이
 
-$2 \times 2$ 행렬 $A = \begin{bmatrix} A_{11} & A_{12} \cr A_{21} & A_{22} \end{bmatrix}$ 의 역행렬에 대한 행렬식을 구하고,<br/>
+$2 \times 2$ 행렬 $A = \begin{bmatrix} A_{11} & A_{12} \cr A_{21} & A_{22} \end{bmatrix}$ 의 역행렬에 대한 일반식을 구하고,<br/>
 그 공식을 이용해서 행렬 $M = \begin{bmatrix} 3 & 0 \cr -1 & 2 \end{bmatrix}$ 의 역행렬을 구해보자.
 
 $
@@ -656,7 +656,21 @@ C_{A} =
 $
 
 $
-A^{-1} = \frac{A^\ast}{det A} = \frac{1}{A_{11}A_{22} - A_{12}A_{21}} \begin{bmatrix} \end{bmatrix} 
+A^{-1} = \frac{A^\ast}{det A} = \frac{C_{A}^T}{det A} = \frac{1}{A_{11}A_{22} - A_{12}A_{21}} \begin{bmatrix} A_{22} & -A_{12} \cr -A_{21} & A_{11} \end{bmatrix} 
 $
+
+이제 위 공식을 이용해서 $M$의 역행렬을 구하면
+
+$M^{-1} = \frac{1}{3 \cdot 2 - 0 \cdot (-1)}\begin{bmatrix} 2 & 0 \cr 1 & 3 \end{bmatrix} = \begin{bmatrix} \frac{1}{3} & 0 \cr \frac{1}{6} & \frac{1}{2} \end{bmatrix}$
+
+&nbsp;<br/>
+
+## 행렬 곱의 역행렬에 대한 유용한 대수적 성질
+
+$A, B$ 가 같은 차원의 가역 정방행렬 이라 할 때 다음이 성립한다.
+
+$(AB)^{-1} = B^{-1}A^{-1}$
+
+$(AB)(B^{-1}A^{-1}) = A(BB^{-1})A^{-1} = AIA^{-1} = AA^{-1} = I$
 
 &nbsp;<br/>
