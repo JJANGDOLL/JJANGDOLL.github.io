@@ -477,6 +477,31 @@ $
 
 &nbsp;<br/>
 
+$A$ 가 $n \times n$ 행렬이고, $n = 1$ 일 때, A의 행렬식은 아래와 같다.
+
+$det A = A_{11}$
+
 $A$ 가 $n \times n$ 행렬이고, $n > 1$ 일 때, A의 행렬식은 아래와 같다.
 
 $det A = (\sum_{j=1}^{n}A_{1j})(-1)^{1+j}det \bar{A_{1j}}$
+
+&nbsp;<br/>
+
+### $2 \times 2$ 행렬식
+
+$
+det
+\begin{bmatrix}
+    A_{11} & A_{12} \cr
+    A_{21} & A_{22} 
+\end{bmatrix} =
+A_{11}det[A_{22}] - A_{12}det[A_{21}] = A_{11}A_{22} - A_{12}A_{21}
+$
+
+&nbsp;<br/>
+
+### $3 \times 3$ 행렬식
+
+    
+
+&nbsp;<br/>
