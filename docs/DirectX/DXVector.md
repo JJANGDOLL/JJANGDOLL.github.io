@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "DirectX Vector"
-nav_order: 1
+nav_order: 10
 parent: "[GameDev] DirectX"
 use_math: true
 ---
