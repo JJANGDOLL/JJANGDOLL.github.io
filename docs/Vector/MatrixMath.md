@@ -502,6 +502,65 @@ $
 
 ### $3 \times 3$ 행렬식
 
-    
+$
+det
+\begin{bmatrix}
+    A_{11} & A_{12} & A_{13}    \cr
+    A_{21} & A_{22} & A_{23}    \cr
+    A_{31} & A_{32} & A_{33}
+\end{bmatrix}
+$
+
+$
+{=}
+A_{11} det
+\begin{bmatrix}
+    A_{22} & A_{23} \cr
+    A_{32} & A_{33} 
+\end{bmatrix} - 
+A_{12} det
+\begin{bmatrix}
+    A_{21} & A_{23} \cr
+    A_{31} & A_{33}
+\end{bmatrix} +
+A_{13} det
+\begin{bmatrix}
+    A_{21} & A_{22} \cr
+    A_{31} & A_{32}
+\end{bmatrix}
+$
+
+$
+{=}
+A_{11} (A_{22}A_{33} - A_{23}A_{32}) -A_{12}(A_{21}A_{33} - A_{23}A_{31}) + A_{13}(A_{21}A_{32}-A_{22}A_{31})
+$
 
 &nbsp;<br/>
+
+### $3 \times 3$ 행렬식 풀이
+
+$
+A = 
+\begin{bmatrix}
+    2 & -5 & 3 \cr
+    1 & 3 & 4 \cr
+    -2 & 3 & 7
+\end{bmatrix}
+$ 
+
+일 때,
+
+$ detA $
+$= 2(3 \cdot 7 - 4 \cdot 3 ) - (-5)(1 \cdot 7 - 4 \cdot (-2)) + 3(1 \cdot 3 - 3 \cdot (-2))$
+$= 2(9)+5(15)+3(9)$
+$= 18 + 75 + 27$
+$= 120$
+
+&nbsp;<br/>
+
+# 딸림행렬
+
+## 여인수 행렬
+
+**
+
