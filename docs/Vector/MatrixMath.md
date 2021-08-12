@@ -375,10 +375,10 @@ $
 
 ## 전치행렬의 성질
 
-* $(A + B)^T = A^T + B^T
+* $(A + B)^T = A^T + B^T$
 * $(cA)^T = cA^T$
-* $(AB)^T = B^TA^T
-* $(A^T)^T = A
+* $(AB)^T = B^TA^T$
+* $(A^T)^T = A$
 * $(A^{-1})^T = (A^T)^{-1}$
 
 &nbsp;<br/>
