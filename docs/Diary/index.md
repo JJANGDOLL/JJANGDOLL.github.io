@@ -4,13 +4,19 @@ title: Diary
 nav_order: 98
 ---
 
+### 20210811
+
+* Found typo in UnrealEngine.
+
+### 20210810
+
+* The Coronavirus has infected more than 2,000 people a day for the first time.
+
 ### 20210809
 
 * I watched all the seasons of The Good Place.
 
 ### 20210808
-
-
 
 ### 20210807
 
