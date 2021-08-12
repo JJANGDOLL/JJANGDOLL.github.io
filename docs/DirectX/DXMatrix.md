@@ -121,4 +121,4 @@ XMMATRIX XM_CALLCONV  noexcept XMMatrixInverse(
 
 ## 매개변수
 
-XMMATRIX 매개변수를 선언할 때에는 [XMVECTOR 매개변수](/docs/DirectX/DXVector.md#파라메타-전달)를 선언할 때와 같은 규칙을 적용한다.
+XMMATRIX 매개변수를 선언할 때에는 [XMVECTOR 매개변수](/docs/DirectX/DXVector.html#파라메타-전달)를 선언할 때와 같은 규칙을 적용한다.
