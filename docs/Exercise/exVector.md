@@ -513,7 +513,7 @@ $ = \Vert v \Vert \Vert u \Vert \sin{\theta} $
 
 $ = \Vert u \Vert \Vert v \Vert \sin{\theta} $
 
-$=\Vert u \times x \Vert $
+$=\Vert u \times v \Vert $
 
 &nbsp; <br/>
 
