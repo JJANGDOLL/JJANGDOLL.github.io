@@ -434,7 +434,7 @@ $M$ 이 정방행렬이고 $I$ 가 단위행렬일 때, $MI = IM = M$ 이다.
 
 ## 소행렬
 
-$n \times n$행렬 $A$ 가 주어졌을 때, 그 소행렬(minor matrix) $\bar{A_{ij}}$ 는 $A$의 $i$ 행과 $j$ 열을 삭제해서 나온 $(n-1) \times $(n-1)$ 행렬이다.
+$n \times n$행렬 $A$ 가 주어졌을 때, 그 소행렬(minor matrix) $\overline{A_{ij}}$ 는 $A$의 $i$ 행과 $j$ 열을 삭제해서 나온 $(n-1) \times $(n-1)$ 행렬이다.
 
 &nbsp;<br/>
 
@@ -450,7 +450,7 @@ $
 일 때,
 
 $
-\bar{A_{11}} = 
+\overline{A_{11}} = 
 \begin{bmatrix}
     A_{22} & A_{23} \cr
     A_{32} & A_{33} 
@@ -458,7 +458,7 @@ $
 $
 
 $
-\bar{A_{22}} = 
+\overline{A_{22}} = 
 \begin{bmatrix}
     A_{11} & A_{13} \cr
     A_{31} & A_{33} 
@@ -466,7 +466,7 @@ $
 $
 
 $
-\bar{A_{33}} = 
+\overline{A_{33}} = 
 \begin{bmatrix}
     A_{11} & A_{12} \cr
     A_{12} & A_{22} 
@@ -483,7 +483,7 @@ $det A = A_{11}$
 
 $A$ 가 $n \times n$ 행렬이고, $n > 1$ 일 때, A의 행렬식은 아래와 같다.
 
-$det A = (\sum_{j=1}^{n}A_{1j})(-1)^{1+j}det \bar{A_{1j}}$
+$det A = (\sum_{j=1}^{n}A_{1j})(-1)^{1+j}det \overline{A_{1j}}$
 
 &nbsp;<br/>
 
@@ -562,7 +562,7 @@ $= 120$
 
 ## 여인수 행렬
 
-$A = n \times n$ 행렬이라고 할 때, $C_{ij}=(-1)^{i+j}det\bar{A_{ij}}$ 를 여인수(cofactor) 라고 부른다.
+$A = n \times n$ 행렬이라고 할 때, $C_{ij}=(-1)^{i+j}det\overline{A_{ij}}$ 를 여인수(cofactor) 라고 부른다.
 
 $A$의 각 성분의 여인수 $C_{ij}$를 계산해서 해당 위치를 동일한 위치에 배치한 행렬 $C_{A}$ 를 $A$의 여인수 행렬 이라고 한다.
 
@@ -575,20 +575,20 @@ C_{A} =
     C_{n1} & C_{n2} & \cdots & C_{nn}
 \end{bmatrix} =
 \begin{bmatrix}
-    (-1)^{1+1} det A_{11} & (-1)^{1+2} det A_{12} & \cdots & (-1)^{1+n} det A_{1n} \cr
-    (-1)^{2+1} det A_{21} & (-1)^{2+2} det A_{22} & \cdots & (-1)^{2+n} det A_{2n} \cr
+    (-1)^{1+1} det \overline{ A_{11}} & (-1)^{1+2} det \overline{A_{12}} & \cdots & (-1)^{1+n} det \overline{A_{1n}} \cr
+    (-1)^{2+1} det \overline{A_{21}} & (-1)^{2+2} det \overline{A_{22}} & \cdots & (-1)^{2+n} det \overline{A_{2n}} \cr
     \vdots & \vdots & \ddots & \vdots \cr
-    (-1)^{n+1} det A_{n1} & (-1)^{n+2} det A_{n2} & \cdots & (-1)^{n+n} det A_{nn}
+    (-1)^{n+1} det \overline{A_{n1}} & (-1)^{n+2} det \overline{A_{n2}} & \cdots & (-1)^{n+n} det \overline{A_{nn}}
 \end{bmatrix}
 $
 $
 {=}
 \begin{bmatrix}
-     det A_{11} & (-1) det A_{12} & det A_{13} & \cdots & (-1)^{1+n} det A_{1n} \cr
-    (-1) A_{21} &  det A_{22} & (-1) det A_{23} & \cdots & (-1)^{2+n} det A_{2n} \cr
-    det A_{31} &  (-1) det A_{32} & det A_{33} & \cdots & (-1)^{3+n} det A_{2n} \cr
+     det \overline{A_{11}} & (-1) det \overline{A_{12}} & det \overline{A_{13}} & \cdots & (-1)^{1+n} det \overline{A_{1n}} \cr
+    (-1) \overline{A_{21}} &  det \overline{A_{22}} & (-1) det \overline{A_{23}} & \cdots & (-1)^{2+n} det \overline{A_{2n}} \cr
+    det \overline{A_{31}} &  (-1) det \overline{A_{32}} & det \overline{A_{33}} & \cdots & (-1)^{3+n} det \overline{A_{2n}} \cr
     \vdots & \vdots & \vdots & \ddots & \vdots \cr
-    (-1)^{n+1} det A_{n1} & (-1)^{n+2} det A_{n2} & (-1)^{n+3} det A_{n3} & \cdots & (-1)^{n+n} det A_{nn}
+    (-1)^{n+1} det \overline{A_{n1}} & (-1)^{n+2} det \overline{ A_{n2}} & (-1)^{n+3} det \overline{A_{n3}} & \cdots & (-1)^{n+n} det \overline{A_{nn}}
 \end{bmatrix}
 $
 
