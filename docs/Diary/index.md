@@ -4,6 +4,10 @@ title: Diary
 nav_order: 98
 ---
 
+### 20210813
+
+* Finish DirectX Matrix Chapter.
+
 ### 20210812
 
 * Start game review.
