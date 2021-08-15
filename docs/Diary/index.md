@@ -4,6 +4,10 @@ title: Diary
 nav_order: 98
 ---
 
+### 20210814
+
+* Night drive is very dangerous.
+
 ### 20210813
 
 * Finish DirectX Matrix Chapter.
