@@ -17,6 +17,18 @@ use_math: true
 
 ---
 
+# 삼각함수의 덧셈정리
+
+$\sin(x + y) = \sin x \cos y + \cos x \sin y$
+
+$\sin(x - y) = \sin x \cos y - \cos x \sin y$
+
+$\cos(x + y) = \cos x \cos y - \sin x \sin y$
+
+$\cos(x - y) = \cos x \cos y - \sin x \sin y$
+
+&nbsp;<br/>
+
 # 제 1 코사인 법칙
 
 각 점을 A,B,C 라고 하고, 그 점을 마주보는 선분을 a,b,c 라고 가정한다.
