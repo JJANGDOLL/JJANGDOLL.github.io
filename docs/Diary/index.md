@@ -6,7 +6,7 @@ nav_order: 98
 
 ### 20210814
 
-* Night drive is very dangerous.
+* Driving at night is very dangerous.
 
 ### 20210813
 
