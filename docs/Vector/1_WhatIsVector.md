@@ -331,7 +331,7 @@ $\vec p = proj_n(\vec V)$
 
 그렇다면 위 투영 공식에 $ \vec n $ 을 단위벡터 $ \frac{\vec n}{\Vert n \Vert}$ 으로 대체하면 좀 더 일반적인 공식이 나온다.
 
-$ \vec p = proj_n(\vec V) = (v \cdot \frac{\vec n}{\Vert n \Vert}) \cdot \frac{\vec n}{\Vert \vec n \Vert}  = \frac{(\vec V \cdot \vec n)}{\Vert \vec n \Vert ^ 2} \cdot n$
+$ \vec p = proj_n(\vec V) = (v \cdot \frac{\vec n}{\Vert n \Vert}) \cdot \frac{\vec n}{\Vert \vec n \Vert}  = \frac{(\vec V \cdot \vec n)}{\Vert \vec n \Vert ^ 2} n$
 
 &nbsp;<br/>
 
