@@ -430,3 +430,98 @@ $[-1, 0, -1]\begin{bmatrix} \frac{\sqrt{3}}{2} & 0 & \frac{1}{2} \cr 0 & 1 & 0 \
 
 &nbsp;<br/>
 
+## 아핀변환의 정의
+
+3차원 그래픽에 필요한 변환 중에는 선형변환으로 서술하지 못하는 것도 있다.<br/>
+
+그래서 아핀변환이(affine transformation)라고 부르는 좀 더 넓은 부류의 함수들을 도입해야 한다. <br/>
+
+아핀변환은 선형변환에 이동벡터 $b$ 를 더한 것이다. 수식으로 표현하면 아래와 같다.<br/>
+
+$\alpha(u) = \tau(u) + b$
+
+이것을 행렬로 다시 나타내보면 
+
+$\alpha(u) = uA + b = [x, y, z]\begin{bmatrix} A_{11} & A_{12} & A_{13} \cr A_{21} & A_{22} & A_{23} \cr A_{31} & A_{32} & A_{33} \end{bmatrix} + [b_x, b_y, b_z] = [{x}', {y}', {z}']$
+
+이다. 근데 $w=1$ 인 동차좌표를 도입하면 아편변환을 좀 더 간결하게 표현할 수 있다.<br/>
+
+$\begin{bmatrix} A_{11} & A_{12} & A_{13} & 0 \cr A_{21} & A_{22} & A_{23} & 0 \cr A_{31} & A_{32} & A_{33} & 0 \cr b_x & b_y & b_z & 1 \end{bmatrix} + [b_x, b_y, b_z] = [{x}', {y}', {z}', 1]$
+
+위 $4 \times 4$ 행렬을 아핀변환의 행렬 표현이라고 한다. 추가적으로 $b$ 는 이동(위치 변경) 을 나타낸 다는 것을 주목해야 한다.<br/>
+
+벡터에서는 위치가 없으므로, 벡터에 대해서는 그러한 이동을 적용하면 안된다. 하지만 아핀변환의 선형변환 부분은 여전히 벡터에 적용해야 된다. <br/>
+
+벡터의 동차좌표의 넷째 성분을 0$(w = 0)$로 설정하면 b에 의한 이동이 적용되지 않는다.<br/>
+
+&nbsp;<br/>
+
+## 이동 
+
+주어진 인수를 그대로 돌려주는 선형변환을 **항등변환(identity transformation)** 이라고 부른다.<br/> 
+
+$I(u) = u$ 이며, 이 선형변환의 행렬 표현은 단위 행렬이다.
+
+<img src="/images/transformation/identity.png">
+
+위 이동변환은 아래처럼 표현할 수 있다.
+
+$\tau(u) = uI + b = u + b$
+
+이 변환은 그냥  점 $u$를 $b$ 만큼 이동한다. $\tau$ 를 아래 행렬로 표현할 수 있다.
+
+$
+\tau =
+\begin{bmatrix}
+    1 & 0 & 0 & 0 \cr
+    0 & 1 & 0 & 0 \cr
+    0 & 0 & 1 & 0 \cr
+    b_x & b_y & b_z & 1
+\end{bmatrix}
+$
+
+이러한 행렬을 **이동행렬(translation matrix)** 라고 부른다
+
+이동행렬의 역은 아래와 같다.
+
+$
+\tau ^{-1} =
+\begin{bmatrix}
+    1 & 0 & 0 & 0 \cr
+    0 & 1 & 0 & 0 \cr
+    0 & 0 & 1 & 0 \cr
+    -b_x & -b_y & -b_z & 1
+\end{bmatrix}
+$
+
+&nbsp;<br/>
+
+## 이동 행렬의 예시
+
+두 점$(-8, 2, 0), (-2, 8, 0)$ 으로 정의되는 사각형을 x축을 따라 12, y 축을 따라 -10 단위만큼 이동한다고 하자.(z 는 그대로둔다.) 이 이동에 해당하는 이동행렬은 아래와 같다.
+
+$T = \begin{bmatrix} 1 & 0 & 0 & 0 \cr 0 & 1 & 0 & 0 \cr 0 & 0 & 1 & 0 \cr 12 & -10 & 0 & 1 \end{bmatrix}$
+
+$[-8, 2, 0, 1]\begin{bmatrix} 1 & 0 & 0 & 0 \cr 0 & 1 & 0 & 0 \cr 0 & 0 & 1 & 0 \cr 12 & -10 & 0 & 1 \end{bmatrix} = [4, -8, 0,  1]$
+
+$[-2, 8, 0, 1]\begin{bmatrix} 1 & 0 & 0 & 0 \cr 0 & 1 & 0 & 0 \cr 0 & 0 & 1 & 0 \cr 12 & -10 & 0 & 1 \end{bmatrix} = [10, -2, 0, 1]$
+
+## 비레와 회전의 아핀변환 행렬
+
+$b = 0$ 이면 아핀변환은 그냥 보통의 선형변환과 같다. 그 어떤 선형변환이라도 $b=0$ 인 아핀변환으로 표현할 수 있다. <br/>
+
+즉, 임의의 선형변환을 $4 \times 4$ 아핀행렬로 표기할 수 있다. 예를 들어 비례변환과 회전변환을 $4 \times 4$ 로 표현할 수 있다.<br/>
+
+$S = \begin{bmatrix} S_x & 0 & 0 & 0 \cr 0 & S_y & 0 & 0 \cr 0 & 0 & S_z & 0 \cr 0 & 0 & 0 & 1 \end{bmatrix}$
+
+$
+R_n = 
+\begin{bmatrix}
+     \cos{\theta} + n_x^2( 1 - \cos{\theta}) & n_xn_y(1 - \cos{\theta}) + n_z \sin{\theta} & n_xn_z(1 - \cos{\theta}) - n_y\sin{\theta} & 0 \cr
+     n_xn_y(1 - \cos{\theta}) - n_z\sin{\theta} & \cos{\theta} + n_y^2(1-\cos{\theta}) & (1 - \cos{\theta})n_yn_z + n_x\sin{\theta} & 0\cr
+     n_xn_z(1 - \cos{\theta}) + n_y\sin{\theta} & n_yn_z(1-\cos{\theta}) - n_x\sin{\theta} & \cos{\theta} + n_z^2(1 - \cos{\theta} & 0 \cr
+     0 & 0 & 0 & 1
+\end{bmatrix}
+$
+
+&nbsp;<br/>
