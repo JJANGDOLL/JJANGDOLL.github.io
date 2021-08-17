@@ -4,6 +4,14 @@ title: Diary
 nav_order: 98
 ---
 
+### 20210816
+
+* The weather is getting cold. Yesterday, I closed the window before I slept.
+
+### 20210815
+
+* National Liberation Day of Korea
+
 ### 20210814
 
 * Driving at night is very dangerous.
