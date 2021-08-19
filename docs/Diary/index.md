@@ -4,6 +4,14 @@ title: Diary
 nav_order: 98
 ---
 
+### 20210819
+
+* Faker is my favorite progamer. He played LeBlanc amazing and won the game. I hope he will win again.
+
+### 20210818
+
+* The League of Legends Champions Korea (LCK) entered the playoffs. Today was the group’s first match. Nongshim redforce was won.
+
 ### 20210816
 
 * The weather is getting cold. Yesterday, I closed the window before I slept.
