@@ -100,7 +100,7 @@ front & back buffer 의 형태를 swap chain 이라고 부른다. D3D에서, swa
 
 ## Depth Buffering
 
-깊이 버퍼는 텍스처에 이미지 자료가 있지 않는 예시이다. 이것은 각 픽셀의 깊이 정보를 가지고 있다. 이 값은 0~1 범위만 가능하다. 0 은 관잘차의 절두채 안에서 가장 가까운 물체에 해당하고, 1은 가장 먼 물체에 해당한다.  depth buffer와 back-buffer 사이에는 일대일 대응이 가능하다.( back-buffer$_{ij}$ 는 depth_buffer$_{ij}$ 에 대응이 된다. ) 그러므로 백퍼버가 1280 $\times$ 1024 의 해상도를 가지고 있다면, depth-buffer 또한 1280  $\times$ 1024 크기를 가지고 있다.<br/>
+깊이 버퍼는 텍스처에 이미지 자료가 있지 않는 예시이다. 이것은 각 픽셀의 깊이 정보를 가지고 있다. 이 값은 0~1 범위만 가능하다. 0 은 관잘차의 절두채 안에서 가장 가까운 물체에 해당하고, 1은 가장 먼 물체에 해당한다.  depth buffer와 back-buffer 사이에는 일대일 대응이 가능하다.( back-buffer $_{ij}$ 는 depth_buffer $_{ij}$ 에 대응이 된다. ) 그러므로 백퍼버가 1280 $\times$ 1024 의 해상도를 가지고 있다면, depth-buffer 또한 1280  $\times$ 1024 크기를 가지고 있다.<br/>
 
 
 
