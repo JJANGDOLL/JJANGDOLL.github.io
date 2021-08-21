@@ -221,7 +221,9 @@ $
 
 임의의 $i$ 번째 행에 대해서, $(AB)_{i,\ast}$ 이라고 했을 때,<br/>
 
-$(AB)_{i, \ast} = \begin{bmatrix} A_{i, \ast}B_{\ast , 1} & A_{i, \ast}B_{\ast , 2} & A_{i, \ast}B_{\ast , 3} \end{bmatrix}$ 이고, <br/>
+$(AB)_{i, \ast} = \begin{bmatrix} A_{i, \ast}B_{\ast , 1} & A_{i, \ast}B_{\ast , 2} & A_{i, \ast}B_{\ast , 3} \end{bmatrix}$
+
+이고, <br/>
 
 이것을 벡터와 행렬의 곱 나타내면 <br/>
 

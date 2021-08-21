@@ -4,6 +4,14 @@ title: Diary
 nav_order: 98
 ---
 
+### 20210821
+
+*  I had a long conversation with a classmate. In short, he suggested studying math together. So, I agreed.
+
+### 20210820
+
+* Ate a macaroon. It was expensive but delicious.
+
 ### 20210819
 
 * Faker is my favorite progamer. He played LeBlanc amazing and won the game. I hope he will win again.

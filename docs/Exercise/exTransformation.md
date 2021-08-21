@@ -7,6 +7,7 @@ use_math: true
 ---
 
 # 변환 연습문제
+
 {: .no_toc}
 
 DirectX 12를 이용한 3D 게임 프로그래밍 입문 문제풀이
@@ -140,3 +141,162 @@ $
 $
 
 &nbsp;<br/>
+
+# 이동행렬과 비례행렬
+
+먼저 $x$ 축을 따라 2단위, $y$ 축을 따라 -3 단위 비례하되 $z$ 축은 그대로 두는 비례변환을 수행하고,<br/>
+
+$x$ 축으로 4단위, $y$ 축은 그대로, $z$ 축은 -9 단위 만큼 이동하는 이동 변환을 수행하는 하나의 변환 행렬을 제작하자.
+
+**풀이**
+
+
+$\begin{bmatrix} 2 & 0 & 0 & 0\cr 0 & -3 & 0 & 0\cr 0 & 0 & 1 & 0 \cr 0 & 0 & 0 & 1\end{bmatrix}\begin{bmatrix} 1 & 0 & 0 & 0 \cr 0 & 1 & 0 & 0 \cr 0 & 0 & 1 & 0 \cr 4 & 0 & -9 & 1 \end{bmatrix} = \begin{bmatrix} 2 & 0 & 0 & 0 \cr 0 & -3 & 0 & 0 \cr 0 & 0 & 1 & 0 \cr 4 & 0 & -9 & 1 \end{bmatrix}$ 
+
+&nbsp;<br/>
+
+# 회전행렬과 이동행렬
+
+먼저 $y$ 축에 대해 $45^{\circ}$, $x$ 축으로 -2, $y$ 축으로 5, $z$ 축으로 1단위 이동하는 하나의 변환행렬을 구축하자.
+
+**풀이**
+
+$\begin{bmatrix} \frac{1}{\sqrt{2}} & 0 & -\frac{1}{\sqrt{2}} & 0 \cr 0 & 1 & 0 & 0 \cr \frac{1}{\sqrt{2}} & 0 & \frac{1}{\sqrt{2}} & 0 \cr 0 & 0 & 0 & 1 \end{bmatrix}\begin{bmatrix} 1 & 0 & 0 & 0 \cr 0 & 1 & 0 & 0 \cr 0 & 0 & 1 & 0 \cr -2 & 5 & 1 & 1\end{bmatrix} = \begin{bmatrix} \frac{1}{\sqrt{2}}& 0 & -\frac{1}{\sqrt{2}} & 0 \cr 0 & 1 & 0 & 0 \cr \frac{1}{\sqrt{2}} & 0 & \frac{1}{\sqrt{2}} & 0 \cr -2 & 5 & 1 & 1 \end{bmatrix}$
+
+#  비례행렬의 적용
+
+두 점 $(-4, -4, 0), (4, 4, 0)$ 으로 정의된 사각형을, $x$ 축을 따라 1.5, $y$ 축을 따라 0.75 만큼 비례하게 하자.
+
+**풀이**
+
+비례행렬
+$
+\begin{bmatrix}
+    1.5 & 0 & 0 \cr
+    0 & 0.75 & 0 \cr
+    0 & 0 & 1 \cr
+\end{bmatrix}
+$
+
+$
+[-4, -4, 0]
+\begin{bmatrix}
+    1.5 & 0 & 0 \cr
+    0 & 0.75 & 0 \cr
+    0 & 0 & 1 \cr
+\end{bmatrix} = [-6, 3, 0], 
+[4, 4, 0]
+\begin{bmatrix}
+    1.5 & 0 & 0 \cr
+    0 & 0.75 & 0 \cr
+    0 & 0 & 1 \cr
+\end{bmatrix} = [6, 3, 0]
+$
+
+&nbsp;<br/><br/>
+
+# 회전행렬의 적용
+
+두 점 $(-1, 0 -1), (1, 0, 1)$ 로 정의된 사각형을 $y$ 축을 따라 $-45^{\circ}$ 회전하라.
+
+**풀이**
+
+회전행렬
+$
+\begin{bmatrix}
+    \frac{1}{\sqrt{2}} & 0 & \frac{1}{\sqrt{2}} \cr
+    0 & 1 & 0 \cr
+    -\frac{1}{\sqrt{2}} & 0 & \frac{1}{\sqrt{2}}
+\end{bmatrix}
+$
+
+
+$
+[-1, 0, -1]
+\begin{bmatrix}
+    \frac{1}{\sqrt{2}} & 0 & \frac{1}{\sqrt{2}} \cr
+    0 & 1 & 0 \cr
+    -\frac{1}{\sqrt{2}} & 0 & \frac{1}{\sqrt{2}}
+\end{bmatrix} = [0, 0, -\frac{2}{\sqrt{2}}],
+[1, 0, 1]
+\begin{bmatrix}
+    \frac{1}{\sqrt{2}} & 0 & \frac{1}{\sqrt{2}} \cr
+    0 & 1 & 0 \cr
+    -\frac{1}{\sqrt{2}} & 0 & \frac{1}{\sqrt{2}}
+\end{bmatrix} = [0, 0, \frac{2}{\sqrt{2}}]
+$
+
+&nbsp;<br/>
+
+# 이동행렬의 적용
+
+두 점 $(-8, 2, 0), (-2, 8, 0)$ 으로 정의되는 사각형을 $x$ 축을 따라 -5, $y$ 축을 따라 -3, $z$ 축을 따라 4 만큼 이동하자.
+
+이동행렬
+$
+\begin{bmatrix}
+    1 & 0 & 0 & 0\cr
+    0 & 1 & 0 & 0\cr
+    0 & 0 & 1 & 0\cr
+    -5 & -3 & 4 & 1
+\end{bmatrix}
+$
+
+$
+[-8, 2, 0, 1]
+\begin{bmatrix}
+    1 & 0 & 0 & 0\cr
+    0 & 1 & 0 & 0\cr
+    0 & 0 & 1 & 0\cr
+    -5 & -3 & 4 & 1
+\end{bmatrix} = [-13, -1, 4 ,1],
+[-2, 8, 0, 1]
+\begin{bmatrix}
+    1 & 0 & 0 & 0\cr
+    0 & 1 & 0 & 0\cr
+    0 & 0 & 1 & 0\cr
+    -5 & -3 & 4 & 1
+\end{bmatrix} = [-7, 5, 4, 1]
+$
+
+&nbsp;<br/>
+
+# 로드리게스의 회전 공식과 선형변환
+
+$R_n(\vec v) = \cos{\theta}v + (1 - \cos{\theta})(n \cdot v)n + \sin{\theta}(n \times v)$ 가 선형변환임을 보이고, 표준행렬을 구하여라.
+
+**풀이**
+
+도저히 모르겠다 이건 ㅈㅈ
+
+&nbsp;<br/>
+
+# 회전 행렬와 정규직교
+
+$R_y$ ($y$ 축 회전 행렬)의 행벡터들이 정규직교임을 증명하라.
+
+**풀이**
+
+$
+R_y = 
+\begin{bmatrix}
+    \cos{\theta} & 0 & -\sin{\theta} \cr
+    0 & 1 & 0 \cr
+    \sin{\theta} & 0 & \cos{\theta}
+\end{bmatrix}
+$
+
+$\Vert R_1 \Vert = \sqrt{\cos{\theta}^2 + 0^2 + \sin{\theta}^2} = 1$
+
+$\Vert R_2 \Vert = \sqrt{0^2 + 1^2 + 0^2} = 1$
+
+$\Vert R_3 \Vert = \sqrt{\sin{\theta}^2 + 0^2 + \cos{\theta}^2} = 1$
+
+$R_1 \cdot R_3 = 0$
+
+$R_2 \cdot R_3 = 0$
+
+$R_1 \cdot R_3 = 0$
+
+&nbsp;<br/><br/>
+&nbsp;<br/><br/>
