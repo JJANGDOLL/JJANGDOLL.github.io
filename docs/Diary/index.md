@@ -4,6 +4,10 @@ title: Diary
 nav_order: 98
 ---
 
+### 20210822
+
+* T1 is won the semi-final.
+
 ### 20210821
 
 *  I had a long conversation with a classmate. In short, he suggested studying math together. So, I agreed.
