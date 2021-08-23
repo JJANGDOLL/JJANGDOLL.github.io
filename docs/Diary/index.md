@@ -6,7 +6,7 @@ nav_order: 98
 
 ### 20210822
 
-* T1 is won the semi-final.
+* T1 won the semi-final.
 
 ### 20210821
 
