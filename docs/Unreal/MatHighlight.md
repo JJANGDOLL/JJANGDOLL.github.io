@@ -14,7 +14,6 @@ parent: "UnrealEngine"
 
 ---
 
-<img src="/images/Unreal/mat_highlight.PNG">
-
+<img src="/images/Unreal/mat_highlight_2.PNG">
 
 [에셋다운로드](/files/unreal/assets/MAT_Highlight.uasset)
