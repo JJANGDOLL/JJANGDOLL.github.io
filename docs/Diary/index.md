@@ -4,6 +4,10 @@ title: Diary
 nav_order: 98
 ---
 
+### 20210823
+
+* Set my goal to implement inventory system.
+
 ### 20210822
 
 * T1 won the semi-final.
