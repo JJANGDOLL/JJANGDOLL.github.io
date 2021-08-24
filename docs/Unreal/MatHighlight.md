@@ -1,9 +1,8 @@
 ---
 layout: default
 title: "Highlight Material"
-nav_order: 99
+nav_order: 1
 parent: "UnrealEngine"
-use_math: true
 ---
 
 # Highlight Material
