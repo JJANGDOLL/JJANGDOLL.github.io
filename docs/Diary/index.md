@@ -4,6 +4,10 @@ title: Diary
 nav_order: 98
 ---
 
+### 20210825
+
+* Implment inventory system in unrealengine using cpp is difficult. I googled when using interface and when using component. But I don't know still now.
+
 ### 20210823
 
 * Set my goal to implement inventory system.
