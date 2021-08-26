@@ -6,7 +6,7 @@ nav_order: 98
 
 ### 20210825
 
-* Implment inventory system in unrealengine using cpp is difficult. I googled when using interface and when using component. But I don't know still now.
+* Implment inventory system in unrealengine using cpp is difficult. I googled when to use interface and when to use using component. But I sill don't know.
 
 ### 20210823
 
