@@ -4,9 +4,17 @@ title: Diary
 nav_order: 98
 ---
 
+### 20210827
+
+* 새 과제가 나왔음. 원하는 무기로, 원하는 콤보를 구현하는 것.
+
+### 20210826
+
+* 인벤토리 시스템의 상속 구조를 되게 오래 생각해서 만들었는데, 막상 만들고 나닌까 별로 안좋은 구조인 것 같다...
+
 ### 20210825
 
-* Implment inventory system in unrealengine using cpp is difficult. I googled when to use interface and when to use using component. But I sill don't know.
+* Implment inventory system in unrealengine using cpp is difficult. I googled when to use interface and when to use using component. But I still don't know.
 
 ### 20210823
 
