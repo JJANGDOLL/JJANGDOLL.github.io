@@ -160,8 +160,69 @@ descriptor heap 는 디스크립터 배열이다. 응용 프로그램에서 사�
 
 &nbsp;<br/>
 
-&nbsp;<br/>
+## Multisampling Theory
+
+모니터의 픽셀이 아주 작지 않은 이상 선을 완벽하게 그리는 것은 불가능하다. 
 
 &nbsp;<br/>
+
+<img src="/images/DirectX/aliasing.png">
+
+&nbsp;<br/>
+
+위 그림의 윗 선은 *계단 현상* 이라고 하는 aliasing 효과를 보여준다. 선을 픽셀의 매트릭스 위에 최대한 비슷하게 표현하다보면 발생한다. 삼각형의 모퉁이에도 앨리어싱과 유사한 효과가 발생한다.
+
+모니터 해상도를 키워서 픽셀의 크기를 줄이면 계단현상 문제를 완화할 수 있다. 하지만, 모니터의 해상도를 키우는 것이 한계가 있으니 우리는 (Antialiasing) 기법을 사용한다. 그런 기술 중 하나인 Super-sampling은 백버퍼와 depth 버퍼를 화면 해상도보다 4배 더 크게 만든다. 3d 장면을 4배로 큰 백버퍼에 렌더링한다. 이제 백버퍼를 화면에 표현할 때가 되면, 백버퍼는 resolved(색보정) (or downsampled) 하는데, 이것은 4개의 픽셀 색상의 평균을 구해 최정적인 픽셀 색상으로 결정하는 것이다. 사실상, super-sampling 은 소프트웨어에서 화면 해상도를 높이는 기법이다.
+
+super-sampling 은 픽셀 처리량과 메모리 소비량이 4배가 필요하므로 비용이 높다. D3D 에서는 Multi-sampling(다중표본화) 라는 안티앨리어싱 기법을 지원한다. 멀티샘플링은 계산 결과를 부분픽셀 들 사이에서 공유하기 때문에 super-sampling 보다 비용이 적다. 4X 멀티 샘플링을 사용할 때는 멀티샘플링도 4배인 백버퍼와 뎁스버퍼를 사용한다. 하지만 멀티샘플링은, 이미지 색상을 각 부분마다 계산하는 것이 아니라 픽셀의 중심에서 한 번만 계산하고, 그 색상과 부분 픽셀들의 가시성(깊이/스탠실 판정은 픽셀별로 평가)과 적용 범위(하위 픽셀 중심이 다각형 내부인지? 외부인지?)를 이용해서 최종 색상이 결정된다.
+
+&nbsp;<br/>
+
+<img src="/images/DirectX/multisampling.png">
+
+&nbsp;<br/>
+
+## D3D의 Multi-Sampling
+
+멀티 샘플링을 위해선 [DXGI_SAMPLE_DESC](https://docs.microsoft.com/en-us/windows/win32/api/dxgicommon/ns-dxgicommon-dxgi_sample_desc) 라는 구조체를 활용해야 한다.
+
+```cpp
+typedef struct DXGI_SAMPLE_DESC {
+  UINT Count;
+  UINT Quality;
+} DXGI_SAMPLE_DESC;
+```
+
+Count 멤버는 픽셀 당 추출할 표본의 개수를 지정하고, Quality 멤버는 원하는 품질 수준을 지정한다. quality 단계는 하드웨어 제조사마다 다를 수 있다. 다수의 표본, 고품질일 수록 렌더 비용이 증가한다. 그래서, 비용과 속도 사이의 균형을 잘 유지해야 한다. 품질 수준의 범위는 텍스쳐 포맷과 각 픽셀당 제공되는 샘플의 숫자에 의존한다.
+
+품질 수준을 위해 주어진 텍스쳐 품질과 샘플 숫자는 `ID3D12Device::CheckFeatureSupport` 라는 메서드로 쿼리를 할 수 있다. 
+
+```cpp
+typedef struct D3D12_FEATURE_DATA_MULTISAMPLE_QUALITY_LEVELS {
+ DXGI_FORMAT Format;
+ UINT SampleCount;
+ D3D12_MULTISAMPLE_QUALITY_LEVELS_FLAG Flags;
+ UINT NumQualityLevels;
+} D3D12_FEATURE_DATA_MULTISAMPLE_QUALITY_LEVELS;
+
+
+D3D12_FEATURE_DATA_MULTISAMPLE_QUALITY_LEVELS msQualityLevels;
+msQualityLevels.Format = mBackBufferFormat;
+msQualityLevels.SampleCount = 4;
+msQualityLevels.Flags = D3D12_MULTISAMPLE_QUALITY_LEVELS_FLAG_NONE;
+msQualityLevels.NumQualityLevels = 0;
+ThrowIfFailed(md3dDevice->CheckFeatureSupport(
+ D3D12_FEATURE_MULTISAMPLE_QUALITY_LEVELS,
+ &msQualityLevels,
+ sizeof(msQualityLevels))); 
+```
+
+이 메소드의 두 번째 매개변수 SampleCount는 입력과 출력 모두에 쓰인다는 것을 주목하자. 입력의 경우, 멀티 샘플링을 지원할 텍스쳐 포맷, 샘플 개수, 플래그를 지정해야 한다. 그 후 함수는 품질수준을 채워서 반환한다. 텍스쳐 포맷과 샘플 갯수의 조합의 유효한 품질 레벨은 *0 ~ NumQuality-1* 까지 입니다. 
+
+한 픽셀에서 추추할 수 있는 최대 표본 갯수는 아래와 같습니다.
+
+`#define D3D11_MAX_MULTISAMPLE_SAMPLE_COUNT ( 32 )`
+
+그러나 실상에서는 합리적인 성능과 메모리 비용을 위해 표본을 4개나 8개만 추출하는 경우가 많다. 멀티 샘플링을 사용하고 싶지 않으면 표본 갯수를 1개로 품질 수준으로 0으로 설정하면 된다. D3D12 대응 장치는 모든ㄹ ㅔㄴ더 대상 형식에 대해서 4X 멀티샘플링을 지원한다.
 
 &nbsp;<br/>
