@@ -26,3 +26,7 @@ use_math: true
 # 콤보
 
 {% include youtubeplayer.html id="Gxg0xaFygSs" %}
+
+# 20210919_BP_Portfolio
+
+{% include youtubeplayer.html id="Zfz2istSn0c" %}
