@@ -25,25 +25,25 @@ parent: "Sagers 개발 일지"
 
 * 문제 : PerceptionUpdate 함수가 호출되지 않음<br/>
 
-1. OnPerceptionUpdated 에 바인딩이 잘 되었는가?<br/>
+>  OnPerceptionUpdated 에 바인딩이 잘 되었는가?<br/>
 
 디버깅 걸고 갯수 확인해보니 1개로 잘 나온다.<br/>
 
-2. PerceptionUpdated 가 진짜 호출이 안되는 건가?<br/>
+> PerceptionUpdated 가 진짜 호출이 안되는 건가?<br/>
 
 간단한 로그 남기니 정말로 호출이 안됨<br/>
 
-3. 서로를 Hostile 로 인식하는가?<br/>
+> 서로를 Hostile 로 인식하는가?<br/>
 
 Nutral, Friendly 전부 켜고 테스트 => 인식함<br/>
 Nutral 만 켜고 테스트 => 인식함<br/>
 Friendly 만 켜고 테스트 => 인식못함<br/>
 
-4. TeamID가 정말 다른가?<br/>
+> TeamID가 정말 다른가?<br/>
 
 Tick 에서 실시간으로 확인하니 둘은 서로 다른 TeamID를 가지고 있음<br/>
 
-5. 왜 둘은 Nutral로 인식하는가?<br/>
+> 왜 둘은 Nutral로 인식하는가?<br/>
 
 서로 인식하는 원리에 대해서 올라가봄<br/>
 
