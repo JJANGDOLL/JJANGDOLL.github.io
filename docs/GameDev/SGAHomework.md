@@ -1,15 +1,15 @@
 ---
 layout: default
-title: "SGA Homeworks"
+title: "GameDev Flow"
 nav_order: 99
 parent: "GameDev"
 use_math: true
 ---
 
-# SGA Homework
+# GameDevList
 {: .no_toc}
 
-서울 게임 아카데미 과제
+만들었던 게임 목록 정리
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -19,14 +19,14 @@ use_math: true
 
 ---
 
-# 튜토리얼 제작
+# DemonSlayer
 
-{% include youtubeplayer.html id="WFf-vMbI7_Q" %}
+Engine : Unity
 
-# 콤보
+{% include youtubeplayer.html id="kwbIwolur04" %}
 
-{% include youtubeplayer.html id="Gxg0xaFygSs" %}
+# Ahrilang
 
-# 20210919_BP_Portfolio
+Engine : Unreal Engine Blueprint
 
-{% include youtubeplayer.html id="Zfz2istSn0c" %}
+{% include youtubeplayer.html id="WS9BlH-rCPE" %}
