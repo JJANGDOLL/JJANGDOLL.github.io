@@ -9,7 +9,7 @@ use_math: true
 # GameDevList
 {: .no_toc}
 
-만들었던 게임 목록 정리
+개발했던 프로젝트 정리
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -18,6 +18,10 @@ use_math: true
 {:toc}
 
 ---
+
+# 서버 점검 솔루션
+
+{% include youtubeplayer.html id="KNCmaPL53YU" %}
 
 # DemonSlayer
 
