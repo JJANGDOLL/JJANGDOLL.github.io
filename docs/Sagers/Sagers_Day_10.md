@@ -48,7 +48,7 @@ OwnerComp.GetOwner() 는 AActor 를 반환하는데 Instigator 라는 애 덕분
 
 <br/>
 
-BTTree 구조는 StateComponent 에서 상태를 설정하고 Service 에서는 상태를 읽어오는 방식으로 다시 하기로...<br/>
+BTTree 구조는 상태 설정에 노티파이랑 StateComponent 을 사용하고 Service 에서는 상태를 읽어오는 방식으로 다시 하기로...<br/>
 
 <br/>
 
@@ -65,3 +65,10 @@ AMinionBase::AMinionBase()
 
 GetClass 이면 _C 붙여서 클래스를 가져와야하는데 왜 잘 되는거지?<br/>
 
+```cpp
+    ObjectHelper::GetClass<AController>(&AIControllerClass, "Class'/Script/Sagers.MinionControllerBase_C'");
+```
+
+이상하게 이 코드가 안된다.<br/>
+
+블프 콘텐츠랑 CPP 스크립트에서 GetClass 할떄 뭔가 다른가? 애초에 CPP은 GetClass 할 필요가 없으려나?<br/>
