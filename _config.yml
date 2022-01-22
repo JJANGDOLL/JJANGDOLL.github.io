@@ -20,12 +20,12 @@ title                    : "JJANGDOLL's Ark"
 title_separator          : "-"
 subtitle                 : "Game & Develope Blog"
 name                     : "JAEJUN KIM"
-description              : "Free now..."
+description              : #"Free now..."
 url                      : "https://jjangdoll.github.io/"
 baseurl                  : #"/blog"
 repository               : "JJANGDOLL/JJANGDOLL.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/favicon.ico"
+logo                     : #"/assets/images/favicon.ico"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -102,10 +102,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "JAEJUN KIM"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "Defficult, Dedicate, Developement"
+  location         : "Seoul/Korea"
   email            :
   links:
     - label: "Email"
@@ -122,7 +122,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/JJANGDOLL"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -138,7 +138,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/JJANGDOLL"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
