@@ -7,10 +7,18 @@ nav_order: 99
 # About
 
 <img src="/images/about/about.JPG" alt="portrait" style="border-radius:50%" width=150px>
+Make new world!
 &nbsp;&nbsp;&nbsp;&nbsp;
-Not enough minerals...
 {: .fs-6 .fw-300 }
 
-## Introduce
 
-* Studying unreal engine 4
+# Algorithm
+
+## Beakjoon
+
+[![Solved.ac
+프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=megaton920)](https://solved.ac/megaton920)
+
+# Interest
+
+* GameProgramming (UE4)
