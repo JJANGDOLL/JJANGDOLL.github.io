@@ -13,9 +13,9 @@ title: "About"
 
 ## EDUCATION
 
-| CLASS &emsp;&emsp;&emsp;&emsp;&emsp; | &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+| CLASS  | &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; |
 | --------------------------------: | -----------------------------------------------------------:|
-| 한국 IT 전문학교 &emsp;&emsp;<br/>정보보호학과   | 2018.10 ~ 2021.02  |
+| 한국 IT 전문학교 <br/>정보보호학과   | 2018.10 ~ 2021.02  |
 | engine |  |
 | ext    | extension to be used for dest files. |
 
