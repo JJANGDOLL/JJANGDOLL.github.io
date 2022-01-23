@@ -7,11 +7,11 @@ title: "About"
 
 ## Interest
 
-| Category      | Details                    |
+| Category &emsp;&emsp;&emsp;&emsp;     | Details &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  |
 |---------------|----------------------------|
-| GameDevelope  | Unreal Engine (C++) &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; |
-| Algorithm     | Python                     |
-| Blog          | Github                     |
+| GameDevelope  | Unreal Engine (C++)  |
+| Algorithm     | Python    |
+| Blog          | Github   |
 
 ## Certifications
 
