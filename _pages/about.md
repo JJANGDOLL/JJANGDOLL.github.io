@@ -13,8 +13,10 @@ title: "About"
 
 ## EDUCATIONS
 
-<div style="background-color:cyan">구역1</div>
-<div style="width:100px; height:100px; background-color:#CF0">구역2</div>
+<div style="background-color:cyan">구역1
+  <div id ="width=50%">구역2</div>
+
+</div>
 
 | Educations  | Details |
 | -------------------------------- | -----------------------------------------------------------|
