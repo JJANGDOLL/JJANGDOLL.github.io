@@ -10,7 +10,6 @@ tags:
   - markup
 toc: true
 toc_label: "My Table of Contents"
-toc_icon: "archive"
 ---
 
 Nested and mixed lists are an interesting beast. It's a corner case to make sure that
