@@ -1,19 +1,17 @@
 ---
 permalink: /about/
 title: "About"
-classes: wide
 ---
 
-ASDF
+독특한 아이디어와 새로운 것을 창조하는 꿈꾸는 개발자입니다.
+
 ## Interest
 
-| Category      | Details                  |
-|---------------|--------------------------|
-| GameDevelope  | Unreal Engine (C++)      |
-| Algorithm     | Python                   |
+| Category      | Details                    |
+|---------------|----------------------------|
+| GameDevelope  | Unreal Engine (C++) &emsp; |
+| Algorithm     | Python                     |
+| Blog          | Github                     |
 
----
+## Certifications
 
-## TT
-
-1234
