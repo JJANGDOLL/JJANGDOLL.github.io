@@ -15,7 +15,7 @@ classes: wide
 ## EDUCATIONS
 
 <table>
-  <tr style="border:1px solid gray;background-color:#808080">
+  <tr style="border:1px solid gray;background-color:#646464">
     <th style="width:20%">Month</th>
     <th style="width:60%;">Savings</th>
   </tr>
