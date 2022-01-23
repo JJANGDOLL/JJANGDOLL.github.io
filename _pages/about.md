@@ -14,14 +14,14 @@ classes: wide
 
 ## EDUCATIONS
 
-<table>
-  <tr>
-    <th> Class </th>
-    <th style="width:75%"> Details </th>
+<table style="width:50%;">
+  <tr style="height:100px">
+    <th style="vertical-align:bottom">Month</th>
+    <th style="vertical-align:bottom">Savings</th>
   </tr>
   <tr>
-    <td> ㅁ</td>
-    <td> ㅠ</td>
+    <td>January</td>
+    <td>$100</td>
   </tr>
 </table>
 
