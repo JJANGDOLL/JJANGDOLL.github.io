@@ -229,7 +229,6 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jakyll-archives
-  - jekyll-spaceship
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -239,7 +238,6 @@ whitelist:
   - jekyll-feed
   - jekyll-include-cache
   - jakyll-archives
-  - jekyll-spaceship
 
 # Archives
 #  Type
