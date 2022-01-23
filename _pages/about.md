@@ -13,8 +13,7 @@ title: "About"
 
 ## EDUCATION
 
-| CLASS | Description |
-| -----------------------: | -----------------------------------------------------------:|
+| --------------------------------: | -----------------------------------------------------------:|
 | 한국 IT 전문학교<br/>정보보호학과   | 2018.10 ~ 2021.02  |
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
