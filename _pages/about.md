@@ -13,7 +13,7 @@ title: "About"
 
 ## EDUCATION
 
-| CLASS  | &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; |
+| Class  | Details |
 | --------------------------------: | -----------------------------------------------------------:|
 | 한국 IT 전문학교 <br/>정보보호학과   | 2018.10 ~ 2021.02  |
 | engine |  |
