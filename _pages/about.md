@@ -13,11 +13,9 @@ title: "About"
 
 ## EDUCATIONS
 
-<div id ="width=50%">구역2</div> asdfasdf
-
 | Educations  | Details |
 | -------------------------------- | -----------------------------------------------------------|
-| <font size="4"><b>한국 IT 전문학교</b></font><br/> <font size="3"><b>정보보호학과</b></font><br/> <font size="2">2018.10 ~ 2021.02</font>   |  |
+| <font size="4"><b>한국 IT 전문학교</b></font><br/> <font size="3"><b>정보보호학과</b></font><br/> <font size="2">2018.10 ~ 2021.02</font>   | 가나다라마바사아자차카타파하<br/>아야어여오요우유으이<br/> |
 | <font size="4"><b>네트워크 운영관리</b></font><br/> <font size="3"><b>네트워크시스템보안</b></font><br/> <font size="2">2015.09 ~ 2016.01</font> |  |
 | <font size="4"><b>게임엔진 프로그래머 양성</b></font><br/> <font size="3"><b>게임콘텐츠제작</b></font><br/> <font size="2">2021.07 ~ 2022.01</font>    |  |
 
