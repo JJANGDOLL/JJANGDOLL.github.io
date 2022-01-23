@@ -17,7 +17,7 @@ classes: wide
 <table>
   <tr>
     <th> Class </th>
-    <th colspan="75%"> Details </th>
+    <th style="width:75%"> Details </th>
   </tr>
   <tr>
     <td> ㅁ</td>
