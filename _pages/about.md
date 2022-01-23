@@ -13,7 +13,7 @@ title: "About"
 
 ## EDUCATIONS
 
-<div id ="width=50%">구역2</div>
+<div id ="width=50%">구역2</div> asdfasdf
 
 | Educations  | Details |
 | -------------------------------- | -----------------------------------------------------------|
