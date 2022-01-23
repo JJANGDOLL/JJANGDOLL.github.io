@@ -16,12 +16,12 @@ classes: wide
 
 <table>
   <tr>
-    <td> Class </td>
-    <td colspan=75%> Details </td>
+    <th> Class </th>
+    <th colspan="75%"> Details </th>
   </tr>
   <tr>
-    <td> </td>
-    <td> </td>
+    <td> ㅁ</td>
+    <td> ㅠ</td>
   </tr>
 </table>
 
