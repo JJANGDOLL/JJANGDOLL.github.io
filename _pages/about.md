@@ -1,6 +1,19 @@
 ---
 permalink: /about/
 title: "About"
+classes: wide
 ---
 
-[![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=megaton920)](https://solved.ac/megaton920)
+ASDF
+## Interest
+
+| Category      | Details                  |
+|---------------|--------------------------|
+| GameDevelope  | Unreal Engine (C++)      |
+| Algorithm     | Python                   |
+
+---
+
+## TT
+
+1234
