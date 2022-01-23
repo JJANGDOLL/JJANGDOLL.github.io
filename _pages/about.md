@@ -15,7 +15,7 @@ title: "About"
 
 | Class  | Details |
 | --------------------------------: | -----------------------------------------------------------:|
-| 한국 IT 전문학교 <br/>정보보호학과   | 2018.10 ~ 2021.02  |
+| <font size="3">한국 IT 전문학교</font><br/> <font size="2">정보보호학과</font><br/> 2018.10 ~ 2021.02   | aaaaaaaaaaaaaaaaaaaaa  |
 | engine |  |
 | ext    | extension to be used for dest files. |
 
