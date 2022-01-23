@@ -15,7 +15,7 @@ title: "About"
 
 | Educations  | Details |
 | -------------------------------- | -----------------------------------------------------------:|
-| <font size="4">한국 IT 전문학교</font><br/> <font size="3">정보보호학과</font><br/> <font size="2">2018.10 ~ 2021.02</font>   |  |
+| <font size="4">**한국 IT 전문학교**</font><br/> <font size="3">**정보보호학과**</font><br/> <font size="2">2018.10 ~ 2021.02</font>   |  |
 | engine |  |
 | ext    | extension to be used for dest files. |
 
