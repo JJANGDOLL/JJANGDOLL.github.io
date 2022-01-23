@@ -9,7 +9,7 @@ title: "About"
 
 | Category      | Details                    |
 |---------------|----------------------------|
-| GameDevelope  | Unreal Engine (C++) &emsp; |
+| GameDevelope  | Unreal Engine (C++) &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; |
 | Algorithm     | Python                     |
 | Blog          | Github                     |
 
