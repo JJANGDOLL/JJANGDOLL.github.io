@@ -124,3 +124,13 @@ classes: wide
     </td>
   </tr>
 </table>
+
+## WORK EXPERIENCE
+
+
+
+## ALGORITHM
+
+알고리즘에 관심이 많고, 다양한 문제를 풀며 공부하고 있습니다.
+
+[![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=megaton920)](https://solved.ac/megaton920)
