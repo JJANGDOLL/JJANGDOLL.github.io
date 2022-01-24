@@ -14,7 +14,7 @@ classes: wide
 
 ## EDUCATIONS
 
-<table style="border-collapse:collapse;">
+<table style="border-collapse:collapse;" width="100%">
   <tr style="border-bottom:1px solid grey;padding:10px;" valign="top">
     <td width="25%">
       <font size="4"><b>한국 IT 전문학교</b></font><br/> 
