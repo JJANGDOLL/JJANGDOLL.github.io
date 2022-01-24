@@ -25,7 +25,7 @@ classes: wide
       <ul>
         <li>학점 : 4.28 </li>
         <li>Programming, Network, OS, DB, Web 전반에 걸쳐 학습 </li>
-        <li>팀 프로젝트 "인프라 취약점 진단 및 모의해킹 진단" 진행</li>
+        <li>인프라 취약점 자동 진단 시스템 개발</li>
         <ul>
           <li>aa</li>
           <li>bb</li>
