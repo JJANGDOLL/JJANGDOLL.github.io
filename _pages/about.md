@@ -76,7 +76,7 @@ classes: wide
     <td style="padding:10px;" width="35%">
       <font size="4">한국기술자격검증원</font>
     </td>
-    <td style="padding:10px;" width="30%">
+    <td style="padding:10px;">
       2015.11.10
     </td>
   </tr>
