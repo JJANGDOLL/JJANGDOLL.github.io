@@ -16,7 +16,7 @@ classes: wide
 
 <table style="border-collapse:collapse;width:100%;">
   <tr style="border-bottom:1px solid grey;padding:10px;" valign="top">
-    <td width="100%">
+    <td width="25%">
       <font size="4"><b>한국 IT 전문학교</b></font><br/> 
       <font size="3"><b>정보보호학과</b></font><br/> 
       <font size="2">2018.10 ~ 2021.02</font>
@@ -70,7 +70,7 @@ classes: wide
 
 <table style="border-collapse:collapse;">
   <tr style="border-bottom:1px solid grey;padding:10px;">
-    <td width="70%">
+    <td width="100%">
       <font size="4">네트워크관리사 2급</font><br/>
       <font size="3">한국기술자격검증원</font>
     </td>
