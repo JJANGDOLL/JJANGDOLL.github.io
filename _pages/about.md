@@ -16,12 +16,12 @@ classes: wide
 
 <table style="border-collapse:collapse;">
   <tr style="border-bottom:1px solid grey;padding:10px;" valign="top">
-    <td>
+    <td width="40%">
       <font size="4"><b>한국 IT 전문학교</b></font><br/> 
       <font size="3"><b>정보보호학과</b></font><br/> 
       <font size="2">2018.10 ~ 2021.02</font>
     </td>
-    <td style="padding:10px;">
+    <td style="padding:10px;" width="60%">
       <ul>
         <li>Programming, Network, OS, DB, Web 전반에 걸쳐 학습하였습니다.</li>
         <li>인프라 취약점 자동 진단 시스템 개발(2016.07 ~ 2017.10)</li>
