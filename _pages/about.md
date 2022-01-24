@@ -134,7 +134,7 @@ classes: wide
       <font size="3"><b>연구원, 기술개발실</b></font><br/> 
       <font size="2">2018.10 ~ 2021.02</font>
     </td>
-    <td style="padding:10px;" width="75%">
+    <td style="padding:10px;" width="100%">
       <ul>
         <li>asdf</li>
       </ul>
