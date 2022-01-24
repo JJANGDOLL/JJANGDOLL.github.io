@@ -24,7 +24,7 @@ classes: wide
     <td style="padding:20px;">
       <ul>
         <li>Programming, Network, OS, DB, Web 전반에 걸쳐 학습 </li>
-        <li>인프라 취약점 자동 진단 시스템 개발</li>
+        <li>인프라 취약점 자동 진단 시스템 개발(2016.07 ~ 2017.10)</li>
         <ul>
           <li>가상의 회사를 설립하여 시스템/네트워크 구축부터 취약점 진단, 모의해킹, 보호 조치 등의 컨설팅 업무를 수행하였습니다.</li>
           <li>Linux/Unix/Windows 기반으로 Web/DNS/Mail/FTP 서버 등 구축, 이를 대상으로 취약점 진단 및 모의해킹 수행하였습니다.</li>
