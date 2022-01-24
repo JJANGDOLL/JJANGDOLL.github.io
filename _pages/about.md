@@ -72,7 +72,7 @@ classes: wide
   <tr style="border-bottom:1px solid grey;padding:10px;">
     <td width="100%">
       <font size="4">네트워크관리사 2급</font><br/>
-      <font size="3">한국기술자격검증원</font>
+      <font size="2">한국기술자격검증원</font>
     </td>
     <td style="padding:10px;" width="30%">
       <font size="4">2015.11.10</font>
@@ -81,7 +81,7 @@ classes: wide
   <tr style="border-bottom:1px solid grey;padding:10px">
     <td>
       <font size="4">정보기기운용기능사</font><br/>
-      <font size="3">한국산업인력공단</font>
+      <font size="2">한국산업인력공단</font>
     </td>
     <td style="padding:10px;">
       <font size="4">2015.11.26</font>
@@ -90,7 +90,7 @@ classes: wide
   <tr style="border-bottom:1px solid grey;padding:10px">
     <td>
       <font size="4">워드프로세서 2급</font><br/>
-      <font size="3">대한상공회의소</font>
+      <font size="2">대한상공회의소</font>
     </td>
     <td style="padding:10px;">
       <font size="4">2008.03.14</font>
@@ -99,7 +99,7 @@ classes: wide
   <tr style="border-bottom:1px solid grey;padding:10px">
     <td>
       <font size="4">한글엑셀 B등급</font><br/>
-      <font size="3">한국생산성본부</font>
+      <font size="2">한국생산성본부</font>
     </td>
     <td style="padding:10px;">
       <font size="4">2009.01.09</font>
@@ -108,7 +108,7 @@ classes: wide
   <tr style="border-bottom:1px solid grey;padding:10px">
     <td>
       <font size="4">아래한글 A등급</font><br/>
-      <font size="3">한국생산성본부</font>
+      <font size="2">한국생산성본부</font>
     </td>
     <td style="padding:10px;">
       <font size="4">2009.01.09</font>
@@ -117,7 +117,7 @@ classes: wide
   <tr style="border-bottom:1px solid grey;padding:10px">
     <td>
       <font size="4">한글파워포인트 C등급</font><br/>
-      <font size="3">한국생산성본부</font>
+      <font size="2">한국생산성본부</font>
     </td>
     <td style="padding:10px;">
       <font size="4">2006.11.09</font>
@@ -136,7 +136,26 @@ classes: wide
     </td>
     <td style="padding:10px;" width="75%">
       <ul>
-        <li>asdf</li>
+        <li>사내 지원 툴 프로그래밍 개발 및 운영</li>
+        <ul>
+          <li>.NET Framework 를 기반으로 사내 다양한 업무(테스트 로그 수집, 빌드 배포 등)의 간편화 및 자동화를 위한 윈도우 어플리케이션을 개발 및 운영하였습니다.</li>
+          <li>지속적인 업데이트 및 배포를 위해 Jenkins 를 도입하여 빌드 및 배포 서버를 구축하여 빠른 피드백과 새로운 기능을 추가할 수 있는 기반을 마련하였습니다.</li>
+          <li>프로그램의 확장성을 위해 주요 함수를 DLL로 이동하여 추후 다른 프로그램에서도 사용할 수 있도록 진행하였습니다.</li>
+          <li>.NET Framework, C#, HTML, Jenkins</li>
+        </ul>
+        <li>사내 빌드 시스템 유지보수</li>
+        <ul>
+          <li>고객사 릴리즈를 위한 패치를 생성하는 빌드 시스템의 시간을 감축하기 위해 코드 최적화를 진행하였으며 소모 시간 40%, 서버 저장 용량 20% 단축 하였습니다.</li>
+          <li>서버의 효율적인 용량 관리를 위해 일정한 주기마다 오래된 패치를 삭제하도록 작업 하였습니다.</li>
+          <li>Python 2.7의 종료로 인해 Python 3.0으로의 변환 작업을 진행 하였습니다.</li>
+          <li>Python, bat</li>
+        </ul>
+        <li>테스트 지원 및 정리, 결과 보고서 작성</li>
+        <ul>
+          <li>해킹툴 구동 방법과 원리를 파악 및 적용하여 XIGNCODE 제품의 탐지 성능 향상에 기여하였습니다.</li>
+          <li>크래시 상황의 자료를 수집 및 재현하여 XIGNCODE 제품의 안정성 개선에 기여하였습니다.</li>
+          <li>다양한 테스트 환경을 구축 및 테스트 방법을 설계하고 결과를 수집 및 로그를 분석하여 기능의 정상 동작여부와 엔진의 이력을 관리하였습니다.</li>
+        </ul>
       </ul>
     </td>
   </tr>
