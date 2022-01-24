@@ -26,8 +26,12 @@ classes: wide
         <li>Programming, Network, OS, DB, Web 전반에 걸쳐 학습 </li>
         <li>인프라 취약점 자동 진단 시스템 개발</li>
         <ul>
-          <li>aa</li>
-          <li>bb</li>
+          <li>가상의 회사를 설립하여 시스템/네트워크 구축부터 취약점 진단, 모의해킹, 보호 조치 등의 컨설팅 업무를 수행하였습니다.</li>
+          <li>Linux/Unix/Windows 기반으로 Web/DNS/Mail/FTP 서버 등 구축, 이를 대상으로 취약점 진단 및 모의해킹 수행하였습니다.</li>
+          <li>Linux Shell Script/Windows PowerShell Script 를 이용하여 자동진단 스크립트 작성하였습니다.</li>
+          <li>QT, Python 을 사용하여 Manager-Agent 방식으로 자동 진단 프로그램 UI 개발하였습니다.</li>
+          <li>진단 결과를 Excel로 출력할 수 있게 하여 보기 쉽도록 정리하였습니다.</li>
+          <li>2017 한국IT프로젝트 경진대회 장려상 수상</li>
         </ul>
       </ul>
     </td>
@@ -40,7 +44,7 @@ classes: wide
     </td>
     <td style="padding:20px;">
       <ul>
-        <li>Network에 대해 실제 실무에서 진행하는 업무 학습</li>
+        <li>Network에 대해 실제 실무에서 진행하는 업무 학습하였습니다.</li>
       </ul>
     </td>
   </tr>
@@ -52,9 +56,9 @@ classes: wide
     </td>
     <td style="padding:20px;">
       <ul>
-        <li>게임 프로그래밍을 위한 다양한 테크닉 학습</li>
-        <li>Unreal Engine의 다양한 기법을 배우고 개인 포트폴리오 제작</li>
-        <li>DirectX 학습하며 사물이 렌더링 되는 과정에 대해서 학습</li>
+        <li>게임 프로그래밍을 위한 다양한 테크닉 학습하였습니다.</li>
+        <li>Unreal Engine의 다양한 기법을 배우고 개인 포트폴리오 Ahrilang 를 제작하였습니다.</li>
+        <li>DirectX 학습하며 사물이 렌더링 되는 과정에 대해서 학습하였습니다.</li>
       </ul>
     </td>
   </tr>
