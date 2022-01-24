@@ -17,7 +17,13 @@ classes: wide
 <table style="border-collapse:collapse;">
   <tr style="border-bottom:1px solid grey;padding:10px">
     <td><font size="4"><b>한국 IT 전문학교</b></font><br/> <font size="3"><b>정보보호학과</b></font><br/> <font size="2">2018.10 ~ 2021.02</font></td>
-    <td>학점 : 4.28 <br/> Programming, Network, OS, DB, Web 전반에 걸쳐 학습 <br/> 팀 프로젝트 "인프라 취약점 진단 및 모의해킹 진단" 진행</td>
+    <td>
+      <ol>
+        <li>학점 : 4.28 </li>
+        <li>Programming, Network, OS, DB, Web 전반에 걸쳐 학습 </li>
+        <li>팀 프로젝트 "인프라 취약점 진단 및 모의해킹 진단" 진행</li>
+      </ol>
+    </td>
   </tr>
 </table>
 
