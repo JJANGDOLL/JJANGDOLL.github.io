@@ -44,7 +44,8 @@ classes: wide
     </td>
     <td style="padding:20px;">
       <ul>
-        <li>Network에 대해 실제 실무에서 진행하는 업무 학습하였습니다.</li>
+        <li>Network에 대한 교육을 이수하고 스위치, 라우터 등의 통신 장비에 대해 학습하였습니다.</li>
+        <li>ACL을 설정하고, 라우팅 테이블을 설정하는 등의 기법에 대해 학습하였습니다.</li>
       </ul>
     </td>
   </tr>
