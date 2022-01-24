@@ -15,13 +15,13 @@ classes: wide
 ## EDUCATIONS
 
 <table style="border-collapse:collapse;">
-  <tr style="border-bottom:1px solid grey;padding:10px;">
-    <td style="width=45%; valign=top;">
+  <tr style="border-bottom:1px solid grey;padding:10px;" valign="top">
+    <td style="width=45%;">
       <font size="4"><b>한국 IT 전문학교</b></font><br/> 
       <font size="3"><b>정보보호학과</b></font><br/> 
       <font size="2">2018.10 ~ 2021.02</font>
     </td>
-    <td style="padding:20px; valign=top;">
+    <td style="padding:20px;">
       <ul>
         <li>Programming, Network, OS, DB, Web 전반에 걸쳐 학습 </li>
         <li>인프라 취약점 자동 진단 시스템 개발</li>
@@ -32,7 +32,7 @@ classes: wide
       </ul>
     </td>
   </tr>
-  <tr style="border-bottom:1px solid grey;padding:10px">
+  <tr style="border-bottom:1px solid grey;padding:10px" valign="top">
     <td style="width=30%;">
       <font size="4"><b>네트워크 운영관리</b></font><br/> 
       <font size="3"><b>네트워크시스템보안</b></font><br/> 
@@ -44,8 +44,8 @@ classes: wide
       </ul>
     </td>
   </tr>
-  <tr style="border-bottom:1px solid grey;padding:10px">
-    <td style="width=30%; valign=top;">
+  <tr style="border-bottom:1px solid grey;padding:10px" valign="top">
+    <td style="width=30%;">
       <font size="4"><b>게임엔진 프로그래머 양성</b></font><br/> 
       <font size="3"><b>게임콘텐츠제작</b></font><br/> 
       <font size="2">2021.07 ~ 2022.01</font>
