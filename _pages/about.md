@@ -67,3 +67,72 @@ classes: wide
 
 
 ## CERTIFICATIONS
+
+<table style="border-collapse:collapse;">
+  <tr style="border-bottom:1px solid grey;padding:10px;" valign="top">
+    <td width="35%">
+      <font size="4">네트워크관리사 2급</font>
+    </td>
+    <td style="padding:10px;" width="35%">
+      <font size="4">한국기술자격검증원</font>
+    </td>
+    <td style="padding:10px;" width="30%">
+      2015.11.10
+    </td>
+  </tr>
+  <tr style="border-bottom:1px solid grey;padding:10px" valign="top">
+    <td width="35%">
+      <font size="4">정보기기운용기능사</font>
+    </td>
+    <td style="padding:10px;" width="35%">
+      <font size="4">한국산업인력공단</font>
+    </td>
+    <td style="padding:10px;" width="30%">
+      <font size="4">2015.11.10</font>
+    </td>
+  </tr>
+  <tr style="border-bottom:1px solid grey;padding:10px" valign="top">
+    <td width="35%">
+      <font size="4">워드프로세서 2급</font>
+    </td>
+    <td style="padding:10px;" width="35%">
+      <font size="4">대한상공회의소</font>
+    </td>
+    <td style="padding:10px;" width="30%">
+      <font size="4">2008.03.14</font>
+    </td>
+  </tr>
+  <tr style="border-bottom:1px solid grey;padding:10px" valign="top">
+    <td width="35%">
+      <font size="4">한글엑셀 B등급</font>
+    </td>
+    <td style="padding:10px;" width="35%">
+      <font size="4">한국생산성본부</font>
+    </td>
+    <td style="padding:10px;" width="30%">
+      <font size="4">2009.01.09</font>
+    </td>
+  </tr>
+  <tr style="border-bottom:1px solid grey;padding:10px" valign="top">
+    <td width="35%">
+      <font size="4">아래한글 A등급</font>
+    </td>
+    <td style="padding:10px;" width="35%">
+      <font size="4">한국생산성본부</font>
+    </td>
+    <td style="padding:10px;" width="30%">
+      <font size="4">2009.01.09</font>
+    </td>
+  </tr>
+  <tr style="border-bottom:1px solid grey;padding:10px" valign="top">
+    <td width="35%">
+      <font size="4">한글파워포인트 C등급</font>
+    </td>
+    <td style="padding:10px;" width="35%">
+      <font size="4">한국생산성본부</font>
+    </td>
+    <td style="padding:10px;" width="30%">
+      <font size="4">2006.11.09</font>
+    </td>
+  </tr>
+</table>
