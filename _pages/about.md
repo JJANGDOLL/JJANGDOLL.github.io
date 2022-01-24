@@ -23,7 +23,6 @@ classes: wide
     </td>
     <td style="padding:20px;"  valign="top">
       <ul>
-        <li>학점 : 4.28 </li>
         <li>Programming, Network, OS, DB, Web 전반에 걸쳐 학습 </li>
         <li>인프라 취약점 자동 진단 시스템 개발</li>
         <ul>
