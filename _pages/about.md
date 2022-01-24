@@ -42,7 +42,7 @@ classes: wide
       <font size="3"><b>네트워크시스템보안</b></font><br/> 
       <font size="2">2015.09 ~ 2016.01</font>
     </td>
-    <td style="padding:20px;">
+    <td style="padding:10px;">
       <ul>
         <li>Network에 대한 교육을 이수하고 스위치, 라우터 등의 통신 장비에 대해 학습하였습니다.</li>
         <li>ACL을 설정하고, 라우팅 테이블을 설정하는 등의 기법에 대해 학습하였습니다.</li>
@@ -55,7 +55,7 @@ classes: wide
       <font size="3"><b>게임콘텐츠제작</b></font><br/> 
       <font size="2">2021.07 ~ 2022.01</font>
     </td>
-    <td style="padding:20px;">
+    <td style="padding:10px;">
       <ul>
         <li>게임 프로그래밍을 위한 다양한 테크닉 학습하였습니다.</li>
         <li>Unreal Engine의 다양한 기법을 배우고 개인 포트폴리오 Ahrilang 를 제작하였습니다.</li>
