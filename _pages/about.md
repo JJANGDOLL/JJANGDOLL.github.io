@@ -127,7 +127,7 @@ classes: wide
 
 ## WORK EXPERIENCE
 
-<table style="border-collapse:collapse;width:100%;">
+<table style="border-collapse:collapse;">
   <tr style="border-bottom:1px solid grey;padding:10px;" valign="top">
     <td width="25%">
       <font size="4"><b>웰비아닷컴</b></font><br/> 
