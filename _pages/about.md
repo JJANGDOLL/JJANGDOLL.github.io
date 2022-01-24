@@ -70,13 +70,13 @@ classes: wide
 
 <table style="border-collapse:collapse;">
   <tr style="border-bottom:1px solid grey;padding:10px;">
-    <td width="35%">
+    <td width="50px">
       <font size="4">네트워크관리사 2급</font>
     </td>
-    <td style="padding:10px;" width="35%">
+    <td style="padding:10px;" width="50px">
       <font size="4">한국기술자격검증원</font>
     </td>
-    <td style="padding:10px;">
+    <td style="padding:10px;" width="50px">
       2015.11.10
     </td>
   </tr>
