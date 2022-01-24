@@ -75,7 +75,7 @@ classes: wide
       <font size="3">한국기술자격검증원</font>
     </td>
     <td style="padding:10px;" width="30%">
-      2015.11.10
+      <font size="4">2015.11.10</font>
     </td>
   </tr>
   <tr style="border-bottom:1px solid grey;padding:10px">
