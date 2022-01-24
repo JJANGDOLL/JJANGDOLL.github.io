@@ -129,7 +129,7 @@ classes: wide
 
 <table style="border-collapse:collapse;width:100%">
   <tr style="border-bottom:1px solid grey;padding:10px;" valign="top">
-    <td width="25%">
+    <td width="15%">
       <font size="4"><b>웰비아닷컴</b></font><br/> 
       <font size="3"><b>연구원, 기술개발실</b></font><br/> 
       <font size="2">2018.10 ~ 2021.02</font>
@@ -143,6 +143,7 @@ classes: wide
           <li>프로그램의 확장성을 위해 주요 함수를 DLL로 이동하여 추후 다른 프로그램에서도 사용할 수 있도록 진행하였습니다.</li>
           <li>.NET Framework, C#, HTML, Jenkins</li>
         </ul>
+        <br/>
         <li>사내 빌드 시스템 유지보수</li>
         <ul>
           <li>고객사 릴리즈를 위한 패치를 생성하는 빌드 시스템의 시간을 감축하기 위해 코드 최적화를 진행하였으며 소모 시간 40%, 서버 저장 용량 20% 단축 하였습니다.</li>
@@ -150,6 +151,7 @@ classes: wide
           <li>Python 2.7의 종료로 인해 Python 3.0으로의 변환 작업을 진행 하였습니다.</li>
           <li>Python, bat</li>
         </ul>
+        <br/>
         <li>테스트 지원 및 정리, 결과 보고서 작성</li>
         <ul>
           <li>해킹툴 구동 방법과 원리를 파악 및 적용하여 XIGNCODE 제품의 탐지 성능 향상에 기여하였습니다.</li>
