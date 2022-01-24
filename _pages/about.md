@@ -19,7 +19,7 @@ classes: wide
     <td width="25%">
       <font size="4"><b>한국 IT 전문학교</b></font><br/> 
       <font size="3"><b>정보보호학과</b></font><br/> 
-      <font size="2">2018.10 ~ 2021.02</font>
+      <font size="2">2016.03 ~ 2028.02</font>
     </td>
     <td style="padding:10px;" width="75%">
       <ul>
@@ -127,6 +127,21 @@ classes: wide
 
 ## WORK EXPERIENCE
 
+<table style="border-collapse:collapse;width:100%;">
+  <tr style="border-bottom:1px solid grey;padding:10px;" valign="top">
+    <td width="25%">
+      <font size="4"><b>웰비아닷컴</b></font><br/> 
+      <font size="3"><b>연구원, 기술개발실</b></font><br/> 
+      <font size="2">2018.10 ~ 2021.02</font>
+    </td>
+    <td style="padding:10px;" width="75%">
+      <ul>
+        <li>asdf</li>
+      </ul>
+    </td>
+  </tr>
+
+</table>
 
 
 ## ALGORITHM
