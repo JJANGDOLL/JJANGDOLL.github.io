@@ -14,12 +14,12 @@ classes: wide
 
 ## EDUCATIONS
 
-<table style="width:80%;">
-  <tr style="background-color:#252a34;">
+<table>
+  <tr style="background-color:grey;">
     <th style="width:20%">Month</th>
-    <th style="width:60%;">Savings</th>
+    <th style="width:80%;">Savings</th>
   </tr>
-  <tr style="border:1px solid gray;">
+  <tr style="border-bottom:1px solid grey;padding:10px">
     <td>January</td>
     <td>$100</td>
   </tr>
