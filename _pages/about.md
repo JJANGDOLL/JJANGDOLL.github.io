@@ -4,12 +4,6 @@ title: "About"
 classes: wide
 ---
 
-<style type="text/css">
-tr {
-  vertical-align: top;
-}
-</style>
-
 독특한 아이디어와 코드에 생명을 불어넣는 꿈꾸는 개발자입니다.
 
 ## INTEREST
