@@ -135,7 +135,7 @@ tr, td {
 
 <table style="border-collapse:collapse;width:100%">
   <tr style="border-bottom:1px solid grey;padding:10px;" valign="top">
-    <td width="15%">
+    <td width="25%" style="padding:20px">
       <font size="4"><b>웰비아닷컴</b></font><br/> 
       <font size="3"><b>연구원, 기술개발실</b></font><br/> 
       <font size="2">2018.10 ~ 2021.02</font>
