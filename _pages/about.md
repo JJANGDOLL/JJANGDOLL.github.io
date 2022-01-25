@@ -42,7 +42,7 @@ tr, td {
       </ul>
     </td>
   </tr>
-  <tr style="border-bottom:1px solid grey;padding:10px" valign="top">
+  <tr style="border-bottom:1px solid grey;padding:20px" valign="top">
     <td>
       <font size="4"><b>네트워크 운영관리</b></font><br/> 
       <font size="3"><b>네트워크시스템보안</b></font><br/> 
@@ -55,7 +55,7 @@ tr, td {
       </ul>
     </td>
   </tr>
-  <tr style="border-bottom:1px solid grey;padding:10px" valign="top">
+  <tr style="border-bottom:1px solid grey;padding:20px" valign="top">
     <td>
       <font size="4"><b>게임엔진 프로그래머 양성</b></font><br/> 
       <font size="3"><b>게임콘텐츠제작</b></font><br/> 
