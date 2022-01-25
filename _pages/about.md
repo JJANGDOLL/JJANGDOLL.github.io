@@ -43,7 +43,7 @@ tr, td {
     </td>
   </tr>
   <tr style="border-bottom:1px solid grey;padding:20px" valign="top">
-    <td>
+    <td style="padding:20px;">
       <font size="4"><b>네트워크 운영관리</b></font><br/> 
       <font size="3"><b>네트워크시스템보안</b></font><br/> 
       <font size="2">2015.09 ~ 2016.01</font>
@@ -56,7 +56,7 @@ tr, td {
     </td>
   </tr>
   <tr style="border-bottom:1px solid grey;padding:20px" valign="top">
-    <td>
+    <td style="padding:20px;">
       <font size="4"><b>게임엔진 프로그래머 양성</b></font><br/> 
       <font size="3"><b>게임콘텐츠제작</b></font><br/> 
       <font size="2">2021.07 ~ 2022.01</font>
