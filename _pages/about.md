@@ -14,9 +14,15 @@ classes: wide
 
 ## EDUCATIONS
 
+<style type="text/css">
+tr, td {
+  vertical-align: top;
+}
+</style>
+
 <table style="border-collapse:collapse;width:100%;">
   <tr style="border-bottom:1px solid grey;padding:10px;" valign="top">
-    <td width="25%">
+    <td width="25%" valign="top">
       <font size="4"><b>한국 IT 전문학교</b></font><br/> 
       <font size="3"><b>정보보호학과</b></font><br/> 
       <font size="2">2016.03 ~ 2028.02</font>
