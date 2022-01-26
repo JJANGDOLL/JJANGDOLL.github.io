@@ -53,12 +53,12 @@ toc_label: "Technique Contents"
     * Attack
   * Controller 에서 조건에 따라 단순히 상태를 설정해주는 역할만 존재
 
-* UMinionLineTraceComponent <= UActorComponent | IMinionStateAction
+* UMinionLineTraceComponent <= UActorComponent, IMinionStateAction
   * 본인 Controller 의 이동 명령을 내리는 액터 컴포넌트
   * 바닥에 따라 그려진 Spline 을 따라 이동
   * 팀에 따라 정방향, 역방향으로 달린다
 
-* UMinionAttackComponent <= UActorComponent | IMinionStateAction
+* UMinionAttackComponent <= UActorComponent, IMinionStateAction
   * 본인 Controller 의 공격 명령을 내리는 액터 컴포넌트
   * AIController 의 Perception 의 감지 여부에 의해 트리거됨
 
