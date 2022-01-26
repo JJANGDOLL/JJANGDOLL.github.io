@@ -4,7 +4,7 @@ main:
   - title: "Tags"
     url: /tags/
   - title: "PortFolio"
-    utl: /portfolio/
+    url: /portfolio/
   - title: "About Me"
     url: /about/
   
