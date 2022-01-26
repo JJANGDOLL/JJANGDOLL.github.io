@@ -12,7 +12,7 @@ toc: true
 toc_label: "Technique Contents"
 ---
 
-<style type="text/css"> body { font-size: 16pt; } </style>
+<style type="text/css"> body { font-size: 13pt; } </style>
 
 넘쳐나는 파라곤 에셋들로 해본 적도 없는 파라곤이라는 게임을 만들어보자.
 
