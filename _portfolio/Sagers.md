@@ -9,9 +9,6 @@ sidebar:
     text: "AOS (수틀리면 언제든 바뀔 수 있음. 그리고 바뀔 확률 높음)"
 
 classes: wide
-
-toc: true
-toc_label: "Technique Contents"
 ---
 
 <style type="text/css">
