@@ -25,10 +25,12 @@ toc_label: "Technique Contents"
 ### Pawn
 
 <font size="3">
+  
 * AMinionBase <= APawn
   * 아래 Melee, Range, Super의 부모 클래스
   * 자식들에 해당하는 데이터는 DataTable에서 관리됨
   * 생성자에서 DataTable 에서 불러온 값을 토대로 Mesh, AnimInstance, Team ,CapsuleSize 등을 설정
+                     
 </font>
 
 ### Controller
