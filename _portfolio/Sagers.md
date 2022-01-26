@@ -14,22 +14,20 @@ toc_label: "Technique Contents"
 
 
 
-# 1
+# Minion
 
-## 1-1
+양 팀에서 주기적으로 소환되어 적진으로 뛰어가면서 싸우는 작고 귀여운 유닛
 
-### 1-1-1
+## 공통
 
-### 1-1-2
+### Pawn
 
-## 1-2
+### Controller
 
-# 2
+### BehaviorTree
 
-## 2-1
+## Melee
 
-## 2-2
+## Range
 
-# 3
-
-# 4
+## Super
