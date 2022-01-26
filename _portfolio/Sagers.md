@@ -16,7 +16,7 @@ toc_label: "Technique Contents"
 
 # Minion
 
-양 팀에서 주기적으로 소환되어 적진으로 뛰어가면서 싸우는 작고 귀여운 유닛
+<font size="3">양 팀에서 주기적으로 소환되어 적진으로 뛰어가면서 싸우는 작고 귀여운 유닛</font>
 
 ## 공통
 
