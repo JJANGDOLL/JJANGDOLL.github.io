@@ -39,10 +39,12 @@ toc_label: "Technique Contents"
     * UMinionLineTraceComponent
     * UMinionAttackComponent
   * 미니언들의 현재 상태와 감지(감각)를 주로 정의
+
 * UAIPerceptionComponent <= UActorComponent
   * 감각기관
   * 시각이 추가되어 있음 (UAISenseConfig_Sight)
   * TeamID 부여와 bDetectEnemies 만 활성화 되어 있어 오로지 적 미니언만 탐지
+
 * UMinionStateComopnent <= UActorComponent
   * 미니언의 현재 상태(Idle, Attack ...)를 정의하는 액터 컴포넌트
   * 20222601 기준 현재 행동 양식은 3가지
@@ -50,13 +52,16 @@ toc_label: "Technique Contents"
     * LineTrace
     * Attack
   * Controller 에서 조건에 따라 단순히 상태를 설정해주는 역할만 존재
+
 * UMinionLineTraceComponent <= UActorComponent | IMinionStateAction
   * 본인 Controller 의 이동 명령을 내리는 액터 컴포넌트
   * 바닥에 따라 그려진 Spline 을 따라 이동
   * 팀에 따라 정방향, 역방향으로 달린다
+
 * UMinionAttackComponent <= UActorComponent | IMinionStateAction
   * 본인 Controller 의 공격 명령을 내리는 액터 컴포넌트
   * AIController 의 Perception 의 감지 여부에 의해 트리거됨
+
 * IMinionStateAction
   * UBTNodeTask 에서 각 컴포넌트의 기능(LineTrace, Attack)이 구현되어 있음을 보장하는 인터페이스
 
