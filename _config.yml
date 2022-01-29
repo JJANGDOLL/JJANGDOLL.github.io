@@ -147,9 +147,9 @@ footer:
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+    - label: "Steam"
+      icon: "fab fa-steam"
+      url: "https://steamcommunity.com/profiles/76561198142565897/"
 
 
 # Reading Files
