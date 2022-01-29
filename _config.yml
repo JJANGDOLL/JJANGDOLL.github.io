@@ -125,7 +125,9 @@ author:
       url: "https://github.com/JJANGDOLL"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+    - label: "Steam"
+      icon: "fab fa-steam"
+      url: "https://steamcommunity.com/profiles/76561198142565897/"
 
 # Site Footer
 footer:
