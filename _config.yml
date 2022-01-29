@@ -126,7 +126,7 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
     - label: "Steam"
-      icon: "fab fa-steam"
+      icon: "fab fa-fw fa-steam"
       url: "https://steamcommunity.com/profiles/76561198142565897/"
 
 # Site Footer
@@ -148,7 +148,7 @@ footer:
       icon: "fab fa-fw fa-bitbucket"
       # url:
     - label: "Steam"
-      icon: "fab fa-steam"
+      icon: "fab fa-fw fa-steam"
       url: "https://steamcommunity.com/profiles/76561198142565897/"
 
 
