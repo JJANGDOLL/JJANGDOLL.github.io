@@ -11,8 +11,19 @@
                     {% if category[0] == "BOJ" %}
                         <li><a href="/categories/boj" class="">백준({{category[1].size}})</a></li>
                     {% endif %}
+                    {% if category[0] == "PROGRAMMERS" %}
+                        <li><a href="/categories/programmers" class="">프로그래머스({{category[1].size}})</a></li>
+                    {% endif %}                    
                 {% endfor %}
             </ul>
+        <span class="nav__sub-title"><h2>UE4</h2></span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "UE4" %}
+                        <li><a href="/categories/ue4study" class="">언리얼 스터디({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>            
       </li>
   </ul>
 </nav>
