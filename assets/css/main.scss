@@ -7,4 +7,9 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@fonr-face  {
+  font-family: 'Nanum Pen Script';
+  src: url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+  font-weight: normal;
+  font-style: normal;
+}
