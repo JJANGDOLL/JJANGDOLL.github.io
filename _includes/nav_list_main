@@ -7,9 +7,9 @@
       <li>
         <span class="nav__sub-title"><h2>Coding Test</h2></span>
             <ul>
-                {% for tag in site.tags %}
-                    {% if tag[0] == "BOJ" %}
-                        <li><a href="/categories/boj" class="">백준({{tag[1].size}})</a></li>
+                {% for category in site.categories %}
+                    {% if category[0] == "BOJ" %}
+                        <li><a href="/categories/boj" class="">백준({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
