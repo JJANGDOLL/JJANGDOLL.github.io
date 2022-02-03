@@ -5,6 +5,9 @@
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label }}</label>
   <ul class="nav__items" id="category_tag_menu">
       <li>
+           전체 글 수 {{sum}} 개
+      </li>
+      <li>
         <span class="nav__sub-title"><h2>Coding Test</h2></span>
             <ul>
                 {% for category in site.categories %}
