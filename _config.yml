@@ -293,6 +293,7 @@ defaults:
       related: true
       show_Date: true
       date_format: "%Y-%m-%d"
+      sidebar_main: true
   # _pages
   - scope:
       path: "_pages"
