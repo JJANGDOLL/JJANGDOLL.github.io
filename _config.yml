@@ -293,8 +293,6 @@ defaults:
       related: true
       show_Date: true
       date_format: "%Y-%m-%d"
-      sidebar:
-        nav: "docs"
   # _pages
   - scope:
       path: "_pages"
@@ -313,8 +311,5 @@ defaults:
 
 collections:
   portfolio:
-    output: true
-    permalink: /:collection/:path/
-  docs:
     output: true
     permalink: /:collection/:path/
