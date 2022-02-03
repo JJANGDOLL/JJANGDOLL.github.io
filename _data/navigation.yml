@@ -8,8 +8,3 @@ main:
   - title: "About Me"
     url: /about/
   
-docs:
-  - title: Getting Started
-    children:
-      - title: "Quick-Start Guide"
-        url: /docs/quick-start-guide/
