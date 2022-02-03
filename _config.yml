@@ -319,4 +319,7 @@ defaults:
 collections:
   portfolio:
     output: true
-    permalink: /:collection/:path
+    permalink: /:collection/:path/
+  docs:
+    output: true
+    permalink: /:collection/:path/
