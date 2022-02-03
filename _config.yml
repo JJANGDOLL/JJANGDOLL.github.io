@@ -183,6 +183,8 @@ exclude:
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
+  - /_pages/categories/category-sample.md
+  - /_posts/2022-01-23-posts-test.md
 keep_files:
   - .git
   - .svn
