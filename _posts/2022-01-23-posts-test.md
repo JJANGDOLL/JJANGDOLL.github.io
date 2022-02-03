@@ -10,7 +10,7 @@ tags:
   - markup
 toc: true
 toc_label: "My Table of Contents"
-toc_sticky: false
+toc_sticky: true
 sidebar_main: true
 ---
 
