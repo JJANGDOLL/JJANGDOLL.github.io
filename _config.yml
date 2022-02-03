@@ -293,6 +293,8 @@ defaults:
       related: true
       show_Date: true
       date_format: "%Y-%m-%d"
+      sidebar:
+        nav: "docs"
   # _pages
   - scope:
       path: "_pages"
@@ -308,13 +310,6 @@ defaults:
       layout: single
       author_profile: false
       share: true
-  # _docs
-  - scope:
-      path: ""
-      type: docs
-    values:
-      sidebar:
-        nav: "docs"
 
 collections:
   portfolio:
