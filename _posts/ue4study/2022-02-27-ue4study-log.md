@@ -5,8 +5,10 @@ categories:
 tags:
   - UE4
   - UE_LOG
+toc: true
+toc_label: UE4 Logging
+toc_sticky: true
 sidebar_main: true
-classes: wide
 ---
 
-test
+asdf
