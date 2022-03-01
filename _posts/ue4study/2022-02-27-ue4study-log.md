@@ -113,6 +113,14 @@ UE_LOG(LogTemp, Warning, TEXT("Current values are: vector %s, float %f, and inte
 | Verbose         | No                  | No                       |                                                  |
 | VeryVerbose     | No                  | No                       |                                                  |
 
+# Custom Log Category
+
+
+
 ----
 
-https://unrealcommunity.wiki/logging-lgpidy6i
+#### 참고자료
+
+* https://unrealcommunity.wiki/logging-lgpidy6i
+* 이득우의 언리얼 C++ 게임개발의 정석
+* C++를 사용한 언리얼 엔진 4 개발
