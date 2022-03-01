@@ -76,9 +76,6 @@
       float: right;
     }
     
-    @include breakpoint($uhd-large) {
-      max-width: $uhd-width;
-    }
   }
 
   ul {
