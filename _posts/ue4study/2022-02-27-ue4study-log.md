@@ -31,7 +31,7 @@ UE_LOG(LogTemp, Warning, TEXT("Hello"));
 
 세 번재 인자는 출력하고자 하는 텍스트 메시지 입니다.  추가로 printf 포맷 지정자를 사용하는 경우 인자가 더 늘어날 수 있습니다.
 
-# Formatting Example Quick Reference
+# Formatting Example
 
 ## Logging an FString
 
