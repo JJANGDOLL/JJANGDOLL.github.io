@@ -113,13 +113,72 @@ UE_LOG(LogTemp, Warning, TEXT("Current values are: vector %s, float %f, and inte
 | Verbose         | No                  | No                       |                                                  |
 | VeryVerbose     | No                  | No                       |                                                  |
 
+<br/>
+
 # Custom Log Category
 
+로그 카테고리를 직접 만든다면 Output Log 창의 많은 로그에서 원하는 정보만 골라서 표시할 수 있습니다. 새로운 핵심 시스템이나 게임모드, 레벨 등에 자주 사용됩니다.
 
+형식은 아래와 같습니다.
+
+`DECLARE_LOG_CATEGORY_EXTERN(CategoryName, DefaultVerbosity, CompileTimeVerbosity)`
+
+* CategoryName : 원하는 카테고리 이름
+* DefaultVerbosity : ini 파일이나  CommandLine에서 지정되지 않은 경우 기본 Verbosity Level.
+* CompileTimeVerbosity : 코드에서 컴파일 할 최대 Verbosity Level. 이보다 자세한 내용은 컴파일이 안됩니다.
+
+아래 코드처럼 추가해서 새로운 로그 카테고리를 정의할 수 있습니다. 필요한 파일의 top level에 #include 해서 사용하세요.
+
+## Header File
+
+```cpp
+// LogCustom : 원하는 카테고리 이름
+
+DECLARE_LOG_CATEGORY_EXTERN(LogCustom, Log, All);
+```
+
+## Cpp File
+
+```cpp
+DEFINE_LOG_CATEGORY(LogCustom);
+```
+
+<br/>
+
+
+# Custom Log Category Example
+
+아래처럼 작성하여 다양한 정보를 출력해주는 매크로를 작성할 수 있습니다.
+
+```cpp
+DECLARE_LOG_CATEGORY_EXTERN(LogCustom, Log, All)
+#define LOG_CALLINFO (FString(__FUNCTION__) + TEXT("(") + FString::FromInt (__LINE__) + TEXT(")"))
+#define LOG_S(Verbosity) UE_LOG(LogCustom, Verbosity,  TEXT("%s"), *LOG_CALLINFO)
+#define LOG(Verbosity, Format, ...) UE_LOG(LogCustom, Verbosity, TEXT("%s%s"), *LOG_CALLINFO, *FString::Printf(Format, ##__VA_ARGS__))
+```
+<br/>
+
+# Printing Message To Screen
+
+엄밀히 말하면, 런타임 동안 화면에 출력하는 것은 파일에 저장되지 않으며 따라서 로깅으로 간주하지 않습니다. 하지만, 개발을 할 때 별도의 로그 창을 열지 않고도 게임 창에서 메시지를 볼 수 있으니 훨씬 편리합니다.
+
+```cpp
+GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, TEXT("This message will appear on the screen!"));
+```
+
+첫 번째 인자는 Key 입니다. 이 키 값이 -1로 셋팅되어 있다면 코드가 실행될 때 마다 새 메시지가 화면에 추가됩니다. 예를 들어 `Tick() `에서 이 함수를 호출할 경우 화면은 메세지가 계속 화면에 흐르듯이 나오게 됩니다. 만약 이 키 값이 양의 정수라면 (uint64) 메시지는 해당 키를 가진 메시지 위로 덮어쓰게 됩니다.
+
+두 번째 인자는 메시지가 표현될 시간(seconds) 입니다.
+
+세 번재 인자는 메시지의 색상입니다.
+
+네 번째 인자는 출력하고자 하는 메시지입니다. 문자열에 매개변수를 사용하고자 한다면 `FString::Printf()` 를 사용해야 합니다.
+
+```cpp
+GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Some variable values: x = %f, y = %f"), x, y));
+```
 
 ----
-
-#### 참고자료
 
 * https://unrealcommunity.wiki/logging-lgpidy6i
 * 이득우의 언리얼 C++ 게임개발의 정석
