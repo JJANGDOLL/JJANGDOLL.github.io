@@ -17,6 +17,10 @@
   @include breakpoint($x-large) {
     max-width: $max-width;
   }
+	
+  @include breakpoint($uhd-large) {
+    max-width: $uhd-width;
+  }
 }
 
 body {
@@ -46,6 +50,11 @@ body {
     width: calc(100% - #{$right-sidebar-width});
     padding-right: $right-sidebar-width;
   }
+	
+  @include breakpoint($uhd-large) {
+    width: calc(100% - #{$right-sidebar-width});
+    padding-right: $right-sidebar-width;
+  }	
 
   .page__inner-wrap {
     float: left;
