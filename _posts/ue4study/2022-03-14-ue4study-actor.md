@@ -27,11 +27,11 @@ UE4 에서 액터를 생성하는 방법은 매우 쉽습니다.
 
 **반드시 경로를 주의합니다. [ProjectName/source/] 아래의 경로에 저장되어야 합니다.**
 
-![CreateActor1](/assets/images/ue4/createactor_1.png)
+![CreateActor1](/assets/images/ue4/createactor_1.PNG)
 
-![CreateActor2](/assets/images/ue4/createactor_2.png)
+![CreateActor2](/assets/images/ue4/createactor_2.PNG)
 
-![CreateActor2](/assets/images/ue4/createactor_3.png)
+![CreateActor2](/assets/images/ue4/createactor_3.PNG)
 
 기다리면 Visual Studio 가 열리며 헤더 파일와 cpp 파일이 생성됩니다.
 
@@ -142,15 +142,15 @@ public:
 
 이제 이 클래스를 상속받는 BP 를 생성해봅시다.
 
-![SerializeActor1](/assets/images/ue4/serializeactor_1.png)
+![SerializeActor1](/assets/images/ue4/serializeactor_1.PNG)
 
-![SerializeActor2](/assets/images/ue4/serializeactor_2.png)
+![SerializeActor2](/assets/images/ue4/serializeactor_2.PNG)
 
-![SerializeActor3](/assets/images/ue4/serializeactor_3.png)
+![SerializeActor3](/assets/images/ue4/serializeactor_3.PNG)
 
 이후 BP의 디폴트 창에서 카테고리로 검색해보면 CPP에서 생성한 멤버를 확인할 수 있습니다.
 
-![SerializeActor4](/assets/images/ue4/serializeactor_4.png)
+![SerializeActor4](/assets/images/ue4/serializeactor_4.PNG)
 
 이제 C++ 로 생성한 클래스를 BP에서도 상속받아 사용할 수 있습니다!
 
@@ -258,7 +258,7 @@ public:
 
 `FObjectFinder` 메소드는 에셋 로딩을 도와주는 클래스 템플릿입니다. 인자에는 에셋의 클래스 이름과 경로를 가진 문자열을 인자로 받습니다. 문자열은 `{ObjectType}/Path/To/Asset.Asset` 형태를 가집니다. 컨텐츠 브라우저에서 `Copy Reference`를 하면 더 쉽게 가져올 수 있습니다.
 
-![CopyReference](/assets/images/ue4/copyreference.png)
+![CopyReference](/assets/images/ue4/copyreference.PNG)
 
 <br/>
 
@@ -309,7 +309,7 @@ public:
 
 `AttachTo` 함수를 이용해 컴포넌트간 계층을 설정할 수 있습니다.
 
-![ComponentLayer](/assets/images/ue4/componentlayer.png)
+![ComponentLayer](/assets/images/ue4/componentlayer.PNG)
 
 <br/>
 
@@ -319,7 +319,7 @@ ActorComponent는 액터 간 공유해야 하는 기능을 쉽게 구현해서 �
 
 커스터마이즈 가능한 ActorComponent 를 만들어봅시다.
 
-![CustomActorComponent](/assets/images/ue4/customactorcomponent.png)
+![CustomActorComponent](/assets/images/ue4/customactorcomponent.PNG)
 
 ```cpp
 #pragma once
