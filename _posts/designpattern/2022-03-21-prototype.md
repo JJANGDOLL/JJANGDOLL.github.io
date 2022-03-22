@@ -9,6 +9,8 @@ tags:
   - designpattern
   - oop
   - prototype
+  - shallowcopy
+  - deepcopy
 
 toc: true
 toc_label: Prototype
