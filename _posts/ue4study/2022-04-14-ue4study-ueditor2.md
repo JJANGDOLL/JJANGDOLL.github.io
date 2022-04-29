@@ -500,3 +500,438 @@ AssetTools.RegisterAssetTypeActions(actionType.ToSharedRef());
 이제 추가한 새 에셋을 확인할 수 있습니다.
 
 ![newasset](/assets/images/ue4/editor_newasset.png)
+
+<br/>
+
+# 새 컨텍스트 메뉴
+
+새로운 에셋 타입을 만들었다면 그에 알맞은 기능들을 추가해줄 필요가 있습니다. 그리고 이 기능은 이 에셋의 컨텍스트 메뉴에만 추가해주고 다른 타입에는 보이지 않게 해주고 싶을 수 있습니다. 이처럼 특정 에셋을 위한 기능을 컨텍스트 메뉴에 추가해봅니다.
+
+아래 예제는 위의 UNewAsset 이 추가되어 있다고 가정합니다.
+
+우선 컨텍스트 추가를 위한 새로운 클래스를 생성합니다.
+
+```cpp
+#pragma once
+
+#include "CoreMinimal.h"
+#include "AssetTypeActions_Base.h"
+#include "Editor/MainFrame/Public/Interfaces/IMainFrameModule.h"
+#include "../temp/NewAsset.h"
+
+class TEMP_EDITOR_API FCustomContextAction: public FAssetTypeActions_Base
+{
+public:
+	FCustomContextAction()
+	{
+
+	}
+
+	~FCustomContextAction()
+	{
+
+	}
+
+    virtual bool HasActions(const TArray<UObject*>& InObjects) const override
+    {
+        return true;
+    }
+
+    virtual void GetActions(const TArray<UObject*>& InObjects, FMenuBuilder& MenuBuilder) override
+    {
+        MenuBuilder.AddMenuEntry(
+            FText::FromString("CustomAssetAction"),
+            FText::FromString("Action from Cookbook Recipe"),
+            FSlateIcon(FEditorStyle::GetStyleSetName(), "LevelEditor.ViewOptions"),
+            FUIAction(
+                FExecuteAction::CreateRaw(this, &FCustomContextAction::MyCustomAssetContext_Clicked),
+                FCanExecuteAction()
+            ));
+    }
+
+    virtual FText GetName() const override
+    {
+        return FText::FromString(TEXT("My Custom Asset"));
+    }
+
+    virtual UClass* GetSupportedClass() const override
+    {
+        return UNewAsset::StaticClass();
+    }
+
+    virtual FColor GetTypeColor() const override
+    {
+        return FColor::Emerald;
+    }
+
+    virtual uint32 GetCategories() override
+    {
+        return EAssetTypeCategories::Misc;
+    }
+
+    void MyCustomAssetContext_Clicked()
+    {
+        TSharedRef<SWindow> CookbookWindow = SNew(SWindow)
+            .Title(FText::FromString(TEXT("Cookbook Window")))
+            .ClientSize(FVector2D(800, 400))
+            .SupportsMaximize(false)
+            .SupportsMinimize(false);
+
+        IMainFrameModule& MainFrameModule = FModuleManager::LoadModuleChecked<IMainFrameModule>(TEXT("MainFrame"));
+
+        if(MainFrameModule.GetParentWindow().IsValid())
+        {
+            FSlateApplication::Get().AddWindowAsNativeChild(CookbookWindow, MainFrameModule.GetParentWindow().ToSharedRef());
+        }
+        else
+        {
+            FSlateApplication::Get().AddWindow(CookbookWindow);
+        }
+
+    };
+};
+```
+
+이후 StartUpModule 에 등록해줍니다.
+
+```cpp
+IAssetTools& AssetTools = FModuleManager::LoadModuleChecked<FAssetToolsModule>("AssetTools").Get();
+TSharedPtr<IAssetTypeActions> CustomAction = MakeShareable(new FCustomContextAction);
+AssetTools.RegisterAssetTypeActions(CustomAction.ToSharedRef());
+```
+
+특정 에셋에만 새로운 컨텍스트 메뉴를 추가되었습니다.
+
+![context](/assets/images/ue4/editor_context.png)
+
+<br/>
+
+# 새 콘솔 명령
+
+개발 과정에서 콘솔 명령은 개발자나 테스터가 콘텐츠를 쉽게 우회하거나 현재 실행중인 테스트와 관련 없는 메커니즘을 비활성화 하는 등 매우 유용하게 사용할 수 있습니다. 런타임 중에 함수를 호출할 수 있습니다.
+
+`새 편집기 모듈` 이 완료되어 있어야 합니다.
+
+`Ftemp_editiorModule` 클래스에 아래 내용을 추가합니다.
+
+```cpp
+IConsoleCommand* DisplayTestCommand;
+IConsoleCommand* DisplayUserSpecifiedWindow;
+
+virtual void StartupModule() override
+{
+	DisplayTestCommand = IConsoleManager::Get().RegisterConsoleCommand(TEXT("DisplayTestCommandWindow"), TEXT("test"), FConsoleCommandDelegate::CreateRaw(this, &Ftemp_editiorModule::DisplayWindow, FString(TEXT("Test Command Window"))), ECVF_Default);
+
+	DisplayUserSpecifiedWindow = IConsoleManager::Get().RegisterConsoleCommand(TEXT("DisplayWindow"), TEXT("test"), FConsoleCommandWithArgsDelegate::CreateLambda(
+		[&](const TArray< FString >& Args)
+	{
+		FString WindowTitle;
+		for(FString Arg : Args)
+		{
+			WindowTitle += Arg;
+			WindowTitle.AppendChar(' ');
+		}
+		this->DisplayWindow(WindowTitle);
+	}
+	), ECVF_Default);
+}
+
+void DisplayWindow(FString WindowTitle)
+{
+	TSharedRef<SWindow> CookbookWindow = SNew(SWindow)
+		.Title(FText::FromString(WindowTitle))
+		.ClientSize(FVector2D(800, 400))
+		.SupportsMaximize(false)
+		.SupportsMinimize(false);
+	IMainFrameModule& MainFrameModule =
+		FModuleManager::LoadModuleChecked<IMainFrameModule>
+		(TEXT("MainFrame"));
+	if(MainFrameModule.GetParentWindow().IsValid())
+	{
+		FSlateApplication::Get().AddWindowAsNativeChild
+		(CookbookWindow, MainFrameModule.GetParentWindow()
+			.ToSharedRef());
+	}
+	else
+	{
+		FSlateApplication::Get().AddWindow(CookbookWindow);
+	}
+}
+```
+
+이후 레벨을 플레이 하고 `~`를 눌러 콘솔을 불러온 뒤에 명령어를 치면 구현한 기능이 보여지는 것을 확인할 수 있습니다.
+
+![console](/assets/images/ue4/editor_console.png)
+
+<br/>
+
+# 새 BP 그래프 핀 시각화
+
+C++ 클래스의 인스턴스를 변수로 사용하고 싶으면 UCLASS 매크로에서 BlueprintType 을 추가하면 됩니다. 하지만 단순히 UObject 로 취급되기에 멤버에 접근할 수는 없습니다.
+
+하지만 FVector 는 리터럴 값으로 편집할 수 있습니다.
+
+![gpp1](/assets/images/ue4/editor_graphpin_1.png)
+
+이렇게 하기 위해선 Graph Pin 시각화를 사용해야 합니다.
+
+우선 Test 모듈(메인 실행 게임모듈)에서 테스트할 클래스 `UNewAsset` 생성합니다.
+
+```cpp
+#pragma once
+
+#include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
+#include "NewAsset.generated.h"
+
+UCLASS(BlueprintType, EditInlineNew)
+class TEMP_API UNewAsset : public UObject
+{
+	GENERATED_BODY()
+	
+public:
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category="CustomAsset")
+	FString Name;
+};
+```
+
+TempEditor 모듈에서 SGraphPin 를 상속받는 새 클래스를 생성합니다.
+
+```cpp
+#pragma once
+
+#include "SGraphPin.h"
+#include "SGraphPinCustomAsset.h"
+#include "temp_editor.h"
+#include "Widgets/Colors/SColorPicker.h"
+#include "./temp/NewAsset.h"
+
+class TEMP_EDITOR_API SGraphPinCustomAsset: public SGraphPin
+{
+    SLATE_BEGIN_ARGS(SGraphPinCustomAsset) {}
+    SLATE_END_ARGS()
+
+    void Construct(const FArguments& InArgs, UEdGraphPin* InPin)
+    {
+        SGraphPin::Construct(SGraphPin::FArguments(), InPin);
+    }
+protected:
+    virtual FSlateColor GetPinColor() const override { return FSlateColor(FColor::Black); };
+
+    virtual TSharedRef<SWidget> GetDefaultValueWidget() override
+    {
+        return SNew(SColorPicker)
+            .OnColorCommitted(this, &SGraphPinCustomAsset::ColorPicked);
+
+    }
+
+    void ColorPicked(FLinearColor SelectedColor)
+    {
+        UNewAsset* NewValue = NewObject<UNewAsset>();
+        NewValue->ColorName = SelectedColor.ToFColor(false).ToHex();
+        GraphPinObj->GetSchema()->TrySetDefaultObject(*GraphPinObj, NewValue);
+    }
+};
+```
+
+TempEditor 모듈에서 FGraphPanelPinFactory를 상속받는 새 클래스를 생성합니다.
+
+```cpp
+#pragma once
+
+#include "EdGraphUtilities.h"
+#include "../temp/NewAsset.h"
+#include "SGraphPinCustomAsset.h"
+
+
+struct TEMP_EDITOR_API FMyCustomAssetPinFactory : public FGraphPanelPinFactory
+{
+public:
+    virtual TSharedPtr<class SGraphPin> CreatePin(class UEdGraphPin* Pin) const override
+    {
+        if(Pin->PinType.PinSubCategoryObject == UNewAsset::StaticClass())
+        {
+            return SNew(SGraphPinCustomAsset, Pin);
+        }
+        else
+        {
+            return nullptr;
+        }
+    };
+};
+```
+
+이후 Ftemp_editiorModule 에서 아래를 추가합니다.
+
+```cpp
+멤버변수
+TSharedPtr<FMyCustomAssetPinFactory> PinFactory;
+
+=> StartupModule
+PinFactory = MakeShareable(new FMyCustomAssetPinFactory());
+FEdGraphUtilities::RegisterVisualPinFactory(PinFactory);
+
+=> ShutdownModule
+FEdGraphUtilities::UnregisterVisualPinFactory(PinFactory);
+PinFactory.Reset();
+```
+
+빌드해서 확인해보면 인자에서 값을 넣을 수 있습니다.
+
+![gpp2](/assets/images/ue4/editor_graphpin_2.png)
+
+<br/>
+
+# Custom Detail Panel
+
+디테일 속성에서 클래스의 멤버를 수정할 수 있도록 커스텀 디테일 패널을 제작해봅니다.
+
+타겟이 될 클래스를 생성합니다.
+
+```cpp
+#pragma once
+
+#include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
+#include "NewAsset.generated.h"
+
+UCLASS(Blueprintable)
+class TEMP_API UNewAsset : public UObject
+{
+	GENERATED_BODY()
+	
+public:
+	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category="CustomAsset")
+	FString ColorName;
+};
+```
+
+Detail 패널을 위한 IDetailCustomization 인터페이스를 상속받는 클래스를 생성합니다.
+
+```cpp
+#pragma once
+
+#include "./temp/NewAsset.h" 
+#include "DetailLayoutBuilder.h" 
+#include "IDetailCustomization.h" 
+#include "IPropertyTypeCustomization.h"
+
+#include "temp_editor.h" 
+#include "IDetailsView.h" 
+#include "DetailLayoutBuilder.h" 
+#include "DetailCategoryBuilder.h" 
+#include "Widgets/Colors/SColorPicker.h"
+#include "Widgets/SBoxPanel.h"
+#include "DetailWidgetRow.h" 
+
+
+class FMyCustomAssetDetailsCustomization: public IDetailCustomization
+{
+
+public:
+    virtual void CustomizeDetails(IDetailLayoutBuilder& DetailBuilder) override
+    {
+        const TArray< TWeakObjectPtr<UObject> >& SelectedObjects = DetailBuilder.GetDetailsView()->GetSelectedObjects();
+
+        for(int32 ObjectIndex = 0; !MyAsset.IsValid() && ObjectIndex < SelectedObjects.Num(); ++ObjectIndex)
+        {
+            const TWeakObjectPtr<UObject>& CurrentObject = SelectedObjects[ObjectIndex];
+            if(CurrentObject.IsValid())
+            {
+                MyAsset = Cast<UNewAsset>(CurrentObject.Get());
+            }
+        }
+
+        DetailBuilder.EditCategory("CustomCategory", FText::GetEmpty(), ECategoryPriority::Important)
+            .AddCustomRow(FText::GetEmpty())
+            [
+                SNew(SVerticalBox)
+                + SVerticalBox::Slot()
+            .VAlign(VAlign_Center)
+            [
+                SNew(SColorPicker)
+                .OnColorCommitted(this, &FMyCustomAssetDetailsCustomization::ColorPicked)
+            ]
+            ];
+    }
+
+    void ColorPicked(FLinearColor SelectedColor)
+    {
+        if(MyAsset.IsValid())
+        {
+            MyAsset.Get()->ColorName = SelectedColor.ToFColor(false).ToHex();
+        }
+    }
+
+    static TSharedRef<IDetailCustomization> MakeInstance()
+    {
+        return MakeShareable(new FMyCustomAssetDetailsCustomization);
+    }
+
+    TWeakObjectPtr<class UNewAsset> MyAsset;
+};
+
+class FMyCustomAssetPropertyDetails: public IPropertyTypeCustomization
+{
+public:
+    void ColorPicked(FLinearColor SelectedColor)
+    {
+        if(MyAsset)
+        {
+            MyAsset->ColorName = SelectedColor.ToFColor(false).ToHex();
+        }
+    }
+
+    static TSharedRef<IPropertyTypeCustomization> MakeInstance()
+    {
+        return MakeShareable(new FMyCustomAssetPropertyDetails);
+    }
+
+    UNewAsset* MyAsset;
+    virtual void CustomizeChildren(TSharedRef<IPropertyHandle> PropertyHandle, IDetailChildrenBuilder& ChildBuilder, IPropertyTypeCustomizationUtils& CustomizationUtils) override
+    {
+
+    }
+
+    virtual void CustomizeHeader(TSharedRef<IPropertyHandle> PropertyHandle, FDetailWidgetRow& HeaderRow, IPropertyTypeCustomizationUtils& CustomizationUtils) override
+    {
+        UObject* PropertyValue = nullptr;
+        auto GetValueResult = PropertyHandle->GetValue(PropertyValue);
+
+        HeaderRow.NameContent()
+            [
+                PropertyHandle->CreatePropertyNameWidget()
+            ];
+        HeaderRow.ValueContent()
+            [
+                SNew(SVerticalBox)
+                + SVerticalBox::Slot()
+            .VAlign(VAlign_Center)
+            [
+                SNew(SColorPicker)
+                .OnColorCommitted(this, &FMyCustomAssetPropertyDetails::ColorPicked)
+            ]
+            ];
+    }
+
+};
+```
+
+이후 temp_editor 클래스의 StartUpModule, ShutdownModule 에 추가합니다.
+
+```cpp
+//StartupModule
+
+FPropertyEditorModule& PropertyModule = FModuleManager::LoadModuleChecked<FPropertyEditorModule>("PropertyEditor");
+PropertyModule.RegisterCustomClassLayout(UNewAsset::StaticClass()->GetFName(), FOnGetDetailCustomizationInstance::CreateStatic(&FMyCustomAssetDetailsCustomization::MakeInstance));
+PropertyModule.RegisterCustomPropertyTypeLayout(UNewAsset::StaticClass()->GetFName(), FOnGetPropertyTypeCustomizationInstance::CreateStatic(&FMyCustomAssetPropertyDetails::MakeInstance));
+
+//ShutdownModule
+
+FPropertyEditorModule& PropertyModule = FModuleManager::LoadModuleChecked<FPropertyEditorModule>("PropertyEditor");
+PropertyModule.UnregisterCustomClassLayout(UNewAsset::StaticClass()->GetFName());
+```
+
+이후 UNewAsset 을 블루프린트화 한 뒤 디테일 패널을 확인해봅니다.
+
+![detail](/assets/images/ue4/editor_detail.png)
