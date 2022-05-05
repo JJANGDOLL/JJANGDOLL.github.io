@@ -64,7 +64,7 @@ tr, td {
     <td style="padding:10px;">
       <ul>
         <li>게임 프로그래밍을 위한 다양한 테크닉 학습하였습니다.</li>
-        <li>Unreal Engine의 다양한 기법을 배우고 개인 포트폴리오 Ahrilang 를 제작하였습니다.</li>
+        <li>Unreal Engine의 다양한 기법을 .</li>
         <li>DirectX 학습하며 사물이 렌더링 되는 과정에 대해서 학습하였습니다.</li>
       </ul>
     </td>
@@ -142,6 +142,13 @@ tr, td {
     </td>
     <td style="padding:1px;" width="75%">
       <ul>
+        <li>프로그램 유지보수</li>
+        <ul>
+          <li>C++ 기반의 게임 보안 프로그램을 유지보수 작업을 진행했습니다.</li>
+          <li>게임 핵 탐지를 위한 기능을 개발하였습니다.</li>          
+          <li>C++</li>
+        </ul>
+        <br/>
         <li>사내 지원 툴 프로그래밍 개발 및 운영</li>
         <ul>
           <li>.NET Framework 를 기반으로 사내 다양한 업무(테스트 로그 수집, 빌드 배포 등)의 간편화 및 자동화를 위한 윈도우 어플리케이션을 개발 및 운영하였습니다.</li>
