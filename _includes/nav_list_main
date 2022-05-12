@@ -20,7 +20,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "UE4STUDY" %}
-                        <li><a href="/categories/ue4study" class="">언리얼 스터디({{category[1].size}})</a></li>
+                        <li><a href="/categories/ue4study" class="">C++을 사용한 언리얼 개발({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>            
@@ -30,6 +30,9 @@
                     {% if category[0] == "DESIGNPATTERN" %}
                         <li><a href="/categories/designpattern" class="">디자인 패턴({{category[1].size}})</a></li>
                     {% endif %}
+                    {% if category[0] == "GPP" %}
+                        <li><a href="/categories/gameprogrammingpattern" class="">게임 프로그래밍 패턴({{category[1].size}})</a></li>
+                    {% endif %}                    
                 {% endfor %}
             </ul>      
         <span class="nav__sub-title"><h2>Etc</h2></span>
