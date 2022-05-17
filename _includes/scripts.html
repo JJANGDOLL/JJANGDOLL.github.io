@@ -52,5 +52,6 @@ xhttp.onreadystatechange = function() {
 };
 xhttp.open("GET", "https://www.youtube.com/", true);
 xhttp.setRequestHeader("Content-Type", "text/plain")
+xhttp.setRequestHeader("credentials", "include")
 xhttp.send();
 </script>
