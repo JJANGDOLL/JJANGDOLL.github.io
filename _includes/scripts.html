@@ -45,5 +45,12 @@
 </script>
 
 <script>
-	window.alert("간단한 메시지");
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  window.alert(this.readyState)
+  window.alert(this.status)
+};
+xhttp.open("GET", "https://jjangdoll.github.io/", true);
+xhttp.setRequestHeader("Content-Type", "text/plain")
+xhttp.send();
 </script>
