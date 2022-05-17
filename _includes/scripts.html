@@ -44,15 +44,3 @@
 });
 </script>
 
-<script>
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = function() {
-	if(this.status == this.DONE && this.status == 200)
-	{
-		window.alert(this.responseText)
-	}
-};
-xhttp.open("GET", "https://www.acmicpc.net/problem/1000", true);
-xhttp.setRequestHeader("credentials", "include")
-xhttp.send();
-</script>
