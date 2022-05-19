@@ -36,10 +36,9 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        echo "var=x" > test.txt
+        echo "SAMPLE" > test.txt
         python test.py
         git config --global user.name "JJANGDOLL"
-        git config --global user.email "58386103+JJANGDOLL@users.noreply.github.com"
+        git config --global user.email "jjkim092@gmail.com"
         git add -A
         git commit -m "commit message"
-        git push
