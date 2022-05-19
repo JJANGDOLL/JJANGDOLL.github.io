@@ -42,3 +42,4 @@ jobs:
         git config --global user.email "jjkim092@gmail.com"
         git add -A
         git commit -m "commit message"
+        git push
