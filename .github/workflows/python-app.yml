@@ -38,7 +38,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        echo "SAMPLE" > test.txt
+        date +%s > test.txt
         python test.py
         git config --global user.name "JJANGDOLL"
         git config --global user.email "jjkim092@gmail.com"
