@@ -19,6 +19,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - with: 
+        token: ${{ secrets.PAT }}
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
       with:
@@ -42,4 +44,3 @@ jobs:
         git config --global user.email "jjkim092@gmail.com"
         git add -A
         git commit -m "commit message"
-        git push
