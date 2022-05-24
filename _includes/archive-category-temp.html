@@ -18,6 +18,18 @@
             {% endfor %}
             ASDF
             {{ post.step }}
+            {% if post.step == "1" %}
+              와 이제 나온다 문자
+            {% endif %}
+            {% if post.step == 1 %}
+              와 이제 나온다 정수
+            {% endif %}         
+            {% if post.step == "1" %}
+              와 이제 나온다 문자
+            {% endif %}
+            {% if psot.step == 1 %}
+              와 이제 나온다 정수
+            {% endif %}               
             {% for step in post.step %}
               {% if step[0] == "1" %}
                 와 이제 나온다 문자
