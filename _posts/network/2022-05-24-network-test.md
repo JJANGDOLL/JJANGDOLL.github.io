@@ -4,8 +4,10 @@ categories:
   - NETWORK
   - 
 tags:
+  - step1
   - network
-  - 
+
+
 toc: true
 toc_label: "네트워크"
 toc_sticky: true
