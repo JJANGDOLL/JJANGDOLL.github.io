@@ -38,6 +38,14 @@
                 {% endif %}                
                 {% endfor %}
             </ul>      
+        <span class="nav__sub-title"><h2>컴퓨터 공학</h2></span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "NETWORK" %}
+                        <li><a href="/categories/network" class="">네트워크({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>            
         <span class="nav__sub-title"><h2>Etc</h2></span>
             <ul>
                 {% for category in site.categories %}
