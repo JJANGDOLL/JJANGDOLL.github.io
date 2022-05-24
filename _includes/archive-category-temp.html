@@ -13,15 +13,19 @@
 <div class="{{ include.type | default: "list" }}__item">
     <article class="archive-item">
         <div>
-            {% if post.step == 1 %}
-              와 이제 나온다 정수
-            {% endif %}                   
             <span>
               <a href="{{ post.url }}">{{post.title}}</a>
-            </span>
-            <small> 
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>{{ post.date | date: " %Y.%m.%d" }}
-            </small>
+            </span>          
+            {% if post.step == 1 %}
+              <small> 
+                <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>{{ post.date | date: " %Y.%m.%d" }}
+              </small>
+            {% endif %}                   
+            {% if post.step == 2 %}
+              <small> 
+                <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i>{{ post.date | date: " %Y.%m.%d" }}
+              </small>
+            {% endif %}    
         </div>
       </article>
 </div>
