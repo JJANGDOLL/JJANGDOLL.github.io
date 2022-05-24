@@ -18,6 +18,9 @@
             {% endfor %}
             ASDF
             {{ post.step }}
+            {% if post.step == "1" %}
+              와 이제 나온다
+            {% endif %}
             <span>
               <a href="{{ post.url }}">{{post.title}}</a>
             </span>
