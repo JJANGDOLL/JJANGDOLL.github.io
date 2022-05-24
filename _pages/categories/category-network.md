@@ -8,4 +8,4 @@ sidebar_main: true
 
 
 {% assign posts = site.categories.NETWORK %}
-{% for post in posts %} {% include archive-category.html type=page.entries_layout %} {% endfor %}
+{% for post in posts %} {% include archive-category-temp.html type=page.entries_layout %} {% endfor %}
