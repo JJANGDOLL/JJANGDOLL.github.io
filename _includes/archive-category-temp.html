@@ -19,7 +19,7 @@
             ASDF
             {{ post.step }}
             {% for step in post.step %}
-              {% if step == "1" %}
+              {% if step[0] == "1" %}
                 와 이제 나온다
               {% endif %}
             {% endfor %}
