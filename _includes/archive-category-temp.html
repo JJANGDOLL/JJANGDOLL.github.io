@@ -1,7 +1,23 @@
 <div class="{{ include.type | default: "list" }}__item">
     <article class="archive-item">
         <div>      
-            과정 1
+            <h1>네트워크</h1><br/>
+            
+            <h2>소제목1</h2><br/>
+            
+            <a>네트워크 1_1 </a><br/>
+            <a>네트워크 1_2 </a><br/>
+            <a>네트워크 1_3 </a><br/>
+            
+            </br>
+        
+            <h2>소제목2</h2><br/>
+                    
+            <a>네트워크 2_1 </a><br/>
+            <a>네트워크 2_2 </a><br/>
+            <a>네트워크 2_3 </a><br/>
+            
+            <!--
             <br/>
             {% for post in posts %}          
               {% if post.header.teaser %}
@@ -9,19 +25,20 @@
               {% else %}
                 {% assign teaser = site.teaser %}
               {% endif %}
-
               {% if post.id %}
                 {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
               {% else %}
                 {% assign title = post.title %}
               {% endif %}          
+            
               {% if post.step == 1 %}
                 <span>
                   <a href="{{ post.url }}">{{post.title}}</a><br/>
                 </span>                 
-              {% endif %}                   
+              {% endif %} 
+            
             {% endfor %}
-            과정 2
+            <big>과정 1</big>
             <br/>
             {% for post in posts %}   
               {% if post.header.teaser %}
@@ -41,6 +58,7 @@
                 </span>                       
               {% endif %}                   
             {% endfor %} 
+            -->
         </div>
       </article>
 </div>
