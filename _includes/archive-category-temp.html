@@ -14,9 +14,7 @@
     <article class="archive-item">
         <div>
             {% for tag in post.tags %}
-                {% for tt in tags %}
-                    {{ tt }}
-                {% endfor %}
+                {{ tag }}
             {% endfor %}
 
             <span>
