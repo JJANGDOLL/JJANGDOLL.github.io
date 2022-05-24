@@ -7,8 +7,7 @@ tags:
   - step1
   - network
 
-step:
-  - 1
+step: 1
 
 toc: true
 toc_label: "네트워크"
