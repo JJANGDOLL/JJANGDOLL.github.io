@@ -25,7 +25,7 @@ tr, td {
     <td style="padding:20px;" width="27%" valign="top">
       <font size="4"><b>한국 IT 전문학교</b></font><br/> 
       <font size="3"><b>정보보호학과</b></font><br/> 
-      <font size="2">2016.03 ~ 2028.02</font>
+      <font size="2">2016.03 ~ 2018.02</font>
     </td>
     <td style="padding:1px;" width="100%">
       <ul>
