@@ -34,8 +34,11 @@
                         <li><a href="/categories/gameprogrammingpattern" class="">게임 프로그래밍 패턴({{category[1].size}})</a></li>
                     {% endif %}      
                     {% if category[0] == "D3D12" %}
-                    <li><a href="/categories/d3d12" class="">DirectX 12({{category[1].size}})</a></li>
-                {% endif %}                
+                        <li><a href="/categories/d3d12" class="">DirectX 12({{category[1].size}})</a></li>
+                    {% endif %}      
+                    {% if category[0] == "EFCPP" %}
+                        <li><a href="/categories/effectivecpp" class="">Effective CPP({{category[1].size}})</a></li>
+                    {% endif %}            
                 {% endfor %}
             </ul>      
         <span class="nav__sub-title"><h2>Etc</h2></span>
