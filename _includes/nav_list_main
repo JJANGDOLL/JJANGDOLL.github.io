@@ -62,7 +62,14 @@
                         <li><a href="/categories/blog" class="">블로그({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>                 
+            </ul>      
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "HGM" %}
+                        <li><a href="/categories/hongongmachine" class="">혼공머신({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>            
       </li>
   </ul>
 </nav>
