@@ -25,7 +25,7 @@ url                      : "https://jjangdoll.github.io/"
 baseurl                  : #"/blog"
 repository               : "JJANGDOLL/JJANGDOLL.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : #"/assets/images/favicon.ico"
+logo                     : "/assets/images/favicon.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -104,7 +104,7 @@ analytics:
 author:
   name             : "JAEJUN KIM"
   avatar           : "/assets/images/bio-photo.jpg"
-  bio              : "[공부를 합시다]"
+  bio              : ""
   location         : "Seoul/Korea"
   email            :
   links:
