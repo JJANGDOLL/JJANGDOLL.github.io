@@ -6,7 +6,7 @@ header:
   image: /assets/images/snake/header.jpg
   teaser: /assets/images/snake/teaser.jpg
 sidebar:
-  - title: "Goal"
+  - title: "주제"
     text: "Snake 게임 제작"
 ---
 
@@ -22,9 +22,17 @@ CPP만을 사용한 Snake 게임 제작
 
 <br/>
 
-# 구조
+# 클래스별 상세 기능
 
-각 클래스에 대해서 설명합니다.
+각 클래스의 역할에 대해서 설명합니다.
+
+<br/>
+
+## General
+
+### randomInRange
+
+1. 입력받은 숫자 내에서 랜덤한 값을 반환
 
 <br/>
 
@@ -32,15 +40,21 @@ CPP만을 사용한 Snake 게임 제작
 
 ### IUpdate
 
+1. 게임 각 객체에서 매 프레임당 실행할 기능
+2. 이벤트 수신에 대한 처리 기능
+3. 게임 흐름(시작, 종료)에 대한 기능
+
+<br/>
+
 ### IWorld
+
+1. 각 객체에 월드에 대한 참조를 가지는 기능
 
 <br/>
 
 ## 클래스
 
-### World
-
-**역할**
+### World 
 
 1. 게임에 필요한 인스턴스(Snake, Feed ...)들 관리
 2. 타이머, 점수 체크등 게임 내/외적 데이터 표시
@@ -49,7 +63,26 @@ CPP만을 사용한 Snake 게임 제작
 
 <br/>
 
-**패턴**
+### Screen 
+
+1. CMD에 좌표와 어떤 글자를 출력해야할 데이터를 관리
+2. 게임 표현해야 할 데이터를 CMD에 출력
+
+<br/>
+
+### Snake 
+
+1. 뱀의 길이, 방향, 위치 등의 정보를 관리
+
+<br/>
+
+### 
+
+<br/>
+
+# 구조
+
+## 디자인 패턴
 
 * 팩토리 패턴
 
@@ -66,9 +99,37 @@ T* World::createUpdateObject()
 
 <br/>
 
+* 싱글턴 패턴
+
+```cpp
+class World
+{
+public:
+    static World& getInstance(int InSize = 0, Screen* InScreen = nullptr);
+
+private:
+    World(const World&);
+    World& operator=(const World&);
+};
+```
+
+```cpp
+World& World::getInstance(int InSize /*= 0*/, Screen* InScreen /*= nullptr*/)
+{
+    static World* _instance;
+    if(_instance == nullptr)
+    {
+        assert((InSize > 0) && (InScreen != nullptr));
+
+        _instance = new World(InSize, InScreen);
+        _instance->createMap();
+    }
+    return *_instance;
+}
+```
+
+<br/>
+
+
+
 ###
-
-
-
-## 팩토리 패턴
-
