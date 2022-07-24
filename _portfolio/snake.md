@@ -10,13 +10,15 @@ sidebar:
     text: "Snake 게임 제작"
 
 toc: true
-toc_label: CPU와 GPU의 상호작용
+toc_label: Snake
 toc_sticky: true    
 ---
 
 CPP만을 사용한 Snake 게임 제작
 
 게임 프로그램이 패턴, 디자인 패턴에서 학습한 패턴을 사용하는 것이 목표
+
+[Snake Code](https://github.com/JJANGDOLL/Snake)
 
 <br/>
 
