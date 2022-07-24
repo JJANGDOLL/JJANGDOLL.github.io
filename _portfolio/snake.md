@@ -8,6 +8,10 @@ header:
 sidebar:
   - title: "주제"
     text: "Snake 게임 제작"
+
+toc: true
+toc_label: CPU와 GPU의 상호작용
+toc_sticky: true    
 ---
 
 CPP만을 사용한 Snake 게임 제작
