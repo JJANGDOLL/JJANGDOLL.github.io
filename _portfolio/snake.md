@@ -28,7 +28,7 @@ CPP만을 사용한 Snake 게임 제작
 
 <br/>
 
-## General
+## Global
 
 ### randomInRange
 
@@ -48,7 +48,7 @@ CPP만을 사용한 Snake 게임 제작
 
 ### IWorld
 
-1. 각 객체에 월드에 대한 참조를 가지는 기능
+1. 각 클래스가 월드에 대한 참조를 가지는 기능
 
 <br/>
 
@@ -76,7 +76,16 @@ CPP만을 사용한 Snake 게임 제작
 
 <br/>
 
-### 
+### Feed
+
+1. 뱀이 먹을 수 있는 먹이 기능
+2. 먹이에 대한 위치를 관리
+
+<br/>
+
+### InputController
+
+1. 게임 입력에 관한 조작을 관리
 
 <br/>
 
@@ -130,6 +139,84 @@ World& World::getInstance(int InSize /*= 0*/, Screen* InScreen /*= nullptr*/)
 
 <br/>
 
+## 게임 프로그래밍 패턴
 
+* 게임 루프
 
-###
+```cpp
+while(!World::getInstance().isEnd())
+{
+    start = std::chrono::steady_clock::now();
+
+    std::chrono::duration<double> elapsedTime = std::chrono::steady_clock::now() - start;
+    term = (World::getInstance().getPerSecond() - elapsedTime.count());
+    if(term > 0)
+        Sleep(int(term * 1000));
+}
+```
+
+<br/>
+
+* 업데이트 메소드
+
+```cpp
+InputController* controller = World::getInstance().createUpdateObject<InputController>();
+Snake* snake = World::getInstance().createUpdateObject<Snake>();
+Feed* feed = World::getInstance().createUpdateObject<Feed>();
+```
+
+```cpp
+while(!World::getInstance().isEnd())
+{
+    World::getInstance().updateAll();
+}
+```
+
+```cpp
+void World::updateAll() 
+{
+    ElapsedTimer();
+    printScore();
+    renderMap();
+    if(!_bGameStart)
+    {
+        readyToStart();
+    }
+
+    for(IUpdate* u : _updateObjects)
+    {
+        u->update();
+    }
+}
+```
+<br/>
+
+* 이중 버퍼
+
+```cpp
+class Screen
+{
+private:
+    int currentIdx = 0;
+    ScreenBuffer screenBuffer[2];
+public:
+    ScreenBuffer& GetCurrentBuffer();
+    void DrawCall();
+};
+```
+
+```cpp
+ScreenBuffer& Screen::GetCurrentBuffer()
+{
+    return screenBuffer[currentIdx];
+}
+
+void Screen::DrawCall()
+{
+    currentIdx++;
+    currentIdx %= 2;
+}
+```
+
+<br/>
+
