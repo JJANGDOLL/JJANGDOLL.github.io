@@ -40,7 +40,7 @@
                         <li><a href="/categories/effectivecpp" class="">Effective CPP({{category[1].size}})</a></li>
                     {% endif %}     
                     {% if category[0] == "MEFCPP" %}
-                        <li><a href="/categories/effectivecpp" class="">Modern Effective CPP({{category[1].size}})</a></li>
+                        <li><a href="/categories/moderneffectivecpp" class="">Modern Effective CPP({{category[1].size}})</a></li>
                     {% endif %}  
                 {% endfor %}
             </ul>             
